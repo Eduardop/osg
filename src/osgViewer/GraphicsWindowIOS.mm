@@ -63,7 +63,9 @@
 //
 - (void) dealloc
 {
+#ifndef OBJC_ARC_ENABLED
     [super dealloc];
+#endif
 }
 
 - (BOOL) canBecomeKeyWindow
@@ -172,17 +174,19 @@ typedef std::map<void*, unsigned int> TouchPointsIdMapping;
         _touchPointsIdMapping = new TouchPointsIdMapping();
     }
     
+    void* vtouch = (__bridge void*)touch;
+    
     switch([touch phase])
     {
     
         case UITouchPhaseBegan:
             {
-                TouchPointsIdMapping::iterator itr = _touchPointsIdMapping->find(touch);
+                TouchPointsIdMapping::iterator itr = _touchPointsIdMapping->find(vtouch);
                 // std::cout << "new: " << touch << " num: " << _touchPointsIdMapping->size() << " found: " << (itr != _touchPointsIdMapping->end()) << std::endl;
                  
                 if (itr == _touchPointsIdMapping->end()) 
                 {
-                    (*_touchPointsIdMapping)[touch] = result = _lastTouchPointId;
+                    (*_touchPointsIdMapping)[vtouch] = result = _lastTouchPointId;
                     _lastTouchPointId++;
                     break;
                 }
@@ -193,14 +197,14 @@ typedef std::map<void*, unsigned int> TouchPointsIdMapping;
         case UITouchPhaseMoved:
         case UITouchPhaseStationary:
             {
-                result = (*_touchPointsIdMapping)[touch];
+                result = (*_touchPointsIdMapping)[vtouch];
             }
             break;
        
         case UITouchPhaseEnded:
         case UITouchPhaseCancelled:
             {
-                TouchPointsIdMapping::iterator itr = _touchPointsIdMapping->find(touch);
+                TouchPointsIdMapping::iterator itr = _touchPointsIdMapping->find(vtouch);
                 // std::cout<< "remove: " << touch << " num: " << _touchPointsIdMapping->size() << " found: " << (itr != _touchPointsIdMapping->end()) << std::endl;
                 
                 if (itr != _touchPointsIdMapping->end()) {
@@ -294,7 +298,9 @@ typedef std::map<void*, unsigned int> TouchPointsIdMapping;
     if(_touchPointsIdMapping) 
         delete _touchPointsIdMapping;
     _touchPointsIdMapping = NULL;
+#ifndef OBJC_ARC_ENABLED
     [super dealloc];
+#endif
 }
 
 - (void)layoutSubviews {
@@ -687,7 +693,9 @@ void GraphicsWindowIOS::init()
 
 bool GraphicsWindowIOS::realizeImplementation()
 {
+#ifndef OBJC_ARC_ENABLED
     NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
+#endif
     
     BOOL bar_hidden = (_traits->windowDecoration) ? NO: YES;
     #ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
@@ -824,7 +832,9 @@ bool GraphicsWindowIOS::realizeImplementation()
     
     // Attach view to window
     [_window addSubview: _view];
+#ifndef OBJC_ARC_ENABLED
     [theView release];
+#endif
     
     //if we own the window also make it visible
     if (_ownsWindow) 
@@ -832,8 +842,10 @@ bool GraphicsWindowIOS::realizeImplementation()
         //show window
         [_window makeKeyAndVisible];
     }
-
+    
+#ifndef OBJC_ARC_ENABLED
     [pool release];
+#endif
     
     // IOSs origin is top/left:
     getEventQueue()->getCurrentEventState()->setMouseYOrientation(osgGA::GUIEventAdapter::Y_INCREASING_DOWNWARDS);
@@ -858,20 +870,26 @@ void GraphicsWindowIOS::closeImplementation()
     if (_view) 
     {
         [_view setOpenGLContext: NULL];
+#ifndef OBJC_ARC_ENABLED
         [_context release];
+#endif
         [_view removeFromSuperview];
         [_view setGraphicsWindow: NULL];
     }
     
     if (_viewController) 
     {
+#ifndef OBJC_ARC_ENABLED
         [_viewController release];
+#endif
         _viewController = NULL;
     }
         
     if (_window && _ownsWindow) 
-    {  
+    { 
+#ifndef OBJC_ARC_ENABLED
         [_window release];
+#endif
         //[glView release];
     }
 

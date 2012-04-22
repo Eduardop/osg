@@ -160,7 +160,9 @@ static NSString* toNSString(const std::string& text)
 //
 osg::Image* ReadCoreGraphicsImageFromFile(std::string file)
 {
+#ifndef OBJC_ARC_ENABLED
     NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
+#endif
     //chop the extension off
     //std::string strExt = osgDB::getFileExtension(file);
     //std::string strPath = osgDB::getFilePath(file);
@@ -177,13 +179,17 @@ osg::Image* ReadCoreGraphicsImageFromFile(std::string file)
     UIImage *img = [UIImage imageWithContentsOfFile:path];
     if (!img) {
         NSLog(@"imageio: failed to load UIImage image '%@'.\n", path);
+#ifndef OBJC_ARC_ENABLED
         [pool release];
+#endif
         return NULL;
     }
     CGImageRef textureImage = img.CGImage;
     if (!textureImage) {
         NSLog(@"imageio: failed to create CGImageRef.\n");
+#ifndef OBJC_ARC_ENABLED
         [pool release];
+#endif
         return NULL;
     }
 
@@ -192,7 +198,9 @@ osg::Image* ReadCoreGraphicsImageFromFile(std::string file)
     GLubyte *textureData = (GLubyte *)malloc(texWidth * texHeight * 4);
     if (!textureData) {
         NSLog(@"imageio: out of memory.\n");
+#ifndef OBJC_ARC_ENABLED
         [pool release];
+#endif
         return NULL;
     }
 
@@ -200,7 +208,9 @@ osg::Image* ReadCoreGraphicsImageFromFile(std::string file)
     if (!csref) {
         NSLog(@"imageio: failed to create CGColorSpaceRef.\n");
         free(textureData);
+#ifndef OBJC_ARC_ENABLED
         [pool release];
+#endif
         return NULL;
     }
 
@@ -213,7 +223,9 @@ osg::Image* ReadCoreGraphicsImageFromFile(std::string file)
     if (!textureContext) {
         NSLog(@"imageio: failed to create CGContextRef.\n");
         free(textureData);
+#ifndef OBJC_ARC_ENABLED
         [pool release];
+#endif
         return NULL;
     }
 
@@ -255,15 +267,21 @@ osg::Image* ReadCoreGraphicsImageFromFile(std::string file)
         pixels += 4;
     }
 
+#ifndef OBJC_ARC_ENABLED
     [pool release];
+#endif
     return image;
 }
 
 osg::Image* CreateOSGImageFromCGImage(CGImageRef textureImage)
 {
+#ifndef OBJC_ARC_ENABLED
     NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
+#endif
     if (textureImage == nil) {
+#ifndef OBJC_ARC_ENABLED
         [pool release];
+#endif
         NSLog(@"imageio: failed to load CGImageRef image");
         return NULL;
     }
@@ -274,7 +292,9 @@ osg::Image* CreateOSGImageFromCGImage(CGImageRef textureImage)
     GLubyte *textureData = (GLubyte *)malloc(texWidth * texHeight * 4);
     if (!textureData) {
         NSLog(@"imageio: out of memory.\n");
+#ifndef OBJC_ARC_ENABLED
         [pool release];
+#endif
         return NULL;
     }
 
@@ -282,7 +302,9 @@ osg::Image* CreateOSGImageFromCGImage(CGImageRef textureImage)
     if (!csref) {
         NSLog(@"imageio: failed to create CGColorSpaceRef.\n");
         free(textureData);
+#ifndef OBJC_ARC_ENABLED
         [pool release];
+#endif
         return NULL;
     }
 
@@ -295,7 +317,9 @@ osg::Image* CreateOSGImageFromCGImage(CGImageRef textureImage)
     if (!textureContext) {
         NSLog(@"imageio: failed to create CGContextRef.\n");
         free(textureData);
+#ifndef OBJC_ARC_ENABLED
         [pool release];
+#endif
         return NULL;
     }
 
@@ -341,7 +365,9 @@ osg::Image* CreateOSGImageFromCGImage(CGImageRef textureImage)
         pixels += 4;
     }
 
+#ifndef OBJC_ARC_ENABLED
     [pool release];
+#endif
     return image;
 }
 

@@ -1005,7 +1005,9 @@ bool osgDB::containsCurrentWorkingDirectoryReference(const FilePathList& paths)
         // location so it can be shared. Pools seem to be stackable,
         // so I don't think there will be a problem if multiple pools
         // exist at a time.
+#ifndef OBJC_ARC_ENABLED
         NSAutoreleasePool* mypool = [[NSAutoreleasePool alloc] init];
+#endif
 
         NSString* myBundlePlugInPath;
         NSString* userSupportDir;
@@ -1032,8 +1034,10 @@ bool osgDB::containsCurrentWorkingDirectoryReference(const FilePathList& paths)
         filepath.push_back( "/Library/Application Support/OpenSceneGraph/PlugIns" );
         filepath.push_back( "/Network/Library/Application Support/OpenSceneGraph/PlugIns" );
 
+#ifndef OBJC_ARC_ENABLED
         // Clean up the autorelease pool
         [mypool release];
+#endif
     }
 
     #elif defined(COMPILE_CARBON_VERSION)

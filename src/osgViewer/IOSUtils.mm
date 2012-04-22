@@ -20,12 +20,21 @@ namespace osgIOS {
 class AutoReleasePoolHelper {
 public:
     AutoReleasePoolHelper() {
+#ifndef OBJC_ARC_ENABLED
         pool = [[NSAutoreleasePool alloc] init];
+#endif
     }
     
-    ~AutoReleasePoolHelper() { [pool release]; }
+    ~AutoReleasePoolHelper() {
+#ifndef OBJC_ARC_ENABLED
+        [pool release];
+#endif
+    }
+    
 private:
+#ifndef OBJC_ARC_ENABLED
     NSAutoreleasePool* pool;
+#endif
 };
 
 
