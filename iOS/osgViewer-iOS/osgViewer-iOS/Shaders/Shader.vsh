@@ -19,11 +19,10 @@ void main()
 {
     vec3 eyeNormal = normalize(osg_NormalMatrix * osg_Normal);
     vec3 lightPosition = vec3(0.0, 0.0, 1.0);
-    vec4 diffuseColor = vec4(0.4, 0.4, 1.0, 1.0);
     
     float nDotVP = max(0.0, dot(eyeNormal, normalize(lightPosition)));
                  
-    colorVarying = diffuseColor * nDotVP;
+    colorVarying = osg_Color * nDotVP;
     
     gl_Position = osg_ModelViewProjectionMatrix * osg_Vertex;
 }
