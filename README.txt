@@ -3,6 +3,14 @@ osg-iOS
 
 Welcome to the OpenSceneGraph iOS port for SDK 5.0+ / ARC.
 
+With this port, you will be able to build OSG for iOS out of the box.
+
+    * No prerequisites needed.
+    * Cmake not needed (the standard cmake 2.8.7 distribution is not
+      compatible with Xcode 4). Xcode projects provided.
+    * Automatic reference counting supported.
+    * iOS 5.1 SDK and higher supported.
+
 README-OSG.txt contains the original README.txt contents.
 
 * Built using Xcode 4.3.2.
@@ -11,11 +19,11 @@ README-OSG.txt contains the original README.txt contents.
 * Defaults to GLES2 (OSG_GLES2_AVAILABLE).
 * User needs to write own shaders.
 
-* Removed modules:
+* Disabled modules:
     * OpenThreads: qt, sproc, win32
     * osgQt
     
-* Removed plugins:
+* Disabled plugins:
     * cfg
     * curl
     * dae
@@ -44,3 +52,5 @@ README-OSG.txt contains the original README.txt contents.
     * vrml
     * xine
     * zip
+
+Many thanks to Robert Osfeld and the OpenSceneGraph team.
