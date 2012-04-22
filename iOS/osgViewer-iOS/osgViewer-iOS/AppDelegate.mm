@@ -17,6 +17,7 @@
 #include <osgGA/TrackballManipulator>
 #include <osg/ShapeDrawable>
 #include <osgViewer/api/IOS/GraphicsWindowIOS> 
+#include <osgDB/FileUtils>
 
 #define kAccelerometerFrequency     30.0 // Hz
 #define kFilteringFactor            0.1
@@ -25,6 +26,26 @@
 
 @synthesize _window;
 
+
+bool loadShaderSource(osg::Shader* obj, const std::string& fileName )
+{
+    std::string fqFileName = osgDB::findDataFile(fileName);
+    if( fqFileName.length() == 0 )
+    {
+        std::cout << "File \"" << fileName << "\" not found." << std::endl;
+        return false;
+    }
+    bool success = obj->loadShaderSourceFromFile( fqFileName.c_str());
+    if ( !success  )
+    {
+        std::cout << "Couldn't load file: " << fileName << std::endl;
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}
 
 //
 // Called once app has finished launching, create the viewer then realize. Can't call viewer->run as will 
@@ -56,7 +77,7 @@
     traits->y = 0;
     traits->width = w;
     traits->height = h;
-    traits->depth = 16; // keep memory down, default is currently 24
+    //traits->depth = 16; // keep memory down, default is currently 24
     //traits->alpha = 8;
     //traits->stencil = 8;
     traits->windowDecoration = false;
@@ -85,14 +106,25 @@
     _root = new osg::MatrixTransform();    
     
     // load and attach scene model
-    osg::ref_ptr<osg::Node> model = (osgDB::readNodeFile("pyramid.obj"));
-    _root->addChild(model);
+    //osg::ref_ptr<osg::Node> model = (osgDB::readNodeFile("pyramid.obj"));
+    //_root->addChild(model);
     
     osg::Geode* geode = new osg::Geode();
     osg::ShapeDrawable* drawable = new osg::ShapeDrawable(new osg::Box(osg::Vec3(1,1,1), 1));
     geode->addDrawable(drawable);
     _root->addChild(geode);
     
+    osg::StateSet* stateset = _root->getOrCreateStateSet();
+    
+    osg::Program* programObject = new osg::Program;
+    osg::Shader* vertexObject = new osg::Shader( osg::Shader::VERTEX );
+    osg::Shader* fragmentObject = new osg::Shader( osg::Shader::FRAGMENT );
+    programObject->addShader( fragmentObject );
+    programObject->addShader( vertexObject );
+    loadShaderSource( vertexObject, "Shader.vsh" );
+    loadShaderSource( fragmentObject, "Shader.fsh" );
+    
+    stateset->setAttributeAndModes(programObject, osg::StateAttribute::ON);    
     
     // create and attach ortho camera for hud text
     osg::ref_ptr<osg::CameraNode> _hudCamera = new osg::CameraNode;
