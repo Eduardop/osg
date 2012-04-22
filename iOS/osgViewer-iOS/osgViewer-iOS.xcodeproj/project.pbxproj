@@ -13,13 +13,15 @@
 		374017221543915B004E64E3 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374017211543915B004E64E3 /* GLKit.framework */; };
 		374017241543915B004E64E3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374017231543915B004E64E3 /* OpenGLES.framework */; };
 		3740172A1543915B004E64E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 374017281543915B004E64E3 /* InfoPlist.strings */; };
-		3740172C1543915B004E64E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3740172B1543915B004E64E3 /* main.m */; };
-		374017301543915B004E64E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3740172F1543915B004E64E3 /* AppDelegate.m */; };
+		3740172C1543915B004E64E3 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3740172B1543915B004E64E3 /* main.mm */; };
+		374017301543915B004E64E3 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3740172F1543915B004E64E3 /* AppDelegate.mm */; };
 		374017321543915B004E64E3 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 374017311543915B004E64E3 /* Shader.fsh */; };
 		374017341543915B004E64E3 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 374017331543915B004E64E3 /* Shader.vsh */; };
-		374017371543915B004E64E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 374017361543915B004E64E3 /* ViewController.m */; };
 		3740173A1543915C004E64E3 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 374017381543915C004E64E3 /* ViewController_iPhone.xib */; };
 		3740173D1543915C004E64E3 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3740173B1543915C004E64E3 /* ViewController_iPad.xib */; };
+		3740174B15439B20004E64E3 /* freetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740174A15439B20004E64E3 /* freetype.a */; };
+		3740174D15439B54004E64E3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740174C15439B54004E64E3 /* ImageIO.framework */; };
+		3740174F15439B6A004E64E3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740174E15439B6A004E64E3 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,16 +33,18 @@
 		374017231543915B004E64E3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		374017271543915B004E64E3 /* osgViewer-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "osgViewer-iOS-Info.plist"; sourceTree = "<group>"; };
 		374017291543915B004E64E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3740172B1543915B004E64E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3740172B1543915B004E64E3 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		3740172D1543915B004E64E3 /* osgViewer-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "osgViewer-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		3740172E1543915B004E64E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3740172F1543915B004E64E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3740172F1543915B004E64E3 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		374017311543915B004E64E3 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
 		374017331543915B004E64E3 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
-		374017351543915B004E64E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		374017361543915B004E64E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		374017391543915C004E64E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		3740173C1543915C004E64E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		3740174715439442004E64E3 /* osgPlugins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osgPlugins.h; sourceTree = "<group>"; };
+		3740174A15439B20004E64E3 /* freetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = freetype.a; path = ../3rdparty/of_preRelease_v007_iphone/libs/freetype/lib/iphone/freetype.a; sourceTree = "<group>"; };
+		3740174C15439B54004E64E3 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		3740174E15439B6A004E64E3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,11 +52,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3740174F15439B6A004E64E3 /* QuartzCore.framework in Frameworks */,
+				3740174D15439B54004E64E3 /* ImageIO.framework in Frameworks */,
 				3740171C1543915B004E64E3 /* UIKit.framework in Frameworks */,
 				3740171E1543915B004E64E3 /* Foundation.framework in Frameworks */,
 				374017201543915B004E64E3 /* CoreGraphics.framework in Frameworks */,
 				374017221543915B004E64E3 /* GLKit.framework in Frameworks */,
 				374017241543915B004E64E3 /* OpenGLES.framework in Frameworks */,
+				3740174B15439B20004E64E3 /* freetype.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +86,9 @@
 		3740171A1543915B004E64E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3740174A15439B20004E64E3 /* freetype.a */,
+				3740174E15439B6A004E64E3 /* QuartzCore.framework */,
+				3740174C15439B54004E64E3 /* ImageIO.framework */,
 				3740171B1543915B004E64E3 /* UIKit.framework */,
 				3740171D1543915B004E64E3 /* Foundation.framework */,
 				3740171F1543915B004E64E3 /* CoreGraphics.framework */,
@@ -92,13 +102,12 @@
 			isa = PBXGroup;
 			children = (
 				3740172E1543915B004E64E3 /* AppDelegate.h */,
-				3740172F1543915B004E64E3 /* AppDelegate.m */,
+				3740172F1543915B004E64E3 /* AppDelegate.mm */,
 				374017311543915B004E64E3 /* Shader.fsh */,
 				374017331543915B004E64E3 /* Shader.vsh */,
-				374017351543915B004E64E3 /* ViewController.h */,
-				374017361543915B004E64E3 /* ViewController.m */,
 				374017381543915C004E64E3 /* ViewController_iPhone.xib */,
 				3740173B1543915C004E64E3 /* ViewController_iPad.xib */,
+				3740174715439442004E64E3 /* osgPlugins.h */,
 				374017261543915B004E64E3 /* Supporting Files */,
 			);
 			path = "osgViewer-iOS";
@@ -109,7 +118,7 @@
 			children = (
 				374017271543915B004E64E3 /* osgViewer-iOS-Info.plist */,
 				374017281543915B004E64E3 /* InfoPlist.strings */,
-				3740172B1543915B004E64E3 /* main.m */,
+				3740172B1543915B004E64E3 /* main.mm */,
 				3740172D1543915B004E64E3 /* osgViewer-iOS-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -180,9 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3740172C1543915B004E64E3 /* main.m in Sources */,
-				374017301543915B004E64E3 /* AppDelegate.m in Sources */,
-				374017371543915B004E64E3 /* ViewController.m in Sources */,
+				3740172C1543915B004E64E3 /* main.mm in Sources */,
+				374017301543915B004E64E3 /* AppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +244,14 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				HEADER_SEARCH_PATHS = (
+					"osgViewer-iOS",
+					../../include,
+					../../iOS/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "../OpenSceneGraph-iOS/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				OTHER_LDFLAGS = "-lOpenSceneGraph-iOS";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -255,8 +270,15 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				HEADER_SEARCH_PATHS = (
+					"osgViewer-iOS",
+					../../include,
+					../../iOS/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "../OpenSceneGraph-iOS/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-lOpenSceneGraph-iOS";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -270,6 +292,11 @@
 				GCC_PREFIX_HEADER = "osgViewer-iOS/osgViewer-iOS-Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = "osgViewer-iOS/osgViewer-iOS-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../3rdparty/of_preRelease_v007_iphone/libs/freetype/lib/iphone\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -282,6 +309,11 @@
 				GCC_PREFIX_HEADER = "osgViewer-iOS/osgViewer-iOS-Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = "osgViewer-iOS/osgViewer-iOS-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../3rdparty/of_preRelease_v007_iphone/libs/freetype/lib/iphone\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
