@@ -6,7 +6,6 @@
 //windowing system
 USE_GRAPICSWINDOW_IMPLEMENTATION(IOS)
 
-
 //plugins
 //USE_OSGPLUGIN(osg)
 //USE_OSGPLUGIN(obj)

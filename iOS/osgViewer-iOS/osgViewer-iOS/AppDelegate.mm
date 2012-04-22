@@ -14,6 +14,7 @@
 //
 
 #import "AppDelegate.h"
+#include "osgPlugins.h"
 #include <osgGA/TrackballManipulator>
 #include <osg/ShapeDrawable>
 #include <osgViewer/api/IOS/GraphicsWindowIOS> 

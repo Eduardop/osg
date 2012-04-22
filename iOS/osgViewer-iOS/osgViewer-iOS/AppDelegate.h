@@ -8,9 +8,6 @@
 
 //Created by Thomas Hogarth 2009
 
-//force the link to our desired osgPlugins
-#include "osgPlugins.h"
-
 #include <osgDB/ReadFile>
 #include <osg/MatrixTransform>
 #include <osg/CameraNode>
