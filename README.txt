@@ -13,14 +13,15 @@ With this port, you will be able to build OSG for iOS out of the box.
     * Xcode projet built from scratch based on a clean iOS project.
     * No need to have different projects for simulator and device.
     * Same for debug and release.
+    * Clang supported.
 
 README-OSG.txt contains the original README.txt contents.
 
 * Built using Xcode 4.3.2.
 * Built with iOS 5.1 SDK, targetting iOS 5.0.
+* Includes precompiled Freetype from OpenFrameworks (in iOS/3rdparty).
 * Supports GLES1 and GLES2.
 * Defaults to GLES2 (OSG_GLES2_AVAILABLE).
-* Includes precompiled Freetype from OpenFrameworks (in iOS/3rdparty).
 * User needs to write own shaders.
 
 * Disabled modules:
