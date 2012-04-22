@@ -58,4 +58,4 @@ README-OSG.txt contains the original README.txt contents.
     * xine
     * zip
 
-Many thanks to Robert Osfeld and the OpenSceneGraph team.
+Many thanks to Robert Osfield and the OpenSceneGraph team.
