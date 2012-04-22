@@ -17,8 +17,6 @@
 		374017301543915B004E64E3 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3740172F1543915B004E64E3 /* AppDelegate.mm */; };
 		374017321543915B004E64E3 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 374017311543915B004E64E3 /* Shader.fsh */; };
 		374017341543915B004E64E3 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 374017331543915B004E64E3 /* Shader.vsh */; };
-		3740173A1543915C004E64E3 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 374017381543915C004E64E3 /* ViewController_iPhone.xib */; };
-		3740173D1543915C004E64E3 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3740173B1543915C004E64E3 /* ViewController_iPad.xib */; };
 		3740174B15439B20004E64E3 /* freetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740174A15439B20004E64E3 /* freetype.a */; };
 		3740174D15439B54004E64E3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740174C15439B54004E64E3 /* ImageIO.framework */; };
 		3740174F15439B6A004E64E3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740174E15439B6A004E64E3 /* QuartzCore.framework */; };
@@ -39,8 +37,6 @@
 		3740172F1543915B004E64E3 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		374017311543915B004E64E3 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
 		374017331543915B004E64E3 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
-		374017391543915C004E64E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		3740173C1543915C004E64E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		3740174715439442004E64E3 /* osgPlugins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osgPlugins.h; sourceTree = "<group>"; };
 		3740174A15439B20004E64E3 /* freetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = freetype.a; path = ../3rdparty/of_preRelease_v007_iphone/libs/freetype/lib/iphone/freetype.a; sourceTree = "<group>"; };
 		3740174C15439B54004E64E3 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -105,8 +101,6 @@
 				3740172F1543915B004E64E3 /* AppDelegate.mm */,
 				374017311543915B004E64E3 /* Shader.fsh */,
 				374017331543915B004E64E3 /* Shader.vsh */,
-				374017381543915C004E64E3 /* ViewController_iPhone.xib */,
-				3740173B1543915C004E64E3 /* ViewController_iPad.xib */,
 				3740174715439442004E64E3 /* osgPlugins.h */,
 				374017261543915B004E64E3 /* Supporting Files */,
 			);
@@ -177,8 +171,6 @@
 				3740172A1543915B004E64E3 /* InfoPlist.strings in Resources */,
 				374017321543915B004E64E3 /* Shader.fsh in Resources */,
 				374017341543915B004E64E3 /* Shader.vsh in Resources */,
-				3740173A1543915C004E64E3 /* ViewController_iPhone.xib in Resources */,
-				3740173D1543915C004E64E3 /* ViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,22 +195,6 @@
 				374017291543915B004E64E3 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		374017381543915C004E64E3 /* ViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				374017391543915C004E64E3 /* en */,
-			);
-			name = ViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		3740173B1543915C004E64E3 /* ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3740173C1543915C004E64E3 /* en */,
-			);
-			name = ViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
