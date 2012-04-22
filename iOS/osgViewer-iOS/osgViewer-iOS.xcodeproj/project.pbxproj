@@ -20,6 +20,7 @@
 		3740174B15439B20004E64E3 /* freetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740174A15439B20004E64E3 /* freetype.a */; };
 		3740174D15439B54004E64E3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740174C15439B54004E64E3 /* ImageIO.framework */; };
 		3740174F15439B6A004E64E3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740174E15439B6A004E64E3 /* QuartzCore.framework */; };
+		37CB34711543DAFE00C516A2 /* glider.osg in Resources */ = {isa = PBXBuildFile; fileRef = 37CB34701543DAFE00C516A2 /* glider.osg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		3740174A15439B20004E64E3 /* freetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = freetype.a; path = ../3rdparty/of_preRelease_v007_iphone/libs/freetype/lib/iphone/freetype.a; sourceTree = "<group>"; };
 		3740174C15439B54004E64E3 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		3740174E15439B6A004E64E3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		37CB34701543DAFE00C516A2 /* glider.osg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = glider.osg; path = ../../data/glider.osg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		374017261543915B004E64E3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				37CB34701543DAFE00C516A2 /* glider.osg */,
 				374017271543915B004E64E3 /* osgViewer-iOS-Info.plist */,
 				374017281543915B004E64E3 /* InfoPlist.strings */,
 				3740172B1543915B004E64E3 /* main.mm */,
@@ -171,6 +174,7 @@
 				3740172A1543915B004E64E3 /* InfoPlist.strings in Resources */,
 				374017321543915B004E64E3 /* Shader.fsh in Resources */,
 				374017341543915B004E64E3 /* Shader.vsh in Resources */,
+				37CB34711543DAFE00C516A2 /* glider.osg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +318,7 @@
 				374017421543915C004E64E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -107,8 +107,8 @@ bool loadShaderSource(osg::Shader* obj, const std::string& fileName )
     _root = new osg::MatrixTransform();    
     
     // load and attach scene model
-    //osg::ref_ptr<osg::Node> model = (osgDB::readNodeFile("pyramid.obj"));
-    //_root->addChild(model);
+    osg::ref_ptr<osg::Node> model = (osgDB::readNodeFile("glider.osg"));
+    _root->addChild(model);
     
     osg::Geode* geode = new osg::Geode();
     osg::ShapeDrawable* drawable = new osg::ShapeDrawable(new osg::Box(osg::Vec3(1,1,1), 1));
