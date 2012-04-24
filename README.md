@@ -1,19 +1,19 @@
 osg-iOS
--------
+=======
 
-Welcome to the OpenSceneGraph iOS port for SDK 5.0+ / ARC.
+### Welcome to the OpenSceneGraph iOS port for SDK 5.0+ / ARC. ###
 
 With this port, you will be able to build OSG for iOS out of the box.
 
-    * No prerequisites needed.
-    * Cmake not needed (the standard cmake 2.8.7 distribution is not
-      compatible with Xcode 4.3). Xcode projects provided.
-    * Automatic reference counting supported.
-    * iOS 5.0 SDK and higher supported.
-    * Xcode projet built from scratch based on a clean iOS project.
-    * No need to have different projects for simulator and device.
-    * Same for debug and release.
-    * Clang supported.
+* No prerequisites needed.
+* Cmake not needed (the standard cmake 2.8.7 distribution is not
+  compatible with Xcode 4.3). Xcode projects provided.
+* Automatic reference counting supported.
+* iOS 5.0 SDK and higher supported.
+* Xcode projet built from scratch based on a clean iOS project.
+* No need to have different projects for simulator and device.
+* Same for debug and release.
+* Clang supported.
 
 README-OSG.txt contains the original README.txt contents.
 
