@@ -37,13 +37,13 @@ Build characteristics
     
 * Disabled plugins:
 
-    cfg         curl        dae         dicom
-    directshow  exr         fbx         ffmpeg
-    gdal        gif         gta         inventor
-    jp2         jpeg        nvtt        ogr
-    pdf         pfb         png         qfont
-    quicktime   qtkit       svg         tiff
-    vnc         vrml        xine        zip
+        cfg         curl        dae         dicom
+        directshow  exr         fbx         ffmpeg
+        gdal        gif         gta         inventor
+        jp2         jpeg        nvtt        ogr
+        pdf         pfb         png         qfont
+        quicktime   qtkit       svg         tiff
+        vnc         vrml        xine        zip
 
 Useful information
 ------------------
