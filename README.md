@@ -37,36 +37,13 @@ Build characteristics
     
 * Disabled plugins:
 
-<table><tr>
-<td>  cfg      </td>
-<td>  curl     </td>
-<td>  dae      </td>
-<td>  dicom    </td></tr><tr>
-<td>  directshow </td>
-<td>  exr      </td>
-<td>  fbx      </td>
-<td>  ffmpeg   </td></tr><tr>
-<td>  gdal     </td>
-<td>  gif      </td>
-<td>  gta      </td>
-<td>  inventor </td></tr><tr>
-<td>  jp2      </td>
-<td>  jpeg     </td>
-<td>  nvtt     </td>
-<td>  ogr      </td></tr><tr>
-<td>  pdf      </td>
-<td>  pfb      </td>
-<td>  png      </td>
-<td>  qfont    </td></tr><tr>
-<td>  quicktime </td>
-<td>  qtkit    </td>
-<td>  svg      </td>
-<td>  tiff     </td></tr><tr>
-<td>  vnc      </td>
-<td>  vrml     </td>
-<td>  xine     </td>
-<td>  zip      </td></tr>
-</table>
+    cfg         curl        dae         dicom
+    directshow  exr         fbx         ffmpeg
+    gdal        gif         gta         inventor
+    jp2         jpeg        nvtt        ogr
+    pdf         pfb         png         qfont
+    quicktime   qtkit       svg         tiff
+    vnc         vrml        xine        zip
 
 Useful information
 ------------------
