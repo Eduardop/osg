@@ -29,33 +29,37 @@ README-OSG.txt contains the original README.txt contents.
     * osgQt
     
 * Disabled plugins:
-    * cfg
-    * curl
-    * dae
-    * dicom
-    * directshow
-    * exr
-    * fbx
-    * ffmpeg
-    * gdal
-    * gif
-    * gta
-    * inventor
-    * jp2
-    * jpeg
-    * nvtt
-    * ogr
-    * pdf
-    * pfb
-    * png
-    * qfont
-    * quicktime
-    * qtkit
-    * svg
-    * tiff
-    * vnc
-    * vrml
-    * xine
-    * zip
+
+<table>
+<tr>
+<td>cfg</td>
+<td>curl</td></tr><tr>
+<td>dae</td>
+<td>dicom</td></tr><tr>
+<td>directshow</td>
+<td>exr</td></tr><tr>
+<td>fbx</td>
+<td>ffmpeg</td></tr><tr>
+<td>gdal</td>
+<td>gif</td></tr><tr>
+<td>gta</td>
+<td>inventor</td></tr><tr>
+<td>jp2</td>
+<td>jpeg</td></tr><tr>
+<td>nvtt</td>
+<td>ogr</td></tr><tr>
+<td>pdf</td>
+<td>pfb</td></tr><tr>
+<td>png</td>
+<td>qfont</td></tr><tr>
+<td>quicktime</td>
+<td>qtkit</td></tr><tr>
+<td>svg</td>
+<td>tiff</td></tr><tr>
+<td>vnc</td>
+<td>vrml</td></tr><tr>
+<td>xine</td>
+<td>zip</td></tr>
+</table>
 
 Many thanks to Robert Osfield and the OpenSceneGraph team.
