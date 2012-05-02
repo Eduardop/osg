@@ -6,12 +6,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-// Created by Thomas Hogarth 2009
-
-//
-// This exampe shows how to render osg into an existing windw. Apple recommends apps only have one window on IPhone so this
-// will be your best bet.
-//
+// Adapted from code by Thomas Hogarth 2009
 
 #import "AppDelegate.h"
 #include "osgPlugins.h"
@@ -107,13 +102,15 @@ bool loadShaderSource(osg::Shader* obj, const std::string& fileName )
     _root = new osg::MatrixTransform();    
     
     // load and attach scene model
-    osg::ref_ptr<osg::Node> model = (osgDB::readNodeFile("glider.osg"));
+    osg::ref_ptr<osg::Node> model = (osgDB::readNodeFile("crate.osgt"));
     _root->addChild(model);
     
+    /*
     osg::Geode* geode = new osg::Geode();
     osg::ShapeDrawable* drawable = new osg::ShapeDrawable(new osg::Box(osg::Vec3(1,1,1), 1));
     geode->addDrawable(drawable);
     _root->addChild(geode);
+    */
     
     osg::StateSet* stateset = _root->getOrCreateStateSet();
     

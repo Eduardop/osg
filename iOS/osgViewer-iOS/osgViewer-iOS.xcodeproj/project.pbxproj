@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370E3F971550AB360030B25E /* crate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 370E3F941550AB360030B25E /* crate.jpg */; };
+		370E3F9F1550AEF00030B25E /* crate.osgt in Resources */ = {isa = PBXBuildFile; fileRef = 370E3F9E1550AEF00030B25E /* crate.osgt */; };
 		3740171C1543915B004E64E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740171B1543915B004E64E3 /* UIKit.framework */; };
 		3740171E1543915B004E64E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740171D1543915B004E64E3 /* Foundation.framework */; };
 		374017201543915B004E64E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740171F1543915B004E64E3 /* CoreGraphics.framework */; };
@@ -20,10 +22,11 @@
 		3740174B15439B20004E64E3 /* freetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740174A15439B20004E64E3 /* freetype.a */; };
 		3740174D15439B54004E64E3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740174C15439B54004E64E3 /* ImageIO.framework */; };
 		3740174F15439B6A004E64E3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740174E15439B6A004E64E3 /* QuartzCore.framework */; };
-		37CB34711543DAFE00C516A2 /* glider.osg in Resources */ = {isa = PBXBuildFile; fileRef = 37CB34701543DAFE00C516A2 /* glider.osg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		370E3F941550AB360030B25E /* crate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = crate.jpg; path = ../../data/crate.jpg; sourceTree = "<group>"; };
+		370E3F9E1550AEF00030B25E /* crate.osgt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = crate.osgt; path = ../../data/crate.osgt; sourceTree = "<group>"; };
 		374017171543915B004E64E3 /* osgViewer-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "osgViewer-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3740171B1543915B004E64E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3740171D1543915B004E64E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,7 +45,6 @@
 		3740174A15439B20004E64E3 /* freetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = freetype.a; path = ../3rdparty/of_preRelease_v007_iphone/libs/freetype/lib/iphone/freetype.a; sourceTree = "<group>"; };
 		3740174C15439B54004E64E3 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		3740174E15439B6A004E64E3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		37CB34701543DAFE00C516A2 /* glider.osg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = glider.osg; path = ../../data/glider.osg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +114,8 @@
 		374017261543915B004E64E3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				37CB34701543DAFE00C516A2 /* glider.osg */,
+				370E3F9E1550AEF00030B25E /* crate.osgt */,
+				370E3F941550AB360030B25E /* crate.jpg */,
 				374017271543915B004E64E3 /* osgViewer-iOS-Info.plist */,
 				374017281543915B004E64E3 /* InfoPlist.strings */,
 				3740172B1543915B004E64E3 /* main.mm */,
@@ -174,7 +177,8 @@
 				3740172A1543915B004E64E3 /* InfoPlist.strings in Resources */,
 				374017321543915B004E64E3 /* Shader.fsh in Resources */,
 				374017341543915B004E64E3 /* Shader.vsh in Resources */,
-				37CB34711543DAFE00C516A2 /* glider.osg in Resources */,
+				370E3F971550AB360030B25E /* crate.jpg in Resources */,
+				370E3F9F1550AEF00030B25E /* crate.osgt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
