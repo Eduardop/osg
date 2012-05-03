@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		370E3F971550AB360030B25E /* crate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 370E3F941550AB360030B25E /* crate.jpg */; };
 		370E3F9F1550AEF00030B25E /* crate.osgt in Resources */ = {isa = PBXBuildFile; fileRef = 370E3F9E1550AEF00030B25E /* crate.osgt */; };
+		3737519C1553224E00DEB84F /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3737519B1553224E00DEB84F /* OpenSans-Regular.ttf */; };
 		3740171C1543915B004E64E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740171B1543915B004E64E3 /* UIKit.framework */; };
 		3740171E1543915B004E64E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740171D1543915B004E64E3 /* Foundation.framework */; };
 		374017201543915B004E64E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740171F1543915B004E64E3 /* CoreGraphics.framework */; };
@@ -2466,6 +2467,7 @@
 		371762121550EF8600321C47 /* Volume.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Volume.cpp; sourceTree = "<group>"; };
 		371762131550EF8600321C47 /* VolumeTechnique.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VolumeTechnique.cpp; sourceTree = "<group>"; };
 		371762141550EF8600321C47 /* VolumeTile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VolumeTile.cpp; sourceTree = "<group>"; };
+		3737519B1553224E00DEB84F /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Regular.ttf"; path = "../../data/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		374017171543915B004E64E3 /* osgViewer-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "osgViewer-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3740171B1543915B004E64E3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3740171D1543915B004E64E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -6290,6 +6292,7 @@
 		374017261543915B004E64E3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3737519B1553224E00DEB84F /* OpenSans-Regular.ttf */,
 				370E3F9E1550AEF00030B25E /* crate.osgt */,
 				370E3F941550AB360030B25E /* crate.jpg */,
 				374017271543915B004E64E3 /* osgViewer-iOS-Info.plist */,
@@ -6355,6 +6358,7 @@
 				374017341543915B004E64E3 /* Shader.vsh in Resources */,
 				370E3F971550AB360030B25E /* crate.jpg in Resources */,
 				370E3F9F1550AEF00030B25E /* crate.osgt in Resources */,
+				3737519C1553224E00DEB84F /* OpenSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

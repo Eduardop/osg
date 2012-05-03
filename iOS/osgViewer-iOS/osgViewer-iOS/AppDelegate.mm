@@ -121,7 +121,7 @@ bool loadShaderSource(osg::Shader* obj, const std::string& fileName )
     stateset->setAttributeAndModes(programObject, osg::StateAttribute::ON);    
     
     // create and attach ortho camera for hud text
-    osg::ref_ptr<osg::CameraNode> _hudCamera = new osg::CameraNode;
+    _hudCamera = new osg::CameraNode;
     
     // set the projection matrix
     _hudCamera->setProjectionMatrix(osg::Matrix::ortho2D(0,w,0,h));
@@ -138,18 +138,17 @@ bool loadShaderSource(osg::Shader* obj, const std::string& fileName )
     _root->addChild(_hudCamera.get());
     
     // attcg text to hud
-    /*
+    
     osg::ref_ptr<osgText::Text> text = new osgText::Text; 
     osg::ref_ptr<osg::Geode> textGeode = new osg::Geode();
-    osg::StateSet* stateset = textGeode->getOrCreateStateSet();
+    stateset = textGeode->getOrCreateStateSet();
     stateset->setMode(GL_LIGHTING,osg::StateAttribute::OFF);
 
     textGeode->addDrawable( text );
     _hudCamera->addChild(textGeode.get());
-    std::string timesFont("arial.ttf");
-    osg::Vec3 position = osg::Vec3(w/2.0f, h/2.0f, 0.0f);
-    osg::Vec3 delta(0.0f,-120.0f,0.0f);
-
+    std::string timesFont("OpenSans-Regular.ttf");
+    osg::Vec3 position = osg::Vec3(w/2.0f, h-h/8.0f, 0.0f);
+    //osg::Vec3 delta(0.0f,-120.0f,0.0f);
 
     text->setFont(timesFont);
     text->setCharacterSize(20.0,1.0);
@@ -158,15 +157,12 @@ bool loadShaderSource(osg::Shader* obj, const std::string& fileName )
     text->setMaximumHeight(480);
     text->setMaximumWidth(320);
     text->setAlignment(osgText::Text::CENTER_CENTER );  
-    text->setText("It's a Hogs life...");
-    */
-    
+    text->setText("OpenSceneGraph-iOS");
     
     _viewer->setSceneData(_root.get());
     _viewer->setCameraManipulator(new osgGA::TrackballManipulator);
     _viewer->setThreadingModel(osgViewer::Viewer::SingleThreaded);//SingleThreaded DrawThreadPerContext
     
-    //
     //_viewer->realize();
     
     osg::setNotifyLevel(osg::DEBUG_FP);
@@ -178,6 +174,21 @@ bool loadShaderSource(osg::Shader* obj, const std::string& fileName )
     [[UIAccelerometer sharedAccelerometer] setDelegate:self];
 }
 
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    CGRect lFrame = [[UIScreen mainScreen] bounds];
+    unsigned int w = lFrame.size.width;
+    unsigned int h = lFrame.size.height;
+    _hudCamera->setProjectionMatrix(osg::Matrix::ortho2D(0,w,0,h));
+    osg::Geode* textGeode = (osg::Geode*)_hudCamera->getChild(0);
+    osgText::Text* text = (osgText::Text*)textGeode->getDrawable(0);
+    text->setPosition(osg::Vec3(w/2.0f, h-h/8.0f, 0.0f));
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return YES;
+}
 
 //
 // Timer called function to update our scene and render the viewer

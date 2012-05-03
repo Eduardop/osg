@@ -25,12 +25,14 @@
     
     osg::ref_ptr<osgViewer::Viewer> _viewer;
     osg::ref_ptr<osg::MatrixTransform> _root;
-    
+    osg::ref_ptr<osg::CameraNode> _hudCamera;
 }
 
 @property (nonatomic, retain) /*IBOutlet*/ UIWindow *_window;
 
 - (void)updateScene;
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation;
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation;
 
 @end
 
