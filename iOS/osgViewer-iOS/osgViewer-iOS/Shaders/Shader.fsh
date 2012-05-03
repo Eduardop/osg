@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
+// This shader is not used on GLES 1 (fixed-function).
+
 varying lowp vec4 colorVarying;
 
 void main()
