@@ -32,7 +32,6 @@ Build characteristics
 * Built using Xcode 4.3.2, on Mac OS X 10.7.3.
 * Built with iOS 5.1 SDK, targetting iOS 5.0.
 * Includes precompiled Freetype from OpenFrameworks (in iOS/3rdparty).
-* User needs to write own shaders.
 
 * Disabled modules:
     * OpenThreads: qt, sproc, win32
