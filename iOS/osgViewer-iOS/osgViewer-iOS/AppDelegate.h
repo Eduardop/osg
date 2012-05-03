@@ -31,8 +31,6 @@
 @property (nonatomic, retain) /*IBOutlet*/ UIWindow *_window;
 
 - (void)updateScene;
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation;
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation;
 
 @end
 

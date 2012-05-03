@@ -174,22 +174,6 @@ bool loadShaderSource(osg::Shader* obj, const std::string& fileName )
     [[UIAccelerometer sharedAccelerometer] setDelegate:self];
 }
 
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
-{
-    CGRect lFrame = [[UIScreen mainScreen] bounds];
-    unsigned int w = lFrame.size.width;
-    unsigned int h = lFrame.size.height;
-    _hudCamera->setProjectionMatrix(osg::Matrix::ortho2D(0,w,0,h));
-    osg::Geode* textGeode = (osg::Geode*)_hudCamera->getChild(0);
-    osgText::Text* text = (osgText::Text*)textGeode->getDrawable(0);
-    text->setPosition(osg::Vec3(w/2.0f, h-h/8.0f, 0.0f));
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return YES;
-}
-
 //
 // Timer called function to update our scene and render the viewer
 //
