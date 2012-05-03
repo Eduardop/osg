@@ -59,8 +59,7 @@ bool loadShaderSource(osg::Shader* obj, const std::string& fileName )
     self._window = [[UIWindow alloc] initWithFrame: lFrame]; 
     
     // show window
-    [_window makeKeyAndVisible];
-    
+    [_window makeKeyAndVisible];    
     
     // create our graphics context directly so we can pass our own window 
     osg::ref_ptr<osg::GraphicsContext::Traits> traits = new osg::GraphicsContext::Traits;
@@ -73,7 +72,7 @@ bool loadShaderSource(osg::Shader* obj, const std::string& fileName )
     traits->y = 0;
     traits->width = w;
     traits->height = h;
-    //traits->depth = 16; // keep memory down, default is currently 24
+    traits->depth = 16; // keep memory down, default is currently 24
     //traits->alpha = 8;
     //traits->stencil = 8;
     traits->windowDecoration = false;
@@ -92,8 +91,12 @@ bool loadShaderSource(osg::Shader* obj, const std::string& fileName )
     // if the context was created then attach to our viewer
     if(graphicsContext)
     {
-        _viewer->getCamera()->setGraphicsContext(graphicsContext);
-        _viewer->getCamera()->setViewport(new osg::Viewport(0, 0, traits->width, traits->height));
+        osg::Camera* cam = _viewer->getCamera();
+        cam->setGraphicsContext(graphicsContext);
+        cam->setViewport(new osg::Viewport(0, 0, traits->width, traits->height));
+        double fv, a, n, f;
+        cam->getProjectionMatrixAsPerspective(fv, a, n, f);
+        cam->setProjectionMatrixAsPerspective(fv, (float)traits->width/(float)traits->height, n, f);
     }
     
     // create scene and attch to viewer
@@ -104,13 +107,6 @@ bool loadShaderSource(osg::Shader* obj, const std::string& fileName )
     // load and attach scene model
     osg::ref_ptr<osg::Node> model = (osgDB::readNodeFile("crate.osgt"));
     _root->addChild(model);
-    
-    /*
-    osg::Geode* geode = new osg::Geode();
-    osg::ShapeDrawable* drawable = new osg::ShapeDrawable(new osg::Box(osg::Vec3(1,1,1), 1));
-    geode->addDrawable(drawable);
-    _root->addChild(geode);
-    */
     
     osg::StateSet* stateset = _root->getOrCreateStateSet();
     
