@@ -4014,8 +4014,8 @@
 		37400F9D154352E8004E64E3 /* VolumeTile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VolumeTile.cpp; sourceTree = "<group>"; };
 		3740166815435593004E64E3 /* README-OSG.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = "README-OSG.txt"; path = "../../README-OSG.txt"; sourceTree = "<group>"; };
 		3740166915435593004E64E3 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.txt; path = ../../README.txt; sourceTree = "<group>"; };
-		374016CF154355B6004E64E3 /* Config */ = {isa = PBXFileReference; lastKnownFileType = text; path = Config; sourceTree = "<group>"; };
-		374016D1154355B6004E64E3 /* Config */ = {isa = PBXFileReference; lastKnownFileType = text; path = Config; sourceTree = "<group>"; };
+		374016CF154355B6004E64E3 /* Config */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = Config; sourceTree = "<group>"; };
+		374016D1154355B6004E64E3 /* Config */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = Config; sourceTree = "<group>"; };
 		3740170315437723004E64E3 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -9557,6 +9557,7 @@
 				3740057415435282004E64E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
