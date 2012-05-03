@@ -1571,6 +1571,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		373D7FD11552E8C9007F64F9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		3740056515435282004E64E3 /* libOpenSceneGraph-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libOpenSceneGraph-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3740056815435282004E64E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		37400578154352E6004E64E3 /* Atomic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Atomic; sourceTree = "<group>"; };
@@ -4013,7 +4014,6 @@
 		37400F9C154352E8004E64E3 /* VolumeTechnique.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VolumeTechnique.cpp; sourceTree = "<group>"; };
 		37400F9D154352E8004E64E3 /* VolumeTile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VolumeTile.cpp; sourceTree = "<group>"; };
 		3740166815435593004E64E3 /* README-OSG.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = "README-OSG.txt"; path = "../../README-OSG.txt"; sourceTree = "<group>"; };
-		3740166915435593004E64E3 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.txt; path = ../../README.txt; sourceTree = "<group>"; };
 		374016CF154355B6004E64E3 /* Config */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = Config; sourceTree = "<group>"; };
 		374016D1154355B6004E64E3 /* Config */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = Config; sourceTree = "<group>"; };
 		3740170315437723004E64E3 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -4034,7 +4034,7 @@
 		3740055A15435281004E64E3 = {
 			isa = PBXGroup;
 			children = (
-				3740166915435593004E64E3 /* README.txt */,
+				373D7FD11552E8C9007F64F9 /* README.md */,
 				3740166815435593004E64E3 /* README-OSG.txt */,
 				3740166A154355B5004E64E3 /* iOS */,
 				37400575154352D8004E64E3 /* OpenSceneGraph */,
