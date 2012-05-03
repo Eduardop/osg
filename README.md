@@ -17,7 +17,12 @@ Features
 * No need to have different projects for simulator and device, or
   for debug and release. Project looks and feels like a standard
   iOS project.
-* Compilation with Clang supported.
+* Compilation with LLVM/Clang supported.
+* Supports GLES1 (enabled by default).
+* For GLES2 support:
+    * user needs to write own shaders, and add code to pass
+      in uniforms to OSG.
+    * a future release will simplify these tasks.
 
 README-OSG.txt contains the original README.txt contents.
 
@@ -27,8 +32,6 @@ Build characteristics
 * Built using Xcode 4.3.2, on Mac OS X 10.7.3.
 * Built with iOS 5.1 SDK, targetting iOS 5.0.
 * Includes precompiled Freetype from OpenFrameworks (in iOS/3rdparty).
-* Supports GLES1 and GLES2.
-* Defaults to GLES2 (OSG_GLES2_AVAILABLE).
 * User needs to write own shaders.
 
 * Disabled modules:
