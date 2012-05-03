@@ -7,6 +7,793 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		373D7FD41552F2B6007F64F9 /* Atomic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007BA154352E7004E64E3 /* Atomic.cpp */; };
+		373D7FD51552F2B6007F64F9 /* Version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007BC154352E7004E64E3 /* Version.cpp */; };
+		373D7FD61552F2B6007F64F9 /* PThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007C0154352E7004E64E3 /* PThread.cpp */; };
+		373D7FD71552F2B6007F64F9 /* PThreadBarrier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007C1154352E7004E64E3 /* PThreadBarrier.cpp */; };
+		373D7FD81552F2B6007F64F9 /* PThreadCondition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007C3154352E7004E64E3 /* PThreadCondition.cpp */; };
+		373D7FD91552F2B6007F64F9 /* PThreadMutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007C5154352E7004E64E3 /* PThreadMutex.cpp */; };
+		373D7FDA1552F2B6007F64F9 /* AlphaFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007EB154352E7004E64E3 /* AlphaFunc.cpp */; };
+		373D7FDB1552F2B6007F64F9 /* AnimationPath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007EC154352E7004E64E3 /* AnimationPath.cpp */; };
+		373D7FDC1552F2B6007F64F9 /* ApplicationUsage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007ED154352E7004E64E3 /* ApplicationUsage.cpp */; };
+		373D7FDD1552F2B6007F64F9 /* ArgumentParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007EE154352E7004E64E3 /* ArgumentParser.cpp */; };
+		373D7FDE1552F2B6007F64F9 /* Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007EF154352E7004E64E3 /* Array.cpp */; };
+		373D7FDF1552F2B6007F64F9 /* ArrayDispatchers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007F0154352E7004E64E3 /* ArrayDispatchers.cpp */; };
+		373D7FE01552F2B6007F64F9 /* AudioStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007F1154352E7004E64E3 /* AudioStream.cpp */; };
+		373D7FE11552F2B6007F64F9 /* AutoTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007F2154352E7004E64E3 /* AutoTransform.cpp */; };
+		373D7FE21552F2B6007F64F9 /* Billboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007F3154352E7004E64E3 /* Billboard.cpp */; };
+		373D7FE31552F2B6007F64F9 /* BlendColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007F4154352E7004E64E3 /* BlendColor.cpp */; };
+		373D7FE41552F2B6007F64F9 /* BlendEquation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007F5154352E7004E64E3 /* BlendEquation.cpp */; };
+		373D7FE51552F2B6007F64F9 /* BlendFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007F6154352E7004E64E3 /* BlendFunc.cpp */; };
+		373D7FE61552F2B6007F64F9 /* BufferIndexBinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007F7154352E7004E64E3 /* BufferIndexBinding.cpp */; };
+		373D7FE71552F2B6007F64F9 /* BufferObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007F8154352E7004E64E3 /* BufferObject.cpp */; };
+		373D7FE81552F2B6007F64F9 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007F9154352E7004E64E3 /* Camera.cpp */; };
+		373D7FE91552F2B6007F64F9 /* CameraView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007FA154352E7004E64E3 /* CameraView.cpp */; };
+		373D7FEA1552F2B6007F64F9 /* ClampColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007FB154352E7004E64E3 /* ClampColor.cpp */; };
+		373D7FEB1552F2B6007F64F9 /* ClearNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007FC154352E7004E64E3 /* ClearNode.cpp */; };
+		373D7FEC1552F2B6007F64F9 /* ClipNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007FD154352E7004E64E3 /* ClipNode.cpp */; };
+		373D7FED1552F2B6007F64F9 /* ClipPlane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007FE154352E7004E64E3 /* ClipPlane.cpp */; };
+		373D7FEE1552F2B6007F64F9 /* ClusterCullingCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007FF154352E7004E64E3 /* ClusterCullingCallback.cpp */; };
+		373D7FEF1552F2B6007F64F9 /* CollectOccludersVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400801154352E7004E64E3 /* CollectOccludersVisitor.cpp */; };
+		373D7FF01552F2B6007F64F9 /* ColorMask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400802154352E7004E64E3 /* ColorMask.cpp */; };
+		373D7FF11552F2B6007F64F9 /* ColorMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400803154352E7004E64E3 /* ColorMatrix.cpp */; };
+		373D7FF21552F2B6007F64F9 /* ComputeBoundsVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400804154352E7004E64E3 /* ComputeBoundsVisitor.cpp */; };
+		373D7FF31552F2B6007F64F9 /* ConvexPlanarOccluder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400806154352E7004E64E3 /* ConvexPlanarOccluder.cpp */; };
+		373D7FF41552F2B6007F64F9 /* ConvexPlanarPolygon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400807154352E7004E64E3 /* ConvexPlanarPolygon.cpp */; };
+		373D7FF51552F2B6007F64F9 /* CoordinateSystemNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400808154352E7004E64E3 /* CoordinateSystemNode.cpp */; };
+		373D7FF61552F2B6007F64F9 /* CopyOp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400809154352E7004E64E3 /* CopyOp.cpp */; };
+		373D7FF71552F2B6007F64F9 /* CullFace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740080A154352E7004E64E3 /* CullFace.cpp */; };
+		373D7FF81552F2B6007F64F9 /* CullingSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740080B154352E7004E64E3 /* CullingSet.cpp */; };
+		373D7FF91552F2B6007F64F9 /* CullSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740080C154352E7004E64E3 /* CullSettings.cpp */; };
+		373D7FFA1552F2B6007F64F9 /* CullStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740080D154352E7004E64E3 /* CullStack.cpp */; };
+		373D7FFB1552F2B6007F64F9 /* DeleteHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740080E154352E7004E64E3 /* DeleteHandler.cpp */; };
+		373D7FFC1552F2B6007F64F9 /* Depth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740080F154352E7004E64E3 /* Depth.cpp */; };
+		373D7FFD1552F2B6007F64F9 /* DisplaySettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400810154352E7004E64E3 /* DisplaySettings.cpp */; };
+		373D7FFE1552F2B6007F64F9 /* Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400811154352E7004E64E3 /* Drawable.cpp */; };
+		373D7FFF1552F2B6007F64F9 /* DrawPixels.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400812154352E7004E64E3 /* DrawPixels.cpp */; };
+		373D80001552F2B6007F64F9 /* dxtctool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400813154352E7004E64E3 /* dxtctool.cpp */; };
+		373D80011552F2B6007F64F9 /* Fog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400815154352E7004E64E3 /* Fog.cpp */; };
+		373D80021552F2B6007F64F9 /* FragmentProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400816154352E7004E64E3 /* FragmentProgram.cpp */; };
+		373D80031552F2B6007F64F9 /* FrameBufferObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400817154352E7004E64E3 /* FrameBufferObject.cpp */; };
+		373D80041552F2B6007F64F9 /* FrameStamp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400818154352E7004E64E3 /* FrameStamp.cpp */; };
+		373D80051552F2B6007F64F9 /* FrontFace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400819154352E7004E64E3 /* FrontFace.cpp */; };
+		373D80061552F2B6007F64F9 /* Geode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740081A154352E7004E64E3 /* Geode.cpp */; };
+		373D80071552F2B6007F64F9 /* Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740081B154352E7004E64E3 /* Geometry.cpp */; };
+		373D80081552F2B6007F64F9 /* GL2Extensions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740081C154352E7004E64E3 /* GL2Extensions.cpp */; };
+		373D80091552F2B6007F64F9 /* GLBeginEndAdapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740081D154352E7004E64E3 /* GLBeginEndAdapter.cpp */; };
+		373D800A1552F2B6007F64F9 /* GLExtensions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740081E154352E7004E64E3 /* GLExtensions.cpp */; };
+		373D800B1552F2B6007F64F9 /* GLObjects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740081F154352E7004E64E3 /* GLObjects.cpp */; };
+		373D800C1552F2B6007F64F9 /* GLStaticLibrary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400820154352E7004E64E3 /* GLStaticLibrary.cpp */; };
+		373D800D1552F2B6007F64F9 /* dict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400826154352E7004E64E3 /* dict.cpp */; };
+		373D800E1552F2B6007F64F9 /* geom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400828154352E7004E64E3 /* geom.cpp */; };
+		373D800F1552F2B6007F64F9 /* memalloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740082A154352E7004E64E3 /* memalloc.cpp */; };
+		373D80101552F2B6007F64F9 /* mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740082C154352E7004E64E3 /* mesh.cpp */; };
+		373D80111552F2B6007F64F9 /* normal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740082E154352E7004E64E3 /* normal.cpp */; };
+		373D80121552F2B6007F64F9 /* priorityq-heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400830154352E7004E64E3 /* priorityq-heap.cpp */; };
+		373D80131552F2B6007F64F9 /* priorityq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400833154352E7004E64E3 /* priorityq.cpp */; };
+		373D80141552F2B6007F64F9 /* render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400836154352E7004E64E3 /* render.cpp */; };
+		373D80151552F2B6007F64F9 /* sweep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400838154352E7004E64E3 /* sweep.cpp */; };
+		373D80161552F2B6007F64F9 /* tess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740083A154352E7004E64E3 /* tess.cpp */; };
+		373D80171552F2B6007F64F9 /* tessmono.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740083C154352E7004E64E3 /* tessmono.cpp */; };
+		373D80181552F2B6007F64F9 /* error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740083F154352E7004E64E3 /* error.cpp */; };
+		373D80191552F2B6007F64F9 /* mipmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400840154352E7004E64E3 /* mipmap.cpp */; };
+		373D801A1552F2B6007F64F9 /* GraphicsContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400841154352E7004E64E3 /* GraphicsContext.cpp */; };
+		373D801B1552F2B6007F64F9 /* GraphicsCostEstimator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400842154352E7004E64E3 /* GraphicsCostEstimator.cpp */; };
+		373D801C1552F2B6007F64F9 /* GraphicsThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400843154352E7004E64E3 /* GraphicsThread.cpp */; };
+		373D801D1552F2B6007F64F9 /* Group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400844154352E7004E64E3 /* Group.cpp */; };
+		373D801E1552F2B6007F64F9 /* Hint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400845154352E7004E64E3 /* Hint.cpp */; };
+		373D801F1552F2B6007F64F9 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400846154352E7004E64E3 /* Image.cpp */; };
+		373D80201552F2B6007F64F9 /* ImageSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400847154352E7004E64E3 /* ImageSequence.cpp */; };
+		373D80211552F2B6007F64F9 /* ImageStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400848154352E7004E64E3 /* ImageStream.cpp */; };
+		373D80221552F2B6007F64F9 /* ImageUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400849154352E7004E64E3 /* ImageUtils.cpp */; };
+		373D80231552F2B6007F64F9 /* KdTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740084A154352E7004E64E3 /* KdTree.cpp */; };
+		373D80241552F2B6007F64F9 /* Light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740084B154352E7004E64E3 /* Light.cpp */; };
+		373D80251552F2B6007F64F9 /* LightModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740084C154352E7004E64E3 /* LightModel.cpp */; };
+		373D80261552F2B6007F64F9 /* LightSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740084D154352E7004E64E3 /* LightSource.cpp */; };
+		373D80271552F2B6007F64F9 /* LineSegment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740084E154352E7004E64E3 /* LineSegment.cpp */; };
+		373D80281552F2B6007F64F9 /* LineStipple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740084F154352E7004E64E3 /* LineStipple.cpp */; };
+		373D80291552F2B6007F64F9 /* LineWidth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400850154352E7004E64E3 /* LineWidth.cpp */; };
+		373D802A1552F2B6007F64F9 /* LOD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400851154352E7004E64E3 /* LOD.cpp */; };
+		373D802B1552F2B6007F64F9 /* LogicOp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400852154352E7004E64E3 /* LogicOp.cpp */; };
+		373D802C1552F2B6007F64F9 /* Material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400853154352E7004E64E3 /* Material.cpp */; };
+		373D802D1552F2B6007F64F9 /* Math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400854154352E7004E64E3 /* Math.cpp */; };
+		373D802E1552F2B6007F64F9 /* Matrixd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400856154352E7004E64E3 /* Matrixd.cpp */; };
+		373D802F1552F2B6007F64F9 /* MatrixDecomposition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400857154352E7004E64E3 /* MatrixDecomposition.cpp */; };
+		373D80301552F2B6007F64F9 /* Matrixf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400858154352E7004E64E3 /* Matrixf.cpp */; };
+		373D80311552F2B6007F64F9 /* MatrixTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400859154352E7004E64E3 /* MatrixTransform.cpp */; };
+		373D80321552F2B6007F64F9 /* Multisample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740085A154352E7004E64E3 /* Multisample.cpp */; };
+		373D80331552F2B6007F64F9 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740085B154352E7004E64E3 /* Node.cpp */; };
+		373D80341552F2B6007F64F9 /* NodeCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740085C154352E7004E64E3 /* NodeCallback.cpp */; };
+		373D80351552F2B6007F64F9 /* NodeTrackerCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740085D154352E7004E64E3 /* NodeTrackerCallback.cpp */; };
+		373D80361552F2B6007F64F9 /* NodeVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740085E154352E7004E64E3 /* NodeVisitor.cpp */; };
+		373D80371552F2B6007F64F9 /* Notify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740085F154352E7004E64E3 /* Notify.cpp */; };
+		373D80381552F2B6007F64F9 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400860154352E7004E64E3 /* Object.cpp */; };
+		373D80391552F2B6007F64F9 /* Observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400861154352E7004E64E3 /* Observer.cpp */; };
+		373D803A1552F2B6007F64F9 /* ObserverNodePath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400862154352E7004E64E3 /* ObserverNodePath.cpp */; };
+		373D803B1552F2B6007F64F9 /* OccluderNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400863154352E7004E64E3 /* OccluderNode.cpp */; };
+		373D803C1552F2B6007F64F9 /* OcclusionQueryNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400864154352E7004E64E3 /* OcclusionQueryNode.cpp */; };
+		373D803D1552F2B6007F64F9 /* OperationThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400865154352E7004E64E3 /* OperationThread.cpp */; };
+		373D803E1552F2B6007F64F9 /* PagedLOD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400866154352E7004E64E3 /* PagedLOD.cpp */; };
+		373D803F1552F2B6007F64F9 /* Point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400867154352E7004E64E3 /* Point.cpp */; };
+		373D80401552F2B6007F64F9 /* PointSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400868154352E7004E64E3 /* PointSprite.cpp */; };
+		373D80411552F2B6007F64F9 /* PolygonMode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400869154352E7004E64E3 /* PolygonMode.cpp */; };
+		373D80421552F2B6007F64F9 /* PolygonOffset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740086A154352E7004E64E3 /* PolygonOffset.cpp */; };
+		373D80431552F2B6007F64F9 /* PolygonStipple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740086B154352E7004E64E3 /* PolygonStipple.cpp */; };
+		373D80441552F2B6007F64F9 /* PositionAttitudeTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740086C154352E7004E64E3 /* PositionAttitudeTransform.cpp */; };
+		373D80451552F2B6007F64F9 /* PrimitiveSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740086D154352E7004E64E3 /* PrimitiveSet.cpp */; };
+		373D80461552F2B6007F64F9 /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740086E154352E7004E64E3 /* Program.cpp */; };
+		373D80471552F2B6007F64F9 /* Projection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740086F154352E7004E64E3 /* Projection.cpp */; };
+		373D80481552F2B6007F64F9 /* ProxyNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400870154352E7004E64E3 /* ProxyNode.cpp */; };
+		373D80491552F2B6007F64F9 /* Quat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400871154352E7004E64E3 /* Quat.cpp */; };
+		373D804A1552F2B6007F64F9 /* Referenced.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400872154352E7004E64E3 /* Referenced.cpp */; };
+		373D804B1552F2B6007F64F9 /* Scissor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400873154352E7004E64E3 /* Scissor.cpp */; };
+		373D804C1552F2B6007F64F9 /* Sequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400874154352E7004E64E3 /* Sequence.cpp */; };
+		373D804D1552F2B6007F64F9 /* ShadeModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400875154352E7004E64E3 /* ShadeModel.cpp */; };
+		373D804E1552F2B6007F64F9 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400876154352E7004E64E3 /* Shader.cpp */; };
+		373D804F1552F2B6007F64F9 /* ShaderAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400877154352E7004E64E3 /* ShaderAttribute.cpp */; };
+		373D80501552F2B6007F64F9 /* ShaderComposer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400878154352E7004E64E3 /* ShaderComposer.cpp */; };
+		373D80511552F2B6007F64F9 /* ShadowVolumeOccluder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400879154352E7004E64E3 /* ShadowVolumeOccluder.cpp */; };
+		373D80521552F2B6007F64F9 /* Shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740087A154352E7004E64E3 /* Shape.cpp */; };
+		373D80531552F2B6007F64F9 /* ShapeDrawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740087B154352E7004E64E3 /* ShapeDrawable.cpp */; };
+		373D80541552F2B6007F64F9 /* State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740087C154352E7004E64E3 /* State.cpp */; };
+		373D80551552F2B6007F64F9 /* StateAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740087D154352E7004E64E3 /* StateAttribute.cpp */; };
+		373D80561552F2B6007F64F9 /* StateSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740087E154352E7004E64E3 /* StateSet.cpp */; };
+		373D80571552F2B6007F64F9 /* Stats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740087F154352E7004E64E3 /* Stats.cpp */; };
+		373D80581552F2B6007F64F9 /* Stencil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400880154352E7004E64E3 /* Stencil.cpp */; };
+		373D80591552F2B6007F64F9 /* StencilTwoSided.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400881154352E7004E64E3 /* StencilTwoSided.cpp */; };
+		373D805A1552F2B6007F64F9 /* Switch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400882154352E7004E64E3 /* Switch.cpp */; };
+		373D805B1552F2B6007F64F9 /* TexEnv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400883154352E7004E64E3 /* TexEnv.cpp */; };
+		373D805C1552F2B6007F64F9 /* TexEnvCombine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400884154352E7004E64E3 /* TexEnvCombine.cpp */; };
+		373D805D1552F2B6007F64F9 /* TexEnvFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400885154352E7004E64E3 /* TexEnvFilter.cpp */; };
+		373D805E1552F2B6007F64F9 /* TexGen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400886154352E7004E64E3 /* TexGen.cpp */; };
+		373D805F1552F2B6007F64F9 /* TexGenNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400887154352E7004E64E3 /* TexGenNode.cpp */; };
+		373D80601552F2B6007F64F9 /* TexMat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400888154352E7004E64E3 /* TexMat.cpp */; };
+		373D80611552F2B6007F64F9 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400889154352E7004E64E3 /* Texture.cpp */; };
+		373D80621552F2B6007F64F9 /* Texture1D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740088A154352E7004E64E3 /* Texture1D.cpp */; };
+		373D80631552F2B6007F64F9 /* Texture2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740088B154352E7004E64E3 /* Texture2D.cpp */; };
+		373D80641552F2B6007F64F9 /* Texture2DArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740088C154352E7004E64E3 /* Texture2DArray.cpp */; };
+		373D80651552F2B6007F64F9 /* Texture2DMultisample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740088D154352E7004E64E3 /* Texture2DMultisample.cpp */; };
+		373D80661552F2B6007F64F9 /* Texture3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740088E154352E7004E64E3 /* Texture3D.cpp */; };
+		373D80671552F2B6007F64F9 /* TextureCubeMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740088F154352E7004E64E3 /* TextureCubeMap.cpp */; };
+		373D80681552F2B6007F64F9 /* TextureRectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400890154352E7004E64E3 /* TextureRectangle.cpp */; };
+		373D80691552F2B6007F64F9 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400891154352E7004E64E3 /* Timer.cpp */; };
+		373D806A1552F2B6007F64F9 /* TransferFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400892154352E7004E64E3 /* TransferFunction.cpp */; };
+		373D806B1552F2B6007F64F9 /* Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400893154352E7004E64E3 /* Transform.cpp */; };
+		373D806C1552F2B6007F64F9 /* Uniform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400894154352E7004E64E3 /* Uniform.cpp */; };
+		373D806D1552F2B6007F64F9 /* UserDataContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400895154352E7004E64E3 /* UserDataContainer.cpp */; };
+		373D806E1552F2B6007F64F9 /* Version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400896154352E7004E64E3 /* Version.cpp */; };
+		373D806F1552F2B6007F64F9 /* VertexProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400898154352E7004E64E3 /* VertexProgram.cpp */; };
+		373D80701552F2B6007F64F9 /* View.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400899154352E7004E64E3 /* View.cpp */; };
+		373D80711552F2B6007F64F9 /* Viewport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740089A154352E7004E64E3 /* Viewport.cpp */; };
+		373D80721552F2B6007F64F9 /* Action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740089C154352E7004E64E3 /* Action.cpp */; };
+		373D80731552F2B6007F64F9 /* ActionAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740089D154352E7004E64E3 /* ActionAnimation.cpp */; };
+		373D80741552F2B6007F64F9 /* ActionBlendIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740089E154352E7004E64E3 /* ActionBlendIn.cpp */; };
+		373D80751552F2B6007F64F9 /* ActionBlendOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740089F154352E7004E64E3 /* ActionBlendOut.cpp */; };
+		373D80761552F2B6007F64F9 /* ActionCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008A0154352E7004E64E3 /* ActionCallback.cpp */; };
+		373D80771552F2B6007F64F9 /* ActionStripAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008A1154352E7004E64E3 /* ActionStripAnimation.cpp */; };
+		373D80781552F2B6007F64F9 /* ActionVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008A2154352E7004E64E3 /* ActionVisitor.cpp */; };
+		373D80791552F2B6007F64F9 /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008A3154352E7004E64E3 /* Animation.cpp */; };
+		373D807A1552F2B6007F64F9 /* AnimationManagerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008A4154352E7004E64E3 /* AnimationManagerBase.cpp */; };
+		373D807B1552F2B6007F64F9 /* BasicAnimationManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008A5154352E7004E64E3 /* BasicAnimationManager.cpp */; };
+		373D807C1552F2B6007F64F9 /* Bone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008A6154352E7004E64E3 /* Bone.cpp */; };
+		373D807D1552F2B6007F64F9 /* BoneMapVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008A7154352E7004E64E3 /* BoneMapVisitor.cpp */; };
+		373D807E1552F2B6007F64F9 /* Channel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008A8154352E7004E64E3 /* Channel.cpp */; };
+		373D807F1552F2B6007F64F9 /* LinkVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008AA154352E7004E64E3 /* LinkVisitor.cpp */; };
+		373D80801552F2B6007F64F9 /* MorphGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008AB154352E7004E64E3 /* MorphGeometry.cpp */; };
+		373D80811552F2B6007F64F9 /* RigGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008AC154352E7004E64E3 /* RigGeometry.cpp */; };
+		373D80821552F2B6007F64F9 /* RigTransformHardware.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008AD154352E7004E64E3 /* RigTransformHardware.cpp */; };
+		373D80831552F2B6007F64F9 /* RigTransformSoftware.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008AE154352E7004E64E3 /* RigTransformSoftware.cpp */; };
+		373D80841552F2B6007F64F9 /* Skeleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008AF154352E7004E64E3 /* Skeleton.cpp */; };
+		373D80851552F2B6007F64F9 /* StackedMatrixElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008B0154352E7004E64E3 /* StackedMatrixElement.cpp */; };
+		373D80861552F2B6007F64F9 /* StackedQuaternionElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008B1154352E7004E64E3 /* StackedQuaternionElement.cpp */; };
+		373D80871552F2B6007F64F9 /* StackedRotateAxisElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008B2154352E7004E64E3 /* StackedRotateAxisElement.cpp */; };
+		373D80881552F2B6007F64F9 /* StackedScaleElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008B3154352E7004E64E3 /* StackedScaleElement.cpp */; };
+		373D80891552F2B6007F64F9 /* StackedTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008B4154352E7004E64E3 /* StackedTransform.cpp */; };
+		373D808A1552F2B6007F64F9 /* StackedTranslateElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008B5154352E7004E64E3 /* StackedTranslateElement.cpp */; };
+		373D808B1552F2B6007F64F9 /* StatsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008B6154352E7004E64E3 /* StatsHandler.cpp */; };
+		373D808C1552F2B6007F64F9 /* StatsVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008B7154352E7004E64E3 /* StatsVisitor.cpp */; };
+		373D808D1552F2B6007F64F9 /* Target.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008B8154352E7004E64E3 /* Target.cpp */; };
+		373D808E1552F2B6007F64F9 /* Timeline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008B9154352E7004E64E3 /* Timeline.cpp */; };
+		373D808F1552F2B6007F64F9 /* TimelineAnimationManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008BA154352E7004E64E3 /* TimelineAnimationManager.cpp */; };
+		373D80901552F2B6007F64F9 /* UpdateBone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008BB154352E7004E64E3 /* UpdateBone.cpp */; };
+		373D80911552F2B6007F64F9 /* UpdateMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008BC154352E7004E64E3 /* UpdateMaterial.cpp */; };
+		373D80921552F2B6007F64F9 /* UpdateMatrixTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008BD154352E7004E64E3 /* UpdateMatrixTransform.cpp */; };
+		373D80931552F2B6007F64F9 /* VertexInfluence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008BE154352E7004E64E3 /* VertexInfluence.cpp */; };
+		373D80941552F2B6007F64F9 /* Archive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008C0154352E7004E64E3 /* Archive.cpp */; };
+		373D80951552F2B6007F64F9 /* AuthenticationMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008C1154352E7004E64E3 /* AuthenticationMap.cpp */; };
+		373D80961552F2B6007F64F9 /* Callbacks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008C2154352E7004E64E3 /* Callbacks.cpp */; };
+		373D80971552F2B6007F64F9 /* Compressors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008C4154352E7004E64E3 /* Compressors.cpp */; };
+		373D80981552F2B6007F64F9 /* ConvertUTF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008C5154352E7004E64E3 /* ConvertUTF.cpp */; };
+		373D80991552F2B6007F64F9 /* DatabasePager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008C6154352E7004E64E3 /* DatabasePager.cpp */; };
+		373D809A1552F2B6007F64F9 /* DatabaseRevisions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008C7154352E7004E64E3 /* DatabaseRevisions.cpp */; };
+		373D809B1552F2B6007F64F9 /* DotOsgWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008C8154352E7004E64E3 /* DotOsgWrapper.cpp */; };
+		373D809C1552F2B6007F64F9 /* DynamicLibrary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008C9154352E7004E64E3 /* DynamicLibrary.cpp */; };
+		373D809D1552F2B6007F64F9 /* ExternalFileWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008CA154352E7004E64E3 /* ExternalFileWriter.cpp */; };
+		373D809E1552F2B6007F64F9 /* Field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008CB154352E7004E64E3 /* Field.cpp */; };
+		373D809F1552F2B6007F64F9 /* FieldReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008CC154352E7004E64E3 /* FieldReader.cpp */; };
+		373D80A01552F2B6007F64F9 /* FieldReaderIterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008CD154352E7004E64E3 /* FieldReaderIterator.cpp */; };
+		373D80A11552F2B6007F64F9 /* FileCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008CE154352E7004E64E3 /* FileCache.cpp */; };
+		373D80A21552F2B6007F64F9 /* FileNameUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008CF154352E7004E64E3 /* FileNameUtils.cpp */; };
+		373D80A31552F2B6007F64F9 /* FileUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008D0154352E7004E64E3 /* FileUtils.cpp */; };
+		373D80A41552F2B6007F64F9 /* fstream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008D1154352E7004E64E3 /* fstream.cpp */; };
+		373D80A51552F2B6007F64F9 /* ImageOptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008D2154352E7004E64E3 /* ImageOptions.cpp */; };
+		373D80A61552F2B6007F64F9 /* ImagePager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008D3154352E7004E64E3 /* ImagePager.cpp */; };
+		373D80A71552F2B6007F64F9 /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008D4154352E7004E64E3 /* Input.cpp */; };
+		373D80A81552F2B6007F64F9 /* InputStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008D5154352E7004E64E3 /* InputStream.cpp */; };
+		373D80A91552F2B6007F64F9 /* MimeTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008D6154352E7004E64E3 /* MimeTypes.cpp */; };
+		373D80AA1552F2B6007F64F9 /* ObjectWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008D7154352E7004E64E3 /* ObjectWrapper.cpp */; };
+		373D80AB1552F2B6007F64F9 /* Options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008D8154352E7004E64E3 /* Options.cpp */; };
+		373D80AC1552F2B6007F64F9 /* Output.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008D9154352E7004E64E3 /* Output.cpp */; };
+		373D80AD1552F2B6007F64F9 /* OutputStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008DA154352E7004E64E3 /* OutputStream.cpp */; };
+		373D80AE1552F2B6007F64F9 /* PluginQuery.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008DB154352E7004E64E3 /* PluginQuery.cpp */; };
+		373D80AF1552F2B6007F64F9 /* ReaderWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008DC154352E7004E64E3 /* ReaderWriter.cpp */; };
+		373D80B01552F2B6007F64F9 /* ReadFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008DD154352E7004E64E3 /* ReadFile.cpp */; };
+		373D80B11552F2B6007F64F9 /* Registry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008DE154352E7004E64E3 /* Registry.cpp */; };
+		373D80B21552F2B6007F64F9 /* SharedStateManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008DF154352E7004E64E3 /* SharedStateManager.cpp */; };
+		373D80B31552F2B6007F64F9 /* StreamOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008E0154352E7004E64E3 /* StreamOperator.cpp */; };
+		373D80B41552F2B6007F64F9 /* Version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008E1154352E7004E64E3 /* Version.cpp */; };
+		373D80B51552F2B6007F64F9 /* WriteFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008E2154352E7004E64E3 /* WriteFile.cpp */; };
+		373D80B61552F2B6007F64F9 /* XmlParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008E3154352E7004E64E3 /* XmlParser.cpp */; };
+		373D80B71552F2B6007F64F9 /* AnisotropicLighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008E5154352E7004E64E3 /* AnisotropicLighting.cpp */; };
+		373D80B81552F2B6007F64F9 /* BumpMapping.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008E6154352E7004E64E3 /* BumpMapping.cpp */; };
+		373D80B91552F2B6007F64F9 /* Cartoon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008E7154352E7004E64E3 /* Cartoon.cpp */; };
+		373D80BA1552F2B6007F64F9 /* Effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008E9154352E7004E64E3 /* Effect.cpp */; };
+		373D80BB1552F2B6007F64F9 /* MultiTextureControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008EA154352E7004E64E3 /* MultiTextureControl.cpp */; };
+		373D80BC1552F2B6007F64F9 /* Outline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008EB154352E7004E64E3 /* Outline.cpp */; };
+		373D80BD1552F2B6007F64F9 /* Registry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008EC154352E7004E64E3 /* Registry.cpp */; };
+		373D80BE1552F2B6007F64F9 /* Scribe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008ED154352E7004E64E3 /* Scribe.cpp */; };
+		373D80BF1552F2B6007F64F9 /* SpecularHighlights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008EE154352E7004E64E3 /* SpecularHighlights.cpp */; };
+		373D80C01552F2B6007F64F9 /* Technique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008EF154352E7004E64E3 /* Technique.cpp */; };
+		373D80C11552F2B6007F64F9 /* Validator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008F0154352E7004E64E3 /* Validator.cpp */; };
+		373D80C21552F2B6007F64F9 /* Version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008F1154352E7004E64E3 /* Version.cpp */; };
+		373D80C31552F2B6007F64F9 /* AnimationPathManipulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008F3154352E7004E64E3 /* AnimationPathManipulator.cpp */; };
+		373D80C41552F2B6007F64F9 /* CameraManipulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008F4154352E7004E64E3 /* CameraManipulator.cpp */; };
+		373D80C51552F2B6007F64F9 /* CameraViewSwitchManipulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008F5154352E7004E64E3 /* CameraViewSwitchManipulator.cpp */; };
+		373D80C61552F2B6007F64F9 /* DriveManipulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008F7154352E7004E64E3 /* DriveManipulator.cpp */; };
+		373D80C71552F2B6007F64F9 /* EventQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008F8154352E7004E64E3 /* EventQueue.cpp */; };
+		373D80C81552F2B6007F64F9 /* EventVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008F9154352E7004E64E3 /* EventVisitor.cpp */; };
+		373D80C91552F2B6007F64F9 /* FirstPersonManipulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008FA154352E7004E64E3 /* FirstPersonManipulator.cpp */; };
+		373D80CA1552F2B6007F64F9 /* FlightManipulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008FB154352E7004E64E3 /* FlightManipulator.cpp */; };
+		373D80CB1552F2B6007F64F9 /* GUIEventAdapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008FC154352E7004E64E3 /* GUIEventAdapter.cpp */; };
+		373D80CC1552F2B6007F64F9 /* GUIEventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008FD154352E7004E64E3 /* GUIEventHandler.cpp */; };
+		373D80CD1552F2B6007F64F9 /* KeySwitchMatrixManipulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008FE154352E7004E64E3 /* KeySwitchMatrixManipulator.cpp */; };
+		373D80CE1552F2B6007F64F9 /* MultiTouchTrackballManipulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374008FF154352E7004E64E3 /* MultiTouchTrackballManipulator.cpp */; };
+		373D80CF1552F2B6007F64F9 /* NodeTrackerManipulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400900154352E7004E64E3 /* NodeTrackerManipulator.cpp */; };
+		373D80D01552F2B6007F64F9 /* OrbitManipulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400901154352E7004E64E3 /* OrbitManipulator.cpp */; };
+		373D80D11552F2B6007F64F9 /* SphericalManipulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400902154352E7004E64E3 /* SphericalManipulator.cpp */; };
+		373D80D21552F2B6007F64F9 /* StandardManipulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400903154352E7004E64E3 /* StandardManipulator.cpp */; };
+		373D80D31552F2B6007F64F9 /* StateSetManipulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400904154352E7004E64E3 /* StateSetManipulator.cpp */; };
+		373D80D41552F2B6007F64F9 /* TerrainManipulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400905154352E7004E64E3 /* TerrainManipulator.cpp */; };
+		373D80D51552F2B6007F64F9 /* TrackballManipulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400906154352E7004E64E3 /* TrackballManipulator.cpp */; };
+		373D80D61552F2B6007F64F9 /* UFOManipulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400907154352E7004E64E3 /* UFOManipulator.cpp */; };
+		373D80D71552F2B6007F64F9 /* Version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400908154352E7004E64E3 /* Version.cpp */; };
+		373D80D81552F2B6007F64F9 /* AntiSquish.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740090A154352E7004E64E3 /* AntiSquish.cpp */; };
+		373D80D91552F2B6007F64F9 /* Command.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740090C154352E7004E64E3 /* Command.cpp */; };
+		373D80DA1552F2B6007F64F9 /* Constraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740090D154352E7004E64E3 /* Constraint.cpp */; };
+		373D80DB1552F2B6007F64F9 /* Dragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740090E154352E7004E64E3 /* Dragger.cpp */; };
+		373D80DC1552F2B6007F64F9 /* Projector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740090F154352E7004E64E3 /* Projector.cpp */; };
+		373D80DD1552F2B6007F64F9 /* RotateCylinderDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400910154352E7004E64E3 /* RotateCylinderDragger.cpp */; };
+		373D80DE1552F2B6007F64F9 /* RotateSphereDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400911154352E7004E64E3 /* RotateSphereDragger.cpp */; };
+		373D80DF1552F2B6007F64F9 /* Scale1DDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400912154352E7004E64E3 /* Scale1DDragger.cpp */; };
+		373D80E01552F2B6007F64F9 /* Scale2DDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400913154352E7004E64E3 /* Scale2DDragger.cpp */; };
+		373D80E11552F2B6007F64F9 /* ScaleAxisDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400914154352E7004E64E3 /* ScaleAxisDragger.cpp */; };
+		373D80E21552F2B6007F64F9 /* TabBoxDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400915154352E7004E64E3 /* TabBoxDragger.cpp */; };
+		373D80E31552F2B6007F64F9 /* TabBoxTrackballDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400916154352E7004E64E3 /* TabBoxTrackballDragger.cpp */; };
+		373D80E41552F2B6007F64F9 /* TabPlaneDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400917154352E7004E64E3 /* TabPlaneDragger.cpp */; };
+		373D80E51552F2B6007F64F9 /* TabPlaneTrackballDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400918154352E7004E64E3 /* TabPlaneTrackballDragger.cpp */; };
+		373D80E61552F2B6007F64F9 /* TrackballDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400919154352E7004E64E3 /* TrackballDragger.cpp */; };
+		373D80E71552F2B6007F64F9 /* Translate1DDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740091A154352E7004E64E3 /* Translate1DDragger.cpp */; };
+		373D80E81552F2B6007F64F9 /* Translate2DDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740091B154352E7004E64E3 /* Translate2DDragger.cpp */; };
+		373D80E91552F2B6007F64F9 /* TranslateAxisDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740091C154352E7004E64E3 /* TranslateAxisDragger.cpp */; };
+		373D80EA1552F2B6007F64F9 /* TranslatePlaneDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740091D154352E7004E64E3 /* TranslatePlaneDragger.cpp */; };
+		373D80EB1552F2B6007F64F9 /* Version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740091E154352E7004E64E3 /* Version.cpp */; };
+		373D80EC1552F2B6007F64F9 /* BounceOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400920154352E7004E64E3 /* BounceOperator.cpp */; };
+		373D80ED1552F2B6007F64F9 /* ConnectedParticleSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400922154352E7004E64E3 /* ConnectedParticleSystem.cpp */; };
+		373D80EE1552F2B6007F64F9 /* DomainOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400923154352E7004E64E3 /* DomainOperator.cpp */; };
+		373D80EF1552F2B6007F64F9 /* Emitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400924154352E7004E64E3 /* Emitter.cpp */; };
+		373D80F01552F2B6007F64F9 /* ExplosionDebrisEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400925154352E7004E64E3 /* ExplosionDebrisEffect.cpp */; };
+		373D80F11552F2B6007F64F9 /* ExplosionEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400926154352E7004E64E3 /* ExplosionEffect.cpp */; };
+		373D80F21552F2B6007F64F9 /* FireEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400927154352E7004E64E3 /* FireEffect.cpp */; };
+		373D80F31552F2B6007F64F9 /* FluidFrictionOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400928154352E7004E64E3 /* FluidFrictionOperator.cpp */; };
+		373D80F41552F2B6007F64F9 /* FluidProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400929154352E7004E64E3 /* FluidProgram.cpp */; };
+		373D80F51552F2B6007F64F9 /* ModularEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740092A154352E7004E64E3 /* ModularEmitter.cpp */; };
+		373D80F61552F2B6007F64F9 /* ModularProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740092B154352E7004E64E3 /* ModularProgram.cpp */; };
+		373D80F71552F2B6007F64F9 /* MultiSegmentPlacer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740092C154352E7004E64E3 /* MultiSegmentPlacer.cpp */; };
+		373D80F81552F2B6007F64F9 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740092D154352E7004E64E3 /* Particle.cpp */; };
+		373D80F91552F2B6007F64F9 /* ParticleEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740092E154352E7004E64E3 /* ParticleEffect.cpp */; };
+		373D80FA1552F2B6007F64F9 /* ParticleProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3740092F154352E7004E64E3 /* ParticleProcessor.cpp */; };
+		373D80FB1552F2B6007F64F9 /* ParticleSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400930154352E7004E64E3 /* ParticleSystem.cpp */; };
+		373D80FC1552F2B6007F64F9 /* ParticleSystemUpdater.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400931154352E7004E64E3 /* ParticleSystemUpdater.cpp */; };
+		373D80FD1552F2B6007F64F9 /* PrecipitationEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400932154352E7004E64E3 /* PrecipitationEffect.cpp */; };
+		373D80FE1552F2B6007F64F9 /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400933154352E7004E64E3 /* Program.cpp */; };
+		373D80FF1552F2B6007F64F9 /* SinkOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400934154352E7004E64E3 /* SinkOperator.cpp */; };
+		373D81001552F2B6007F64F9 /* SmokeEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400935154352E7004E64E3 /* SmokeEffect.cpp */; };
+		373D81011552F2B6007F64F9 /* SmokeTrailEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400936154352E7004E64E3 /* SmokeTrailEffect.cpp */; };
+		373D81021552F2B6007F64F9 /* Version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400937154352E7004E64E3 /* Version.cpp */; };
+		373D81DE1552F2B6007F64F9 /* obj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400B9C154352E7004E64E3 /* obj.cpp */; };
+		373D81DF1552F2B6007F64F9 /* OBJWriterNodeVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400B9E154352E7004E64E3 /* OBJWriterNodeVisitor.cpp */; };
+		373D81E01552F2B6007F64F9 /* ReaderWriterOBJ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400BA0154352E7004E64E3 /* ReaderWriterOBJ.cpp */; };
+		373D81FF1552F2B6007F64F9 /* ReaderWriterOSG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400BDD154352E7004E64E3 /* ReaderWriterOSG.cpp */; };
+		373D82001552F2B6007F64F9 /* ReaderWriterOSG2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400BDE154352E7004E64E3 /* ReaderWriterOSG2.cpp */; };
+		373D82411552F2B6007F64F9 /* AnimationMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CBC154352E8004E64E3 /* AnimationMaterial.cpp */; };
+		373D82421552F2B6007F64F9 /* CompileSlideCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CBE154352E8004E64E3 /* CompileSlideCallback.cpp */; };
+		373D82431552F2B6007F64F9 /* PickEventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CBF154352E8004E64E3 /* PickEventHandler.cpp */; };
+		373D82441552F2B6007F64F9 /* SlideEventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CC0154352E8004E64E3 /* SlideEventHandler.cpp */; };
+		373D82451552F2B6007F64F9 /* SlideShowConstructor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CC1154352E8004E64E3 /* SlideShowConstructor.cpp */; };
+		373D82461552F2B6007F64F9 /* ConvexPolyhedron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CCA154352E8004E64E3 /* ConvexPolyhedron.cpp */; };
+		373D82471552F2B6007F64F9 /* DebugShadowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CCB154352E8004E64E3 /* DebugShadowMap.cpp */; };
+		373D82481552F2B6007F64F9 /* LightSpacePerspectiveShadowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CCC154352E8004E64E3 /* LightSpacePerspectiveShadowMap.cpp */; };
+		373D82491552F2B6007F64F9 /* MinimalCullBoundsShadowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CCD154352E8004E64E3 /* MinimalCullBoundsShadowMap.cpp */; };
+		373D824A1552F2B6007F64F9 /* MinimalDrawBoundsShadowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CCE154352E8004E64E3 /* MinimalDrawBoundsShadowMap.cpp */; };
+		373D824B1552F2B6007F64F9 /* MinimalShadowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CCF154352E8004E64E3 /* MinimalShadowMap.cpp */; };
+		373D824C1552F2B6007F64F9 /* OccluderGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CD0154352E8004E64E3 /* OccluderGeometry.cpp */; };
+		373D824D1552F2B6007F64F9 /* ParallelSplitShadowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CD1154352E8004E64E3 /* ParallelSplitShadowMap.cpp */; };
+		373D824E1552F2B6007F64F9 /* ShadowedScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CD2154352E8004E64E3 /* ShadowedScene.cpp */; };
+		373D824F1552F2B6007F64F9 /* ShadowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CD3154352E8004E64E3 /* ShadowMap.cpp */; };
+		373D82501552F2B6007F64F9 /* ShadowSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CD4154352E8004E64E3 /* ShadowSettings.cpp */; };
+		373D82511552F2B6007F64F9 /* ShadowTechnique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CD5154352E8004E64E3 /* ShadowTechnique.cpp */; };
+		373D82521552F2B6007F64F9 /* ShadowTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CD6154352E8004E64E3 /* ShadowTexture.cpp */; };
+		373D82531552F2B6007F64F9 /* ShadowVolume.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CD7154352E8004E64E3 /* ShadowVolume.cpp */; };
+		373D82541552F2B6007F64F9 /* SoftShadowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CD8154352E8004E64E3 /* SoftShadowMap.cpp */; };
+		373D82551552F2B6007F64F9 /* StandardShadowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CD9154352E8004E64E3 /* StandardShadowMap.cpp */; };
+		373D82561552F2B6007F64F9 /* Version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CDA154352E8004E64E3 /* Version.cpp */; };
+		373D82571552F2B6007F64F9 /* ViewDependentShadowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CDB154352E8004E64E3 /* ViewDependentShadowMap.cpp */; };
+		373D82581552F2B6007F64F9 /* ViewDependentShadowTechnique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CDC154352E8004E64E3 /* ViewDependentShadowTechnique.cpp */; };
+		373D82591552F2B6007F64F9 /* BlinkSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CDE154352E8004E64E3 /* BlinkSequence.cpp */; };
+		373D825A1552F2B6007F64F9 /* ColorRange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CE0154352E8004E64E3 /* ColorRange.cpp */; };
+		373D825B1552F2B6007F64F9 /* DOFTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CE1154352E8004E64E3 /* DOFTransform.cpp */; };
+		373D825C1552F2B6007F64F9 /* ElevationSlice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CE2154352E8004E64E3 /* ElevationSlice.cpp */; };
+		373D825D1552F2B6007F64F9 /* HeightAboveTerrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CE3154352E8004E64E3 /* HeightAboveTerrain.cpp */; };
+		373D825E1552F2B6007F64F9 /* Impostor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CE4154352E8004E64E3 /* Impostor.cpp */; };
+		373D825F1552F2B6007F64F9 /* ImpostorSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CE5154352E8004E64E3 /* ImpostorSprite.cpp */; };
+		373D82601552F2B6007F64F9 /* InsertImpostorsVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CE6154352E8004E64E3 /* InsertImpostorsVisitor.cpp */; };
+		373D82611552F2B6007F64F9 /* LightPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CE7154352E8004E64E3 /* LightPoint.cpp */; };
+		373D82621552F2B6007F64F9 /* LightPointDrawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CE8154352E8004E64E3 /* LightPointDrawable.cpp */; };
+		373D82631552F2B6007F64F9 /* LightPointNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CEA154352E8004E64E3 /* LightPointNode.cpp */; };
+		373D82641552F2B6007F64F9 /* LightPointSpriteDrawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CEB154352E8004E64E3 /* LightPointSpriteDrawable.cpp */; };
+		373D82651552F2B6007F64F9 /* LineOfSight.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CED154352E8004E64E3 /* LineOfSight.cpp */; };
+		373D82661552F2B6007F64F9 /* MultiSwitch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CEE154352E8004E64E3 /* MultiSwitch.cpp */; };
+		373D82671552F2B6007F64F9 /* OverlayNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CEF154352E8004E64E3 /* OverlayNode.cpp */; };
+		373D82681552F2B6007F64F9 /* ScalarBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CF0154352E8004E64E3 /* ScalarBar.cpp */; };
+		373D82691552F2B6007F64F9 /* ScalarsToColors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CF1154352E8004E64E3 /* ScalarsToColors.cpp */; };
+		373D826A1552F2B6007F64F9 /* Sector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CF2154352E8004E64E3 /* Sector.cpp */; };
+		373D826B1552F2B6007F64F9 /* ShapeAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CF3154352E8004E64E3 /* ShapeAttribute.cpp */; };
+		373D826C1552F2B6007F64F9 /* SphereSegment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CF4154352E8004E64E3 /* SphereSegment.cpp */; };
+		373D826D1552F2B6007F64F9 /* Version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CF5154352E8004E64E3 /* Version.cpp */; };
+		373D826E1552F2B6007F64F9 /* VisibilityGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CF6154352E8004E64E3 /* VisibilityGroup.cpp */; };
+		373D826F1552F2B6007F64F9 /* GeometryTechnique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CF9154352E8004E64E3 /* GeometryTechnique.cpp */; };
+		373D82701552F2B6007F64F9 /* Layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CFA154352E8004E64E3 /* Layer.cpp */; };
+		373D82711552F2B6007F64F9 /* Locator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CFB154352E8004E64E3 /* Locator.cpp */; };
+		373D82721552F2B6007F64F9 /* Terrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CFC154352E8004E64E3 /* Terrain.cpp */; };
+		373D82731552F2B6007F64F9 /* TerrainTechnique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CFD154352E8004E64E3 /* TerrainTechnique.cpp */; };
+		373D82741552F2B6007F64F9 /* TerrainTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CFE154352E8004E64E3 /* TerrainTile.cpp */; };
+		373D82751552F2B6007F64F9 /* Version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CFF154352E8004E64E3 /* Version.cpp */; };
+		373D82761552F2B6007F64F9 /* DefaultFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D02154352E8004E64E3 /* DefaultFont.cpp */; };
+		373D82771552F2B6007F64F9 /* FadeText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D04154352E8004E64E3 /* FadeText.cpp */; };
+		373D82781552F2B6007F64F9 /* Font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D05154352E8004E64E3 /* Font.cpp */; };
+		373D82791552F2B6007F64F9 /* Glyph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D06154352E8004E64E3 /* Glyph.cpp */; };
+		373D827A1552F2B6007F64F9 /* GlyphGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D07154352E8004E64E3 /* GlyphGeometry.cpp */; };
+		373D827B1552F2B6007F64F9 /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D09154352E8004E64E3 /* String.cpp */; };
+		373D827C1552F2B6007F64F9 /* Style.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D0A154352E8004E64E3 /* Style.cpp */; };
+		373D827D1552F2B6007F64F9 /* Text.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D0B154352E8004E64E3 /* Text.cpp */; };
+		373D827E1552F2B6007F64F9 /* Text3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D0C154352E8004E64E3 /* Text3D.cpp */; };
+		373D827F1552F2B6007F64F9 /* TextBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D0D154352E8004E64E3 /* TextBase.cpp */; };
+		373D82801552F2B6007F64F9 /* Version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D0E154352E8004E64E3 /* Version.cpp */; };
+		373D82811552F2B6007F64F9 /* CubeMapGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D11154352E8004E64E3 /* CubeMapGenerator.cpp */; };
+		373D82821552F2B6007F64F9 /* CullVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D12154352E8004E64E3 /* CullVisitor.cpp */; };
+		373D82831552F2B6007F64F9 /* DelaunayTriangulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D13154352E8004E64E3 /* DelaunayTriangulator.cpp */; };
+		373D82841552F2B6007F64F9 /* DisplayRequirementsVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D14154352E8004E64E3 /* DisplayRequirementsVisitor.cpp */; };
+		373D82851552F2B6007F64F9 /* DrawElementTypeSimplifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D15154352E8004E64E3 /* DrawElementTypeSimplifier.cpp */; };
+		373D82861552F2B6007F64F9 /* EdgeCollector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D16154352E8004E64E3 /* EdgeCollector.cpp */; };
+		373D82871552F2B6007F64F9 /* GLObjectsVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D17154352E8004E64E3 /* GLObjectsVisitor.cpp */; };
+		373D82881552F2B6007F64F9 /* HalfWayMapGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D18154352E8004E64E3 /* HalfWayMapGenerator.cpp */; };
+		373D82891552F2B6007F64F9 /* HighlightMapGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D19154352E8004E64E3 /* HighlightMapGenerator.cpp */; };
+		373D828A1552F2B6007F64F9 /* IncrementalCompileOperation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D1A154352E8004E64E3 /* IncrementalCompileOperation.cpp */; };
+		373D828B1552F2B6007F64F9 /* IntersectionVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D1B154352E8004E64E3 /* IntersectionVisitor.cpp */; };
+		373D828C1552F2B6007F64F9 /* IntersectVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D1C154352E8004E64E3 /* IntersectVisitor.cpp */; };
+		373D828D1552F2B6007F64F9 /* LineSegmentIntersector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D1D154352E8004E64E3 /* LineSegmentIntersector.cpp */; };
+		373D828E1552F2B6007F64F9 /* MeshOptimizers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D1E154352E8004E64E3 /* MeshOptimizers.cpp */; };
+		373D828F1552F2B6007F64F9 /* Optimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D1F154352E8004E64E3 /* Optimizer.cpp */; };
+		373D82901552F2B6007F64F9 /* PerlinNoise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D20154352E8004E64E3 /* PerlinNoise.cpp */; };
+		373D82911552F2B6007F64F9 /* PlaneIntersector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D21154352E8004E64E3 /* PlaneIntersector.cpp */; };
+		373D82921552F2B6007F64F9 /* PolytopeIntersector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D22154352E8004E64E3 /* PolytopeIntersector.cpp */; };
+		373D82931552F2B6007F64F9 /* PositionalStateContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D23154352E8004E64E3 /* PositionalStateContainer.cpp */; };
+		373D82941552F2B6007F64F9 /* PrintVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D24154352E8004E64E3 /* PrintVisitor.cpp */; };
+		373D82951552F2B6007F64F9 /* RenderBin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D25154352E8004E64E3 /* RenderBin.cpp */; };
+		373D82961552F2B6007F64F9 /* RenderLeaf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D26154352E8004E64E3 /* RenderLeaf.cpp */; };
+		373D82971552F2B6007F64F9 /* RenderStage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D27154352E8004E64E3 /* RenderStage.cpp */; };
+		373D82981552F2B6007F64F9 /* ReversePrimitiveFunctor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D28154352E8004E64E3 /* ReversePrimitiveFunctor.cpp */; };
+		373D82991552F2B6007F64F9 /* SceneGraphBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D29154352E8004E64E3 /* SceneGraphBuilder.cpp */; };
+		373D829A1552F2B6007F64F9 /* SceneView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D2A154352E8004E64E3 /* SceneView.cpp */; };
+		373D829B1552F2B6007F64F9 /* ShaderGen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D2B154352E8004E64E3 /* ShaderGen.cpp */; };
+		373D829C1552F2B6007F64F9 /* Simplifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D2C154352E8004E64E3 /* Simplifier.cpp */; };
+		373D829D1552F2B6007F64F9 /* SmoothingVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D2D154352E8004E64E3 /* SmoothingVisitor.cpp */; };
+		373D829E1552F2B6007F64F9 /* StateGraph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D2E154352E8004E64E3 /* StateGraph.cpp */; };
+		373D829F1552F2B6007F64F9 /* Statistics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D2F154352E8004E64E3 /* Statistics.cpp */; };
+		373D82A01552F2B6007F64F9 /* TangentSpaceGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D30154352E8004E64E3 /* TangentSpaceGenerator.cpp */; };
+		373D82A11552F2B6007F64F9 /* Tessellator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D31154352E8004E64E3 /* Tessellator.cpp */; };
+		373D82A21552F2B6007F64F9 /* TransformAttributeFunctor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D32154352E8004E64E3 /* TransformAttributeFunctor.cpp */; };
+		373D82A31552F2B6007F64F9 /* TransformCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D33154352E8004E64E3 /* TransformCallback.cpp */; };
+		373D82A41552F2B6007F64F9 /* connectivity_graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D40154352E8004E64E3 /* connectivity_graph.cpp */; };
+		373D82A51552F2B6007F64F9 /* policy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D41154352E8004E64E3 /* policy.cpp */; };
+		373D82A61552F2B6007F64F9 /* tri_stripper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D42154352E8004E64E3 /* tri_stripper.cpp */; };
+		373D82A71552F2B6007F64F9 /* TriStripVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D43154352E8004E64E3 /* TriStripVisitor.cpp */; };
+		373D82A81552F2B6007F64F9 /* UpdateVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D44154352E8004E64E3 /* UpdateVisitor.cpp */; };
+		373D82A91552F2B6007F64F9 /* Version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D45154352E8004E64E3 /* Version.cpp */; };
+		373D82AA1552F2B6007F64F9 /* CompositeViewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D48154352E8004E64E3 /* CompositeViewer.cpp */; };
+		373D82AB1552F2B6007F64F9 /* GraphicsWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D4B154352E8004E64E3 /* GraphicsWindow.cpp */; };
+		373D82AC1552F2B6007F64F9 /* GraphicsWindowIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 37400D4E154352E8004E64E3 /* GraphicsWindowIOS.mm */; };
+		373D82AD1552F2B6007F64F9 /* HelpHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D51154352E8004E64E3 /* HelpHandler.cpp */; };
+		373D82AE1552F2B6007F64F9 /* IOSUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 37400D53154352E8004E64E3 /* IOSUtils.mm */; };
+		373D82AF1552F2B6007F64F9 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D58154352E8004E64E3 /* Renderer.cpp */; };
+		373D82B01552F2B6007F64F9 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D59154352E8004E64E3 /* Scene.cpp */; };
+		373D82B11552F2B6007F64F9 /* ScreenCaptureHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D5A154352E8004E64E3 /* ScreenCaptureHandler.cpp */; };
+		373D82B21552F2B6007F64F9 /* StatsHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D5B154352E8004E64E3 /* StatsHandler.cpp */; };
+		373D82B31552F2B6007F64F9 /* Version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D5C154352E8004E64E3 /* Version.cpp */; };
+		373D82B41552F2B6007F64F9 /* View.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D5D154352E8004E64E3 /* View.cpp */; };
+		373D82B51552F2B6007F64F9 /* Viewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D5E154352E8004E64E3 /* Viewer.cpp */; };
+		373D82B61552F2B6007F64F9 /* ViewerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D5F154352E8004E64E3 /* ViewerBase.cpp */; };
+		373D82B71552F2B6007F64F9 /* ViewerEventHandlers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D60154352E8004E64E3 /* ViewerEventHandlers.cpp */; };
+		373D82B81552F2B6007F64F9 /* FixedFunctionTechnique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D63154352E8004E64E3 /* FixedFunctionTechnique.cpp */; };
+		373D82B91552F2B6007F64F9 /* Layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D64154352E8004E64E3 /* Layer.cpp */; };
+		373D82BA1552F2B6007F64F9 /* Locator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D65154352E8004E64E3 /* Locator.cpp */; };
+		373D82BB1552F2B6007F64F9 /* Property.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D66154352E8004E64E3 /* Property.cpp */; };
+		373D82BC1552F2B6007F64F9 /* RayTracedTechnique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D67154352E8004E64E3 /* RayTracedTechnique.cpp */; };
+		373D82BD1552F2B6007F64F9 /* volume_frag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D69154352E8004E64E3 /* volume_frag.cpp */; };
+		373D82BE1552F2B6007F64F9 /* volume_iso_frag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D6A154352E8004E64E3 /* volume_iso_frag.cpp */; };
+		373D82BF1552F2B6007F64F9 /* volume_lit_frag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D6B154352E8004E64E3 /* volume_lit_frag.cpp */; };
+		373D82C01552F2B6007F64F9 /* volume_lit_tf_frag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D6C154352E8004E64E3 /* volume_lit_tf_frag.cpp */; };
+		373D82C11552F2B6007F64F9 /* volume_mip_frag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D6D154352E8004E64E3 /* volume_mip_frag.cpp */; };
+		373D82C21552F2B6007F64F9 /* volume_tf_frag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D6E154352E8004E64E3 /* volume_tf_frag.cpp */; };
+		373D82C31552F2B6007F64F9 /* volume_tf_iso_frag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D6F154352E8004E64E3 /* volume_tf_iso_frag.cpp */; };
+		373D82C41552F2B6007F64F9 /* volume_tf_mip_frag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D70154352E8004E64E3 /* volume_tf_mip_frag.cpp */; };
+		373D82C51552F2B6007F64F9 /* volume_vert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D71154352E8004E64E3 /* volume_vert.cpp */; };
+		373D82C61552F2B6007F64F9 /* Version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D72154352E8004E64E3 /* Version.cpp */; };
+		373D82C71552F2B6007F64F9 /* Volume.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D73154352E8004E64E3 /* Volume.cpp */; };
+		373D82C81552F2B6007F64F9 /* VolumeTechnique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D74154352E8004E64E3 /* VolumeTechnique.cpp */; };
+		373D82C91552F2B6007F64F9 /* VolumeTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D75154352E8004E64E3 /* VolumeTile.cpp */; };
+		373D82CA1552F2B6007F64F9 /* Box.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D77154352E8004E64E3 /* Box.cpp */; };
+		373D82CB1552F2B6007F64F9 /* Browser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D78154352E8004E64E3 /* Browser.cpp */; };
+		373D82CC1552F2B6007F64F9 /* Canvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D79154352E8004E64E3 /* Canvas.cpp */; };
+		373D82CD1552F2B6007F64F9 /* Frame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D7B154352E8004E64E3 /* Frame.cpp */; };
+		373D82CE1552F2B6007F64F9 /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D7C154352E8004E64E3 /* Input.cpp */; };
+		373D82CF1552F2B6007F64F9 /* Label.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D7D154352E8004E64E3 /* Label.cpp */; };
+		373D82D01552F2B6007F64F9 /* Lua.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D7E154352E8004E64E3 /* Lua.cpp */; };
+		373D82D11552F2B6007F64F9 /* PdfReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D7F154352E8004E64E3 /* PdfReader.cpp */; };
+		373D82D21552F2B6007F64F9 /* Python.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D80154352E8004E64E3 /* Python.cpp */; };
+		373D82D31552F2B6007F64F9 /* StyleManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D81154352E8004E64E3 /* StyleManager.cpp */; };
+		373D82D41552F2B6007F64F9 /* Table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D82154352E8004E64E3 /* Table.cpp */; };
+		373D82D51552F2B6007F64F9 /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D83154352E8004E64E3 /* Util.cpp */; };
+		373D82D61552F2B6007F64F9 /* Version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D84154352E8004E64E3 /* Version.cpp */; };
+		373D82D71552F2B6007F64F9 /* ViewerEventHandlers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D85154352E8004E64E3 /* ViewerEventHandlers.cpp */; };
+		373D82D81552F2B6007F64F9 /* VncClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D86154352E8004E64E3 /* VncClient.cpp */; };
+		373D82D91552F2B6007F64F9 /* Widget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D87154352E8004E64E3 /* Widget.cpp */; };
+		373D82DA1552F2B6007F64F9 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D88154352E8004E64E3 /* Window.cpp */; };
+		373D82DB1552F2B6007F64F9 /* WindowManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D89154352E8004E64E3 /* WindowManager.cpp */; };
+		373D83A31552F2B6007F64F9 /* AlphaFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E70154352E8004E64E3 /* AlphaFunc.cpp */; };
+		373D83A41552F2B6007F64F9 /* AnimationPath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E71154352E8004E64E3 /* AnimationPath.cpp */; };
+		373D83A51552F2B6007F64F9 /* AnimationPathCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E72154352E8004E64E3 /* AnimationPathCallback.cpp */; };
+		373D83A61552F2B6007F64F9 /* AudioSink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E73154352E8004E64E3 /* AudioSink.cpp */; };
+		373D83A71552F2B6007F64F9 /* AudioStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E74154352E8004E64E3 /* AudioStream.cpp */; };
+		373D83A81552F2B6007F64F9 /* AutoTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E75154352E8004E64E3 /* AutoTransform.cpp */; };
+		373D83A91552F2B6007F64F9 /* Billboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E76154352E8004E64E3 /* Billboard.cpp */; };
+		373D83AA1552F2B6007F64F9 /* BlendColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E77154352E8004E64E3 /* BlendColor.cpp */; };
+		373D83AB1552F2B6007F64F9 /* BlendEquation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E78154352E8004E64E3 /* BlendEquation.cpp */; };
+		373D83AC1552F2B6007F64F9 /* BlendFunc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E79154352E8004E64E3 /* BlendFunc.cpp */; };
+		373D83AD1552F2B6007F64F9 /* Box.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E7A154352E8004E64E3 /* Box.cpp */; };
+		373D83AE1552F2B6007F64F9 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E7B154352E8004E64E3 /* Camera.cpp */; };
+		373D83AF1552F2B6007F64F9 /* CameraView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E7C154352E8004E64E3 /* CameraView.cpp */; };
+		373D83B01552F2B6007F64F9 /* Capsule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E7D154352E8004E64E3 /* Capsule.cpp */; };
+		373D83B11552F2B6007F64F9 /* ClampColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E7E154352E8004E64E3 /* ClampColor.cpp */; };
+		373D83B21552F2B6007F64F9 /* ClearNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E7F154352E8004E64E3 /* ClearNode.cpp */; };
+		373D83B31552F2B6007F64F9 /* ClipNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E80154352E8004E64E3 /* ClipNode.cpp */; };
+		373D83B41552F2B6007F64F9 /* ClipPlane.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E81154352E8004E64E3 /* ClipPlane.cpp */; };
+		373D83B51552F2B6007F64F9 /* ClusterCullingCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E82154352E8004E64E3 /* ClusterCullingCallback.cpp */; };
+		373D83B61552F2B6007F64F9 /* ColorMask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E84154352E8004E64E3 /* ColorMask.cpp */; };
+		373D83B71552F2B6007F64F9 /* ColorMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E85154352E8004E64E3 /* ColorMatrix.cpp */; };
+		373D83B81552F2B6007F64F9 /* CompositeShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E86154352E8004E64E3 /* CompositeShape.cpp */; };
+		373D83B91552F2B6007F64F9 /* Cone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E87154352E8004E64E3 /* Cone.cpp */; };
+		373D83BA1552F2B6007F64F9 /* ConvexHull.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E88154352E8004E64E3 /* ConvexHull.cpp */; };
+		373D83BB1552F2B6007F64F9 /* ConvexPlanarOccluder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E89154352E8004E64E3 /* ConvexPlanarOccluder.cpp */; };
+		373D83BC1552F2B6007F64F9 /* CoordinateSystemNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E8A154352E8004E64E3 /* CoordinateSystemNode.cpp */; };
+		373D83BD1552F2B6007F64F9 /* CullFace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E8B154352E8004E64E3 /* CullFace.cpp */; };
+		373D83BE1552F2B6007F64F9 /* Cylinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E8C154352E8004E64E3 /* Cylinder.cpp */; };
+		373D83BF1552F2B6007F64F9 /* Depth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E8D154352E8004E64E3 /* Depth.cpp */; };
+		373D83C01552F2B6007F64F9 /* Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E8E154352E8004E64E3 /* Drawable.cpp */; };
+		373D83C11552F2B6007F64F9 /* DrawPixels.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E8F154352E8004E64E3 /* DrawPixels.cpp */; };
+		373D83C21552F2B6007F64F9 /* EllipsoidModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E90154352E8004E64E3 /* EllipsoidModel.cpp */; };
+		373D83C31552F2B6007F64F9 /* Fog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E91154352E8004E64E3 /* Fog.cpp */; };
+		373D83C41552F2B6007F64F9 /* FragmentProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E92154352E8004E64E3 /* FragmentProgram.cpp */; };
+		373D83C51552F2B6007F64F9 /* FrontFace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E93154352E8004E64E3 /* FrontFace.cpp */; };
+		373D83C61552F2B6007F64F9 /* Geode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E94154352E8004E64E3 /* Geode.cpp */; };
+		373D83C71552F2B6007F64F9 /* Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E95154352E8004E64E3 /* Geometry.cpp */; };
+		373D83C81552F2B6007F64F9 /* Group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E96154352E8004E64E3 /* Group.cpp */; };
+		373D83C91552F2B6007F64F9 /* HeightField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E97154352E8004E64E3 /* HeightField.cpp */; };
+		373D83CA1552F2B6007F64F9 /* Hint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E98154352E8004E64E3 /* Hint.cpp */; };
+		373D83CB1552F2B6007F64F9 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E99154352E8004E64E3 /* Image.cpp */; };
+		373D83CC1552F2B6007F64F9 /* ImageSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E9A154352E8004E64E3 /* ImageSequence.cpp */; };
+		373D83CD1552F2B6007F64F9 /* ImageStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E9B154352E8004E64E3 /* ImageStream.cpp */; };
+		373D83CE1552F2B6007F64F9 /* LibraryWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E9C154352E8004E64E3 /* LibraryWrapper.cpp */; };
+		373D83CF1552F2B6007F64F9 /* Light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E9D154352E8004E64E3 /* Light.cpp */; };
+		373D83D01552F2B6007F64F9 /* LightModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E9E154352E8004E64E3 /* LightModel.cpp */; };
+		373D83D11552F2B6007F64F9 /* LightSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400E9F154352E8004E64E3 /* LightSource.cpp */; };
+		373D83D21552F2B6007F64F9 /* LineStipple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EA0154352E8004E64E3 /* LineStipple.cpp */; };
+		373D83D31552F2B6007F64F9 /* LineWidth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EA1154352E8004E64E3 /* LineWidth.cpp */; };
+		373D83D41552F2B6007F64F9 /* LOD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EA2154352E8004E64E3 /* LOD.cpp */; };
+		373D83D51552F2B6007F64F9 /* LogicOp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EA3154352E8004E64E3 /* LogicOp.cpp */; };
+		373D83D61552F2B6007F64F9 /* Material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EA4154352E8004E64E3 /* Material.cpp */; };
+		373D83D71552F2B6007F64F9 /* MatrixTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EA5154352E8004E64E3 /* MatrixTransform.cpp */; };
+		373D83D81552F2B6007F64F9 /* Multisample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EA6154352E8004E64E3 /* Multisample.cpp */; };
+		373D83D91552F2B6007F64F9 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EA7154352E8004E64E3 /* Node.cpp */; };
+		373D83DA1552F2B6007F64F9 /* NodeCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EA8154352E8004E64E3 /* NodeCallback.cpp */; };
+		373D83DB1552F2B6007F64F9 /* NodeTrackerCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EA9154352E8004E64E3 /* NodeTrackerCallback.cpp */; };
+		373D83DC1552F2B6007F64F9 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EAA154352E8004E64E3 /* Object.cpp */; };
+		373D83DD1552F2B6007F64F9 /* OccluderNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EAB154352E8004E64E3 /* OccluderNode.cpp */; };
+		373D83DE1552F2B6007F64F9 /* OcclusionQueryNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EAC154352E8004E64E3 /* OcclusionQueryNode.cpp */; };
+		373D83DF1552F2B6007F64F9 /* PagedLOD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EAD154352E8004E64E3 /* PagedLOD.cpp */; };
+		373D83E01552F2B6007F64F9 /* Point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EAE154352E8004E64E3 /* Point.cpp */; };
+		373D83E11552F2B6007F64F9 /* PointSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EAF154352E8004E64E3 /* PointSprite.cpp */; };
+		373D83E21552F2B6007F64F9 /* PolygonMode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EB0154352E8004E64E3 /* PolygonMode.cpp */; };
+		373D83E31552F2B6007F64F9 /* PolygonOffset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EB1154352E8004E64E3 /* PolygonOffset.cpp */; };
+		373D83E41552F2B6007F64F9 /* PolygonStipple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EB2154352E8004E64E3 /* PolygonStipple.cpp */; };
+		373D83E51552F2B6007F64F9 /* PositionAttitudeTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EB3154352E8004E64E3 /* PositionAttitudeTransform.cpp */; };
+		373D83E61552F2B6007F64F9 /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EB4154352E8004E64E3 /* Program.cpp */; };
+		373D83E71552F2B6007F64F9 /* Projection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EB5154352E8004E64E3 /* Projection.cpp */; };
+		373D83E81552F2B6007F64F9 /* ProxyNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EB6154352E8004E64E3 /* ProxyNode.cpp */; };
+		373D83E91552F2B6007F64F9 /* Scissor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EB7154352E8004E64E3 /* Scissor.cpp */; };
+		373D83EA1552F2B6007F64F9 /* Sequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EB8154352E8004E64E3 /* Sequence.cpp */; };
+		373D83EB1552F2B6007F64F9 /* ShadeModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EB9154352E8004E64E3 /* ShadeModel.cpp */; };
+		373D83EC1552F2B6007F64F9 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EBA154352E8004E64E3 /* Shader.cpp */; };
+		373D83ED1552F2B6007F64F9 /* ShaderBinary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EBB154352E8004E64E3 /* ShaderBinary.cpp */; };
+		373D83EE1552F2B6007F64F9 /* Shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EBC154352E8004E64E3 /* Shape.cpp */; };
+		373D83EF1552F2B6007F64F9 /* ShapeDrawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EBD154352E8004E64E3 /* ShapeDrawable.cpp */; };
+		373D83F01552F2B6007F64F9 /* Sphere.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EBE154352E8004E64E3 /* Sphere.cpp */; };
+		373D83F11552F2B6007F64F9 /* StateAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EBF154352E8004E64E3 /* StateAttribute.cpp */; };
+		373D83F21552F2B6007F64F9 /* StateSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EC0154352E8004E64E3 /* StateSet.cpp */; };
+		373D83F31552F2B6007F64F9 /* Stencil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EC1154352E8004E64E3 /* Stencil.cpp */; };
+		373D83F41552F2B6007F64F9 /* StencilTwoSided.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EC2154352E8004E64E3 /* StencilTwoSided.cpp */; };
+		373D83F51552F2B6007F64F9 /* Switch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EC3154352E8004E64E3 /* Switch.cpp */; };
+		373D83F61552F2B6007F64F9 /* TessellationHints.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EC4154352E8004E64E3 /* TessellationHints.cpp */; };
+		373D83F71552F2B6007F64F9 /* TexEnv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EC5154352E8004E64E3 /* TexEnv.cpp */; };
+		373D83F81552F2B6007F64F9 /* TexEnvCombine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EC6154352E8004E64E3 /* TexEnvCombine.cpp */; };
+		373D83F91552F2B6007F64F9 /* TexEnvFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EC7154352E8004E64E3 /* TexEnvFilter.cpp */; };
+		373D83FA1552F2B6007F64F9 /* TexGen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EC8154352E8004E64E3 /* TexGen.cpp */; };
+		373D83FB1552F2B6007F64F9 /* TexGenNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EC9154352E8004E64E3 /* TexGenNode.cpp */; };
+		373D83FC1552F2B6007F64F9 /* TexMat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400ECA154352E8004E64E3 /* TexMat.cpp */; };
+		373D83FD1552F2B6007F64F9 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400ECB154352E8004E64E3 /* Texture.cpp */; };
+		373D83FE1552F2B6007F64F9 /* Texture1D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400ECC154352E8004E64E3 /* Texture1D.cpp */; };
+		373D83FF1552F2B6007F64F9 /* Texture2D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400ECD154352E8004E64E3 /* Texture2D.cpp */; };
+		373D84001552F2B6007F64F9 /* Texture2DArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400ECE154352E8004E64E3 /* Texture2DArray.cpp */; };
+		373D84011552F2B6007F64F9 /* Texture3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400ECF154352E8004E64E3 /* Texture3D.cpp */; };
+		373D84021552F2B6007F64F9 /* TextureCubeMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400ED0154352E8004E64E3 /* TextureCubeMap.cpp */; };
+		373D84031552F2B6007F64F9 /* TextureRectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400ED1154352E8004E64E3 /* TextureRectangle.cpp */; };
+		373D84041552F2B6007F64F9 /* TransferFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400ED2154352E8004E64E3 /* TransferFunction.cpp */; };
+		373D84051552F2B6007F64F9 /* TransferFunction1D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400ED3154352E8004E64E3 /* TransferFunction1D.cpp */; };
+		373D84061552F2B6007F64F9 /* Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400ED4154352E8004E64E3 /* Transform.cpp */; };
+		373D84071552F2B6007F64F9 /* TriangleMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400ED5154352E8004E64E3 /* TriangleMesh.cpp */; };
+		373D84081552F2B6007F64F9 /* Uniform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400ED6154352E8004E64E3 /* Uniform.cpp */; };
+		373D84091552F2B6007F64F9 /* UserDataContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400ED7154352E8004E64E3 /* UserDataContainer.cpp */; };
+		373D840A1552F2B6007F64F9 /* ValueObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400ED8154352E8004E64E3 /* ValueObject.cpp */; };
+		373D840B1552F2B6007F64F9 /* VertexProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400ED9154352E8004E64E3 /* VertexProgram.cpp */; };
+		373D840C1552F2B6007F64F9 /* Viewport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EDA154352E8004E64E3 /* Viewport.cpp */; };
+		373D840D1552F2B6007F64F9 /* Action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EDC154352E8004E64E3 /* Action.cpp */; };
+		373D840E1552F2B6007F64F9 /* ActionAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EDD154352E8004E64E3 /* ActionAnimation.cpp */; };
+		373D840F1552F2B6007F64F9 /* ActionBlendIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EDE154352E8004E64E3 /* ActionBlendIn.cpp */; };
+		373D84101552F2B6007F64F9 /* ActionBlendOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EDF154352E8004E64E3 /* ActionBlendOut.cpp */; };
+		373D84111552F2B6007F64F9 /* ActionStripAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EE0154352E8004E64E3 /* ActionStripAnimation.cpp */; };
+		373D84121552F2B6007F64F9 /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EE1154352E8004E64E3 /* Animation.cpp */; };
+		373D84131552F2B6007F64F9 /* AnimationManagerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EE2154352E8004E64E3 /* AnimationManagerBase.cpp */; };
+		373D84141552F2B6007F64F9 /* BasicAnimationManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EE3154352E8004E64E3 /* BasicAnimationManager.cpp */; };
+		373D84151552F2B6007F64F9 /* Bone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EE4154352E8004E64E3 /* Bone.cpp */; };
+		373D84161552F2B6007F64F9 /* LibraryWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EE6154352E8004E64E3 /* LibraryWrapper.cpp */; };
+		373D84171552F2B6007F64F9 /* MorphGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EE7154352E8004E64E3 /* MorphGeometry.cpp */; };
+		373D84181552F2B6007F64F9 /* RigGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EE8154352E8004E64E3 /* RigGeometry.cpp */; };
+		373D84191552F2B6007F64F9 /* Skeleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EE9154352E8004E64E3 /* Skeleton.cpp */; };
+		373D841A1552F2B6007F64F9 /* StackedMatrixElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EEA154352E8004E64E3 /* StackedMatrixElement.cpp */; };
+		373D841B1552F2B6007F64F9 /* StackedQuaternionElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EEB154352E8004E64E3 /* StackedQuaternionElement.cpp */; };
+		373D841C1552F2B6007F64F9 /* StackedRotateAxisElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EEC154352E8004E64E3 /* StackedRotateAxisElement.cpp */; };
+		373D841D1552F2B6007F64F9 /* StackedScaleElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EED154352E8004E64E3 /* StackedScaleElement.cpp */; };
+		373D841E1552F2B6007F64F9 /* StackedTransformElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EEE154352E8004E64E3 /* StackedTransformElement.cpp */; };
+		373D841F1552F2B6007F64F9 /* StackedTranslateElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EEF154352E8004E64E3 /* StackedTranslateElement.cpp */; };
+		373D84201552F2B6007F64F9 /* Timeline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EF0154352E8004E64E3 /* Timeline.cpp */; };
+		373D84211552F2B6007F64F9 /* TimelineAnimationManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EF1154352E8004E64E3 /* TimelineAnimationManager.cpp */; };
+		373D84221552F2B6007F64F9 /* UpdateBone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EF2154352E8004E64E3 /* UpdateBone.cpp */; };
+		373D84231552F2B6007F64F9 /* UpdateMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EF3154352E8004E64E3 /* UpdateMaterial.cpp */; };
+		373D84241552F2B6007F64F9 /* UpdateMatrixTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EF4154352E8004E64E3 /* UpdateMatrixTransform.cpp */; };
+		373D84251552F2B6007F64F9 /* UpdateMorph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EF5154352E8004E64E3 /* UpdateMorph.cpp */; };
+		373D84261552F2B6007F64F9 /* UpdateSkeleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EF6154352E8004E64E3 /* UpdateSkeleton.cpp */; };
+		373D84271552F2B6007F64F9 /* AnisotropicLighting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EF8154352E8004E64E3 /* AnisotropicLighting.cpp */; };
+		373D84281552F2B6007F64F9 /* BumpMapping.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EF9154352E8004E64E3 /* BumpMapping.cpp */; };
+		373D84291552F2B6007F64F9 /* Cartoon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EFA154352E8004E64E3 /* Cartoon.cpp */; };
+		373D842A1552F2B6007F64F9 /* Effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EFC154352E8004E64E3 /* Effect.cpp */; };
+		373D842B1552F2B6007F64F9 /* LibraryWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EFD154352E8004E64E3 /* LibraryWrapper.cpp */; };
+		373D842C1552F2B6007F64F9 /* MultiTextureControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EFE154352E8004E64E3 /* MultiTextureControl.cpp */; };
+		373D842D1552F2B6007F64F9 /* Outline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400EFF154352E8004E64E3 /* Outline.cpp */; };
+		373D842E1552F2B6007F64F9 /* Scribe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F00154352E8004E64E3 /* Scribe.cpp */; };
+		373D842F1552F2B6007F64F9 /* SpecularHighlights.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F01154352E8004E64E3 /* SpecularHighlights.cpp */; };
+		373D84301552F2B6007F64F9 /* AntiSquish.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F03154352E8004E64E3 /* AntiSquish.cpp */; };
+		373D84311552F2B6007F64F9 /* CompositeDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F05154352E8004E64E3 /* CompositeDragger.cpp */; };
+		373D84321552F2B6007F64F9 /* Dragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F06154352E8004E64E3 /* Dragger.cpp */; };
+		373D84331552F2B6007F64F9 /* LibraryWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F07154352E8004E64E3 /* LibraryWrapper.cpp */; };
+		373D84341552F2B6007F64F9 /* RotateCylinderDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F08154352E8004E64E3 /* RotateCylinderDragger.cpp */; };
+		373D84351552F2B6007F64F9 /* RotateSphereDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F09154352E8004E64E3 /* RotateSphereDragger.cpp */; };
+		373D84361552F2B6007F64F9 /* Scale1DDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F0A154352E8004E64E3 /* Scale1DDragger.cpp */; };
+		373D84371552F2B6007F64F9 /* Scale2DDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F0B154352E8004E64E3 /* Scale2DDragger.cpp */; };
+		373D84381552F2B6007F64F9 /* ScaleAxisDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F0C154352E8004E64E3 /* ScaleAxisDragger.cpp */; };
+		373D84391552F2B6007F64F9 /* TabBoxDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F0D154352E8004E64E3 /* TabBoxDragger.cpp */; };
+		373D843A1552F2B6007F64F9 /* TabBoxTrackballDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F0E154352E8004E64E3 /* TabBoxTrackballDragger.cpp */; };
+		373D843B1552F2B6007F64F9 /* TabPlaneDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F0F154352E8004E64E3 /* TabPlaneDragger.cpp */; };
+		373D843C1552F2B6007F64F9 /* TabPlaneTrackballDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F10154352E8004E64E3 /* TabPlaneTrackballDragger.cpp */; };
+		373D843D1552F2B6007F64F9 /* TrackballDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F11154352E8004E64E3 /* TrackballDragger.cpp */; };
+		373D843E1552F2B6007F64F9 /* Translate1DDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F12154352E8004E64E3 /* Translate1DDragger.cpp */; };
+		373D843F1552F2B6007F64F9 /* Translate2DDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F13154352E8004E64E3 /* Translate2DDragger.cpp */; };
+		373D84401552F2B6007F64F9 /* TranslateAxisDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F14154352E8004E64E3 /* TranslateAxisDragger.cpp */; };
+		373D84411552F2B6007F64F9 /* TranslatePlaneDragger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F15154352E8004E64E3 /* TranslatePlaneDragger.cpp */; };
+		373D84421552F2B6007F64F9 /* AccelOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F17154352E8004E64E3 /* AccelOperator.cpp */; };
+		373D84431552F2B6007F64F9 /* AngularAccelOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F18154352E8004E64E3 /* AngularAccelOperator.cpp */; };
+		373D84441552F2B6007F64F9 /* AngularDampingOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F19154352E8004E64E3 /* AngularDampingOperator.cpp */; };
+		373D84451552F2B6007F64F9 /* BounceOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F1A154352E8004E64E3 /* BounceOperator.cpp */; };
+		373D84461552F2B6007F64F9 /* BoxPlacer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F1B154352E8004E64E3 /* BoxPlacer.cpp */; };
+		373D84471552F2B6007F64F9 /* CenteredPlacer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F1C154352E8004E64E3 /* CenteredPlacer.cpp */; };
+		373D84481552F2B6007F64F9 /* CompositePlacer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F1E154352E8004E64E3 /* CompositePlacer.cpp */; };
+		373D84491552F2B6007F64F9 /* ConnectedParticleSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F1F154352E8004E64E3 /* ConnectedParticleSystem.cpp */; };
+		373D844A1552F2B6007F64F9 /* ConstantRateCounter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F20154352E8004E64E3 /* ConstantRateCounter.cpp */; };
+		373D844B1552F2B6007F64F9 /* Counter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F21154352E8004E64E3 /* Counter.cpp */; };
+		373D844C1552F2B6007F64F9 /* DampingOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F22154352E8004E64E3 /* DampingOperator.cpp */; };
+		373D844D1552F2B6007F64F9 /* DomainOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F23154352E8004E64E3 /* DomainOperator.cpp */; };
+		373D844E1552F2B6007F64F9 /* Emitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F24154352E8004E64E3 /* Emitter.cpp */; };
+		373D844F1552F2B6007F64F9 /* ExplosionDebrisEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F25154352E8004E64E3 /* ExplosionDebrisEffect.cpp */; };
+		373D84501552F2B6007F64F9 /* ExplosionEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F26154352E8004E64E3 /* ExplosionEffect.cpp */; };
+		373D84511552F2B6007F64F9 /* ExplosionOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F27154352E8004E64E3 /* ExplosionOperator.cpp */; };
+		373D84521552F2B6007F64F9 /* FireEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F28154352E8004E64E3 /* FireEffect.cpp */; };
+		373D84531552F2B6007F64F9 /* FluidFrictionOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F29154352E8004E64E3 /* FluidFrictionOperator.cpp */; };
+		373D84541552F2B6007F64F9 /* FluidProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F2A154352E8004E64E3 /* FluidProgram.cpp */; };
+		373D84551552F2B6007F64F9 /* ForceOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F2B154352E8004E64E3 /* ForceOperator.cpp */; };
+		373D84561552F2B6007F64F9 /* Interpolator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F2C154352E8004E64E3 /* Interpolator.cpp */; };
+		373D84571552F2B6007F64F9 /* LibraryWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F2D154352E8004E64E3 /* LibraryWrapper.cpp */; };
+		373D84581552F2B6007F64F9 /* LinearInterpolator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F2E154352E8004E64E3 /* LinearInterpolator.cpp */; };
+		373D84591552F2B6007F64F9 /* ModularEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F2F154352E8004E64E3 /* ModularEmitter.cpp */; };
+		373D845A1552F2B6007F64F9 /* ModularProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F30154352E8004E64E3 /* ModularProgram.cpp */; };
+		373D845B1552F2B6007F64F9 /* MultiSegmentPlacer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F31154352E8004E64E3 /* MultiSegmentPlacer.cpp */; };
+		373D845C1552F2B6007F64F9 /* Operator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F32154352E8004E64E3 /* Operator.cpp */; };
+		373D845D1552F2B6007F64F9 /* OrbitOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F33154352E8004E64E3 /* OrbitOperator.cpp */; };
+		373D845E1552F2B6007F64F9 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F34154352E8004E64E3 /* Particle.cpp */; };
+		373D845F1552F2B6007F64F9 /* ParticleEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F35154352E8004E64E3 /* ParticleEffect.cpp */; };
+		373D84601552F2B6007F64F9 /* ParticleProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F36154352E8004E64E3 /* ParticleProcessor.cpp */; };
+		373D84611552F2B6007F64F9 /* ParticleSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F37154352E8004E64E3 /* ParticleSystem.cpp */; };
+		373D84621552F2B6007F64F9 /* ParticleSystemUpdater.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F38154352E8004E64E3 /* ParticleSystemUpdater.cpp */; };
+		373D84631552F2B6007F64F9 /* Placer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F39154352E8004E64E3 /* Placer.cpp */; };
+		373D84641552F2B6007F64F9 /* PointPlacer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F3A154352E8004E64E3 /* PointPlacer.cpp */; };
+		373D84651552F2B6007F64F9 /* PrecipitationEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F3B154352E8004E64E3 /* PrecipitationEffect.cpp */; };
+		373D84661552F2B6007F64F9 /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F3C154352E8004E64E3 /* Program.cpp */; };
+		373D84671552F2B6007F64F9 /* RadialShooter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F3D154352E8004E64E3 /* RadialShooter.cpp */; };
+		373D84681552F2B6007F64F9 /* RandomRateCounter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F3E154352E8004E64E3 /* RandomRateCounter.cpp */; };
+		373D84691552F2B6007F64F9 /* SectorPlacer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F3F154352E8004E64E3 /* SectorPlacer.cpp */; };
+		373D846A1552F2B6007F64F9 /* SegmentPlacer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F40154352E8004E64E3 /* SegmentPlacer.cpp */; };
+		373D846B1552F2B6007F64F9 /* Shooter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F41154352E8004E64E3 /* Shooter.cpp */; };
+		373D846C1552F2B6007F64F9 /* SinkOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F42154352E8004E64E3 /* SinkOperator.cpp */; };
+		373D846D1552F2B6007F64F9 /* SmokeEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F43154352E8004E64E3 /* SmokeEffect.cpp */; };
+		373D846E1552F2B6007F64F9 /* SmokeTrailEffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F44154352E8004E64E3 /* SmokeTrailEffect.cpp */; };
+		373D846F1552F2B6007F64F9 /* VariableRateCounter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F45154352E8004E64E3 /* VariableRateCounter.cpp */; };
+		373D84701552F2B6007F64F9 /* DebugShadowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F48154352E8004E64E3 /* DebugShadowMap.cpp */; };
+		373D84711552F2B6007F64F9 /* LibraryWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F49154352E8004E64E3 /* LibraryWrapper.cpp */; };
+		373D84721552F2B6007F64F9 /* LightSpacePerspectiveShadowMapCB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F4A154352E8004E64E3 /* LightSpacePerspectiveShadowMapCB.cpp */; };
+		373D84731552F2B6007F64F9 /* LightSpacePerspectiveShadowMapDB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F4B154352E8004E64E3 /* LightSpacePerspectiveShadowMapDB.cpp */; };
+		373D84741552F2B6007F64F9 /* LightSpacePerspectiveShadowMapVB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F4C154352E8004E64E3 /* LightSpacePerspectiveShadowMapVB.cpp */; };
+		373D84751552F2B6007F64F9 /* MinimalCullBoundsShadowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F4D154352E8004E64E3 /* MinimalCullBoundsShadowMap.cpp */; };
+		373D84761552F2B6007F64F9 /* MinimalDrawBoundsShadowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F4E154352E8004E64E3 /* MinimalDrawBoundsShadowMap.cpp */; };
+		373D84771552F2B6007F64F9 /* MinimalShadowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F4F154352E8004E64E3 /* MinimalShadowMap.cpp */; };
+		373D84781552F2B6007F64F9 /* ParallelSplitShadowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F50154352E8004E64E3 /* ParallelSplitShadowMap.cpp */; };
+		373D84791552F2B6007F64F9 /* ShadowedScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F51154352E8004E64E3 /* ShadowedScene.cpp */; };
+		373D847A1552F2B6007F64F9 /* ShadowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F52154352E8004E64E3 /* ShadowMap.cpp */; };
+		373D847B1552F2B6007F64F9 /* ShadowTechnique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F53154352E8004E64E3 /* ShadowTechnique.cpp */; };
+		373D847C1552F2B6007F64F9 /* ShadowTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F54154352E8004E64E3 /* ShadowTexture.cpp */; };
+		373D847D1552F2B6007F64F9 /* ShadowVolume.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F55154352E8004E64E3 /* ShadowVolume.cpp */; };
+		373D847E1552F2B6007F64F9 /* SoftShadowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F56154352E8004E64E3 /* SoftShadowMap.cpp */; };
+		373D847F1552F2B6007F64F9 /* StandardShadowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F57154352E8004E64E3 /* StandardShadowMap.cpp */; };
+		373D84801552F2B6007F64F9 /* ViewDependentShadowTechnique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F58154352E8004E64E3 /* ViewDependentShadowTechnique.cpp */; };
+		373D84811552F2B6007F64F9 /* AzimElevationSector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F5A154352E8004E64E3 /* AzimElevationSector.cpp */; };
+		373D84821552F2B6007F64F9 /* AzimSector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F5B154352E8004E64E3 /* AzimSector.cpp */; };
+		373D84831552F2B6007F64F9 /* BlinkSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F5C154352E8004E64E3 /* BlinkSequence.cpp */; };
+		373D84841552F2B6007F64F9 /* ConeSector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F5E154352E8004E64E3 /* ConeSector.cpp */; };
+		373D84851552F2B6007F64F9 /* DirectionalSector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F5F154352E8004E64E3 /* DirectionalSector.cpp */; };
+		373D84861552F2B6007F64F9 /* DOFTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F60154352E8004E64E3 /* DOFTransform.cpp */; };
+		373D84871552F2B6007F64F9 /* ElevationSector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F61154352E8004E64E3 /* ElevationSector.cpp */; };
+		373D84881552F2B6007F64F9 /* Impostor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F62154352E8004E64E3 /* Impostor.cpp */; };
+		373D84891552F2B6007F64F9 /* LibraryWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F63154352E8004E64E3 /* LibraryWrapper.cpp */; };
+		373D848A1552F2B6007F64F9 /* LightPointNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F64154352E8004E64E3 /* LightPointNode.cpp */; };
+		373D848B1552F2B6007F64F9 /* LightPointSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F65154352E8004E64E3 /* LightPointSystem.cpp */; };
+		373D848C1552F2B6007F64F9 /* MultiSwitch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F66154352E8004E64E3 /* MultiSwitch.cpp */; };
+		373D848D1552F2B6007F64F9 /* ObjectRecordData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F67154352E8004E64E3 /* ObjectRecordData.cpp */; };
+		373D848E1552F2B6007F64F9 /* OverlayNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F68154352E8004E64E3 /* OverlayNode.cpp */; };
+		373D848F1552F2B6007F64F9 /* ScalarBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F69154352E8004E64E3 /* ScalarBar.cpp */; };
+		373D84901552F2B6007F64F9 /* Sector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F6A154352E8004E64E3 /* Sector.cpp */; };
+		373D84911552F2B6007F64F9 /* SequenceGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F6B154352E8004E64E3 /* SequenceGroup.cpp */; };
+		373D84921552F2B6007F64F9 /* ShapeAttributeList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F6C154352E8004E64E3 /* ShapeAttributeList.cpp */; };
+		373D84931552F2B6007F64F9 /* SphereSegment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F6D154352E8004E64E3 /* SphereSegment.cpp */; };
+		373D84941552F2B6007F64F9 /* VisibilityGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F6E154352E8004E64E3 /* VisibilityGroup.cpp */; };
+		373D84951552F2B6007F64F9 /* CompositeLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F71154352E8004E64E3 /* CompositeLayer.cpp */; };
+		373D84961552F2B6007F64F9 /* ContourLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F72154352E8004E64E3 /* ContourLayer.cpp */; };
+		373D84971552F2B6007F64F9 /* GeometryTechnique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F73154352E8004E64E3 /* GeometryTechnique.cpp */; };
+		373D84981552F2B6007F64F9 /* HeightFieldLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F74154352E8004E64E3 /* HeightFieldLayer.cpp */; };
+		373D84991552F2B6007F64F9 /* ImageLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F75154352E8004E64E3 /* ImageLayer.cpp */; };
+		373D849A1552F2B6007F64F9 /* Layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F76154352E8004E64E3 /* Layer.cpp */; };
+		373D849B1552F2B6007F64F9 /* LibraryWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F77154352E8004E64E3 /* LibraryWrapper.cpp */; };
+		373D849C1552F2B6007F64F9 /* Locator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F78154352E8004E64E3 /* Locator.cpp */; };
+		373D849D1552F2B6007F64F9 /* ProxyLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F79154352E8004E64E3 /* ProxyLayer.cpp */; };
+		373D849E1552F2B6007F64F9 /* SwitchLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F7A154352E8004E64E3 /* SwitchLayer.cpp */; };
+		373D849F1552F2B6007F64F9 /* Terrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F7B154352E8004E64E3 /* Terrain.cpp */; };
+		373D84A01552F2B6007F64F9 /* TerrainTechnique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F7C154352E8004E64E3 /* TerrainTechnique.cpp */; };
+		373D84A11552F2B6007F64F9 /* TerrainTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F7D154352E8004E64E3 /* TerrainTile.cpp */; };
+		373D84A21552F2B6007F64F9 /* FadeText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F80154352E8004E64E3 /* FadeText.cpp */; };
+		373D84A31552F2B6007F64F9 /* LibraryWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F81154352E8004E64E3 /* LibraryWrapper.cpp */; };
+		373D84A41552F2B6007F64F9 /* Text.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F82154352E8004E64E3 /* Text.cpp */; };
+		373D84A51552F2B6007F64F9 /* Text3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F83154352E8004E64E3 /* Text3D.cpp */; };
+		373D84A61552F2B6007F64F9 /* TextBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F84154352E8004E64E3 /* TextBase.cpp */; };
+		373D84A71552F2B6007F64F9 /* AlphaFuncProperty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F86154352E8004E64E3 /* AlphaFuncProperty.cpp */; };
+		373D84A81552F2B6007F64F9 /* CompositeLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F88154352E8004E64E3 /* CompositeLayer.cpp */; };
+		373D84A91552F2B6007F64F9 /* CompositeProperty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F89154352E8004E64E3 /* CompositeProperty.cpp */; };
+		373D84AA1552F2B6007F64F9 /* FixedFunctionTechnique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F8A154352E8004E64E3 /* FixedFunctionTechnique.cpp */; };
+		373D84AB1552F2B6007F64F9 /* ImageDetails.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F8B154352E8004E64E3 /* ImageDetails.cpp */; };
+		373D84AC1552F2B6007F64F9 /* ImageLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F8C154352E8004E64E3 /* ImageLayer.cpp */; };
+		373D84AD1552F2B6007F64F9 /* IsoSurfaceProperty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F8D154352E8004E64E3 /* IsoSurfaceProperty.cpp */; };
+		373D84AE1552F2B6007F64F9 /* Layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F8E154352E8004E64E3 /* Layer.cpp */; };
+		373D84AF1552F2B6007F64F9 /* LibraryWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F8F154352E8004E64E3 /* LibraryWrapper.cpp */; };
+		373D84B01552F2B6007F64F9 /* LightingProperty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F90154352E8004E64E3 /* LightingProperty.cpp */; };
+		373D84B11552F2B6007F64F9 /* Locator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F91154352E8004E64E3 /* Locator.cpp */; };
+		373D84B21552F2B6007F64F9 /* MaximumIntensityProjectionProperty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F92154352E8004E64E3 /* MaximumIntensityProjectionProperty.cpp */; };
+		373D84B31552F2B6007F64F9 /* Property.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F93154352E8004E64E3 /* Property.cpp */; };
+		373D84B41552F2B6007F64F9 /* PropertyAdjustmentCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F94154352E8004E64E3 /* PropertyAdjustmentCallback.cpp */; };
+		373D84B51552F2B6007F64F9 /* RayTracedTechnique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F95154352E8004E64E3 /* RayTracedTechnique.cpp */; };
+		373D84B61552F2B6007F64F9 /* SampleDensityProperty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F96154352E8004E64E3 /* SampleDensityProperty.cpp */; };
+		373D84B71552F2B6007F64F9 /* ScalarProperty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F97154352E8004E64E3 /* ScalarProperty.cpp */; };
+		373D84B81552F2B6007F64F9 /* SwitchProperty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F98154352E8004E64E3 /* SwitchProperty.cpp */; };
+		373D84B91552F2B6007F64F9 /* TransferFunctionProperty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F99154352E8004E64E3 /* TransferFunctionProperty.cpp */; };
+		373D84BA1552F2B6007F64F9 /* TransparencyProperty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F9A154352E8004E64E3 /* TransparencyProperty.cpp */; };
+		373D84BB1552F2B6007F64F9 /* Volume.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F9B154352E8004E64E3 /* Volume.cpp */; };
+		373D84BC1552F2B6007F64F9 /* VolumeTechnique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F9C154352E8004E64E3 /* VolumeTechnique.cpp */; };
+		373D84BD1552F2B6007F64F9 /* VolumeTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400F9D154352E8004E64E3 /* VolumeTile.cpp */; };
+		373D84C31552F2B6007F64F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740056815435282004E64E3 /* Foundation.framework */; };
+		373D84C51552F2B6007F64F9 /* PThreadBarrierPrivateData.h in Headers */ = {isa = PBXBuildFile; fileRef = 374007C2154352E7004E64E3 /* PThreadBarrierPrivateData.h */; };
+		373D84C61552F2B6007F64F9 /* PThreadConditionPrivateData.h in Headers */ = {isa = PBXBuildFile; fileRef = 374007C4154352E7004E64E3 /* PThreadConditionPrivateData.h */; };
+		373D84C71552F2B6007F64F9 /* PThreadMutexPrivateData.h in Headers */ = {isa = PBXBuildFile; fileRef = 374007C6154352E7004E64E3 /* PThreadMutexPrivateData.h */; };
+		373D84C81552F2B6007F64F9 /* PThreadPrivateData.h in Headers */ = {isa = PBXBuildFile; fileRef = 374007C7154352E7004E64E3 /* PThreadPrivateData.h */; };
+		373D84C91552F2B6007F64F9 /* dxtctool.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400814154352E7004E64E3 /* dxtctool.h */; };
+		373D84CA1552F2B6007F64F9 /* GLStaticLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400821154352E7004E64E3 /* GLStaticLibrary.h */; };
+		373D84CB1552F2B6007F64F9 /* dict-list.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400825154352E7004E64E3 /* dict-list.h */; };
+		373D84CC1552F2B6007F64F9 /* dict.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400827154352E7004E64E3 /* dict.h */; };
+		373D84CD1552F2B6007F64F9 /* geom.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400829154352E7004E64E3 /* geom.h */; };
+		373D84CE1552F2B6007F64F9 /* memalloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 3740082B154352E7004E64E3 /* memalloc.h */; };
+		373D84CF1552F2B6007F64F9 /* mesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 3740082D154352E7004E64E3 /* mesh.h */; };
+		373D84D01552F2B6007F64F9 /* normal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3740082F154352E7004E64E3 /* normal.h */; };
+		373D84D11552F2B6007F64F9 /* priorityq-heap.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400831154352E7004E64E3 /* priorityq-heap.h */; };
+		373D84D21552F2B6007F64F9 /* priorityq-sort.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400832154352E7004E64E3 /* priorityq-sort.h */; };
+		373D84D31552F2B6007F64F9 /* priorityq.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400834154352E7004E64E3 /* priorityq.h */; };
+		373D84D41552F2B6007F64F9 /* render.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400837154352E7004E64E3 /* render.h */; };
+		373D84D51552F2B6007F64F9 /* sweep.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400839154352E7004E64E3 /* sweep.h */; };
+		373D84D61552F2B6007F64F9 /* tess.h in Headers */ = {isa = PBXBuildFile; fileRef = 3740083B154352E7004E64E3 /* tess.h */; };
+		373D84D71552F2B6007F64F9 /* tessmono.h in Headers */ = {isa = PBXBuildFile; fileRef = 3740083D154352E7004E64E3 /* tessmono.h */; };
+		373D85A41552F2B6007F64F9 /* obj.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400B9D154352E7004E64E3 /* obj.h */; };
+		373D85A51552F2B6007F64F9 /* OBJWriterNodeVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400B9F154352E7004E64E3 /* OBJWriterNodeVisitor.h */; };
+		373D85B91552F2B6007F64F9 /* AsciiStreamOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400BDA154352E7004E64E3 /* AsciiStreamOperator.h */; };
+		373D85BA1552F2B6007F64F9 /* BinaryStreamOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400BDB154352E7004E64E3 /* BinaryStreamOperator.h */; };
+		373D85BB1552F2B6007F64F9 /* XmlStreamOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400BDF154352E7004E64E3 /* XmlStreamOperator.h */; };
+		373D85DC1552F2B6007F64F9 /* LightPointDrawable.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400CE9154352E8004E64E3 /* LightPointDrawable.h */; };
+		373D85DD1552F2B6007F64F9 /* LightPointSpriteDrawable.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400CEC154352E8004E64E3 /* LightPointSpriteDrawable.h */; };
+		373D85DE1552F2B6007F64F9 /* DefaultFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400D03154352E8004E64E3 /* DefaultFont.h */; };
+		373D85DF1552F2B6007F64F9 /* GlyphGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400D08154352E8004E64E3 /* GlyphGeometry.h */; };
+		373D85E01552F2B6007F64F9 /* cache_simulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400D37154352E8004E64E3 /* cache_simulator.h */; };
+		373D85E11552F2B6007F64F9 /* connectivity_graph.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400D38154352E8004E64E3 /* connectivity_graph.h */; };
+		373D85E21552F2B6007F64F9 /* graph_array.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400D39154352E8004E64E3 /* graph_array.h */; };
+		373D85E31552F2B6007F64F9 /* heap_array.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400D3A154352E8004E64E3 /* heap_array.h */; };
+		373D85E41552F2B6007F64F9 /* policy.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400D3B154352E8004E64E3 /* policy.h */; };
+		373D85E51552F2B6007F64F9 /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400D3C154352E8004E64E3 /* types.h */; };
+		373D85E61552F2B6007F64F9 /* public_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400D3D154352E8004E64E3 /* public_types.h */; };
+		373D85E71552F2B6007F64F9 /* tri_stripper.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400D3E154352E8004E64E3 /* tri_stripper.h */; };
+		373D85E81552F2B6007F64F9 /* IOSUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400D52154352E8004E64E3 /* IOSUtils.h */; };
+		373D85E91552F2B6007F64F9 /* Matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400DBB154352E8004E64E3 /* Matrix.h */; };
+		373D85EA1552F2B6007F64F9 /* Matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400DEA154352E8004E64E3 /* Matrix.h */; };
+		373D85EB1552F2B6007F64F9 /* IO_LightPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400E31154352E8004E64E3 /* IO_LightPoint.h */; };
 		3740056915435282004E64E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3740056815435282004E64E3 /* Foundation.framework */; };
 		37400F9E154352E9004E64E3 /* Atomic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007BA154352E7004E64E3 /* Atomic.cpp */; };
 		37400F9F154352E9004E64E3 /* Version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 374007BC154352E7004E64E3 /* Version.cpp */; };
@@ -1568,10 +2355,17 @@
 		3740170915437DC7004E64E3 /* ReaderWriterDirectX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CAC154352E8004E64E3 /* ReaderWriterDirectX.cpp */; };
 		3740170A15437DC7004E64E3 /* types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CAD154352E8004E64E3 /* types.cpp */; };
 		3740170B15437DC7004E64E3 /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400CAE154352E8004E64E3 /* types.h */; };
+		375240B815530F320000AA53 /* FreeTypeFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400A02154352E7004E64E3 /* FreeTypeFont.cpp */; };
+		375240B915530F320000AA53 /* FreeTypeFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400A03154352E7004E64E3 /* FreeTypeFont.h */; };
+		375240BA15530F320000AA53 /* FreeTypeLibrary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400A04154352E7004E64E3 /* FreeTypeLibrary.cpp */; };
+		375240BB15530F320000AA53 /* FreeTypeLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 37400A05154352E7004E64E3 /* FreeTypeLibrary.h */; };
+		375240BC15530F320000AA53 /* ReaderWriterFreeType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400A06154352E7004E64E3 /* ReaderWriterFreeType.cpp */; };
+		375240BE15530F3A0000AA53 /* ReaderWriterImageIO_IOS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400A31154352E7004E64E3 /* ReaderWriterImageIO_IOS.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		373D7FD11552E8C9007F64F9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		373D85F21552F2B6007F64F9 /* libOpenSceneGraph-iOS-lite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libOpenSceneGraph-iOS-lite.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3740056515435282004E64E3 /* libOpenSceneGraph-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libOpenSceneGraph-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3740056815435282004E64E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		37400578154352E6004E64E3 /* Atomic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Atomic; sourceTree = "<group>"; };
@@ -4020,6 +4814,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		373D84C21552F2B6007F64F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				373D84C31552F2B6007F64F9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3740056215435282004E64E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -4047,6 +4849,7 @@
 			isa = PBXGroup;
 			children = (
 				3740056515435282004E64E3 /* libOpenSceneGraph-iOS.a */,
+				373D85F21552F2B6007F64F9 /* libOpenSceneGraph-iOS-lite.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -7833,6 +8636,55 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		373D84C41552F2B6007F64F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				373D84C51552F2B6007F64F9 /* PThreadBarrierPrivateData.h in Headers */,
+				373D84C61552F2B6007F64F9 /* PThreadConditionPrivateData.h in Headers */,
+				373D84C71552F2B6007F64F9 /* PThreadMutexPrivateData.h in Headers */,
+				373D84C81552F2B6007F64F9 /* PThreadPrivateData.h in Headers */,
+				373D84C91552F2B6007F64F9 /* dxtctool.h in Headers */,
+				373D84CA1552F2B6007F64F9 /* GLStaticLibrary.h in Headers */,
+				373D84CB1552F2B6007F64F9 /* dict-list.h in Headers */,
+				373D84CC1552F2B6007F64F9 /* dict.h in Headers */,
+				373D84CD1552F2B6007F64F9 /* geom.h in Headers */,
+				373D84CE1552F2B6007F64F9 /* memalloc.h in Headers */,
+				373D84CF1552F2B6007F64F9 /* mesh.h in Headers */,
+				373D84D01552F2B6007F64F9 /* normal.h in Headers */,
+				373D84D11552F2B6007F64F9 /* priorityq-heap.h in Headers */,
+				373D84D21552F2B6007F64F9 /* priorityq-sort.h in Headers */,
+				373D84D31552F2B6007F64F9 /* priorityq.h in Headers */,
+				373D84D41552F2B6007F64F9 /* render.h in Headers */,
+				373D84D51552F2B6007F64F9 /* sweep.h in Headers */,
+				373D84D61552F2B6007F64F9 /* tess.h in Headers */,
+				373D84D71552F2B6007F64F9 /* tessmono.h in Headers */,
+				373D85A41552F2B6007F64F9 /* obj.h in Headers */,
+				373D85A51552F2B6007F64F9 /* OBJWriterNodeVisitor.h in Headers */,
+				373D85B91552F2B6007F64F9 /* AsciiStreamOperator.h in Headers */,
+				373D85BA1552F2B6007F64F9 /* BinaryStreamOperator.h in Headers */,
+				373D85BB1552F2B6007F64F9 /* XmlStreamOperator.h in Headers */,
+				373D85DC1552F2B6007F64F9 /* LightPointDrawable.h in Headers */,
+				373D85DD1552F2B6007F64F9 /* LightPointSpriteDrawable.h in Headers */,
+				373D85DE1552F2B6007F64F9 /* DefaultFont.h in Headers */,
+				373D85DF1552F2B6007F64F9 /* GlyphGeometry.h in Headers */,
+				373D85E01552F2B6007F64F9 /* cache_simulator.h in Headers */,
+				373D85E11552F2B6007F64F9 /* connectivity_graph.h in Headers */,
+				373D85E21552F2B6007F64F9 /* graph_array.h in Headers */,
+				373D85E31552F2B6007F64F9 /* heap_array.h in Headers */,
+				373D85E41552F2B6007F64F9 /* policy.h in Headers */,
+				373D85E51552F2B6007F64F9 /* types.h in Headers */,
+				373D85E61552F2B6007F64F9 /* public_types.h in Headers */,
+				373D85E71552F2B6007F64F9 /* tri_stripper.h in Headers */,
+				373D85E81552F2B6007F64F9 /* IOSUtils.h in Headers */,
+				373D85E91552F2B6007F64F9 /* Matrix.h in Headers */,
+				373D85EA1552F2B6007F64F9 /* Matrix.h in Headers */,
+				373D85EB1552F2B6007F64F9 /* IO_LightPoint.h in Headers */,
+				375240B915530F320000AA53 /* FreeTypeFont.h in Headers */,
+				375240BB15530F320000AA53 /* FreeTypeLibrary.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3740056315435282004E64E3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -8141,6 +8993,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		373D7FD21552F2B6007F64F9 /* OpenSceneGraph-iOS-lite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 373D85EF1552F2B6007F64F9 /* Build configuration list for PBXNativeTarget "OpenSceneGraph-iOS-lite" */;
+			buildPhases = (
+				373D7FD31552F2B6007F64F9 /* Sources */,
+				373D84C21552F2B6007F64F9 /* Frameworks */,
+				373D84C41552F2B6007F64F9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenSceneGraph-iOS-lite";
+			productName = "OpenSceneGraph-iOS";
+			productReference = 373D85F21552F2B6007F64F9 /* libOpenSceneGraph-iOS-lite.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		3740056415435282004E64E3 /* OpenSceneGraph-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3740057215435282004E64E3 /* Build configuration list for PBXNativeTarget "OpenSceneGraph-iOS" */;
@@ -8179,11 +9048,769 @@
 			projectRoot = "";
 			targets = (
 				3740056415435282004E64E3 /* OpenSceneGraph-iOS */,
+				373D7FD21552F2B6007F64F9 /* OpenSceneGraph-iOS-lite */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		373D7FD31552F2B6007F64F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				373D7FD41552F2B6007F64F9 /* Atomic.cpp in Sources */,
+				373D7FD51552F2B6007F64F9 /* Version.cpp in Sources */,
+				373D7FD61552F2B6007F64F9 /* PThread.cpp in Sources */,
+				373D7FD71552F2B6007F64F9 /* PThreadBarrier.cpp in Sources */,
+				373D7FD81552F2B6007F64F9 /* PThreadCondition.cpp in Sources */,
+				373D7FD91552F2B6007F64F9 /* PThreadMutex.cpp in Sources */,
+				373D7FDA1552F2B6007F64F9 /* AlphaFunc.cpp in Sources */,
+				373D7FDB1552F2B6007F64F9 /* AnimationPath.cpp in Sources */,
+				373D7FDC1552F2B6007F64F9 /* ApplicationUsage.cpp in Sources */,
+				373D7FDD1552F2B6007F64F9 /* ArgumentParser.cpp in Sources */,
+				373D7FDE1552F2B6007F64F9 /* Array.cpp in Sources */,
+				373D7FDF1552F2B6007F64F9 /* ArrayDispatchers.cpp in Sources */,
+				373D7FE01552F2B6007F64F9 /* AudioStream.cpp in Sources */,
+				373D7FE11552F2B6007F64F9 /* AutoTransform.cpp in Sources */,
+				373D7FE21552F2B6007F64F9 /* Billboard.cpp in Sources */,
+				373D7FE31552F2B6007F64F9 /* BlendColor.cpp in Sources */,
+				373D7FE41552F2B6007F64F9 /* BlendEquation.cpp in Sources */,
+				373D7FE51552F2B6007F64F9 /* BlendFunc.cpp in Sources */,
+				373D7FE61552F2B6007F64F9 /* BufferIndexBinding.cpp in Sources */,
+				373D7FE71552F2B6007F64F9 /* BufferObject.cpp in Sources */,
+				373D7FE81552F2B6007F64F9 /* Camera.cpp in Sources */,
+				373D7FE91552F2B6007F64F9 /* CameraView.cpp in Sources */,
+				373D7FEA1552F2B6007F64F9 /* ClampColor.cpp in Sources */,
+				373D7FEB1552F2B6007F64F9 /* ClearNode.cpp in Sources */,
+				373D7FEC1552F2B6007F64F9 /* ClipNode.cpp in Sources */,
+				373D7FED1552F2B6007F64F9 /* ClipPlane.cpp in Sources */,
+				373D7FEE1552F2B6007F64F9 /* ClusterCullingCallback.cpp in Sources */,
+				373D7FEF1552F2B6007F64F9 /* CollectOccludersVisitor.cpp in Sources */,
+				373D7FF01552F2B6007F64F9 /* ColorMask.cpp in Sources */,
+				373D7FF11552F2B6007F64F9 /* ColorMatrix.cpp in Sources */,
+				373D7FF21552F2B6007F64F9 /* ComputeBoundsVisitor.cpp in Sources */,
+				373D7FF31552F2B6007F64F9 /* ConvexPlanarOccluder.cpp in Sources */,
+				373D7FF41552F2B6007F64F9 /* ConvexPlanarPolygon.cpp in Sources */,
+				373D7FF51552F2B6007F64F9 /* CoordinateSystemNode.cpp in Sources */,
+				373D7FF61552F2B6007F64F9 /* CopyOp.cpp in Sources */,
+				373D7FF71552F2B6007F64F9 /* CullFace.cpp in Sources */,
+				373D7FF81552F2B6007F64F9 /* CullingSet.cpp in Sources */,
+				373D7FF91552F2B6007F64F9 /* CullSettings.cpp in Sources */,
+				373D7FFA1552F2B6007F64F9 /* CullStack.cpp in Sources */,
+				373D7FFB1552F2B6007F64F9 /* DeleteHandler.cpp in Sources */,
+				373D7FFC1552F2B6007F64F9 /* Depth.cpp in Sources */,
+				373D7FFD1552F2B6007F64F9 /* DisplaySettings.cpp in Sources */,
+				373D7FFE1552F2B6007F64F9 /* Drawable.cpp in Sources */,
+				373D7FFF1552F2B6007F64F9 /* DrawPixels.cpp in Sources */,
+				373D80001552F2B6007F64F9 /* dxtctool.cpp in Sources */,
+				373D80011552F2B6007F64F9 /* Fog.cpp in Sources */,
+				373D80021552F2B6007F64F9 /* FragmentProgram.cpp in Sources */,
+				373D80031552F2B6007F64F9 /* FrameBufferObject.cpp in Sources */,
+				373D80041552F2B6007F64F9 /* FrameStamp.cpp in Sources */,
+				373D80051552F2B6007F64F9 /* FrontFace.cpp in Sources */,
+				373D80061552F2B6007F64F9 /* Geode.cpp in Sources */,
+				373D80071552F2B6007F64F9 /* Geometry.cpp in Sources */,
+				373D80081552F2B6007F64F9 /* GL2Extensions.cpp in Sources */,
+				373D80091552F2B6007F64F9 /* GLBeginEndAdapter.cpp in Sources */,
+				373D800A1552F2B6007F64F9 /* GLExtensions.cpp in Sources */,
+				373D800B1552F2B6007F64F9 /* GLObjects.cpp in Sources */,
+				373D800C1552F2B6007F64F9 /* GLStaticLibrary.cpp in Sources */,
+				373D800D1552F2B6007F64F9 /* dict.cpp in Sources */,
+				373D800E1552F2B6007F64F9 /* geom.cpp in Sources */,
+				373D800F1552F2B6007F64F9 /* memalloc.cpp in Sources */,
+				373D80101552F2B6007F64F9 /* mesh.cpp in Sources */,
+				373D80111552F2B6007F64F9 /* normal.cpp in Sources */,
+				373D80121552F2B6007F64F9 /* priorityq-heap.cpp in Sources */,
+				373D80131552F2B6007F64F9 /* priorityq.cpp in Sources */,
+				373D80141552F2B6007F64F9 /* render.cpp in Sources */,
+				373D80151552F2B6007F64F9 /* sweep.cpp in Sources */,
+				373D80161552F2B6007F64F9 /* tess.cpp in Sources */,
+				373D80171552F2B6007F64F9 /* tessmono.cpp in Sources */,
+				373D80181552F2B6007F64F9 /* error.cpp in Sources */,
+				373D80191552F2B6007F64F9 /* mipmap.cpp in Sources */,
+				373D801A1552F2B6007F64F9 /* GraphicsContext.cpp in Sources */,
+				373D801B1552F2B6007F64F9 /* GraphicsCostEstimator.cpp in Sources */,
+				373D801C1552F2B6007F64F9 /* GraphicsThread.cpp in Sources */,
+				373D801D1552F2B6007F64F9 /* Group.cpp in Sources */,
+				373D801E1552F2B6007F64F9 /* Hint.cpp in Sources */,
+				373D801F1552F2B6007F64F9 /* Image.cpp in Sources */,
+				373D80201552F2B6007F64F9 /* ImageSequence.cpp in Sources */,
+				373D80211552F2B6007F64F9 /* ImageStream.cpp in Sources */,
+				373D80221552F2B6007F64F9 /* ImageUtils.cpp in Sources */,
+				373D80231552F2B6007F64F9 /* KdTree.cpp in Sources */,
+				373D80241552F2B6007F64F9 /* Light.cpp in Sources */,
+				373D80251552F2B6007F64F9 /* LightModel.cpp in Sources */,
+				373D80261552F2B6007F64F9 /* LightSource.cpp in Sources */,
+				373D80271552F2B6007F64F9 /* LineSegment.cpp in Sources */,
+				373D80281552F2B6007F64F9 /* LineStipple.cpp in Sources */,
+				373D80291552F2B6007F64F9 /* LineWidth.cpp in Sources */,
+				373D802A1552F2B6007F64F9 /* LOD.cpp in Sources */,
+				373D802B1552F2B6007F64F9 /* LogicOp.cpp in Sources */,
+				373D802C1552F2B6007F64F9 /* Material.cpp in Sources */,
+				373D802D1552F2B6007F64F9 /* Math.cpp in Sources */,
+				373D802E1552F2B6007F64F9 /* Matrixd.cpp in Sources */,
+				373D802F1552F2B6007F64F9 /* MatrixDecomposition.cpp in Sources */,
+				373D80301552F2B6007F64F9 /* Matrixf.cpp in Sources */,
+				373D80311552F2B6007F64F9 /* MatrixTransform.cpp in Sources */,
+				373D80321552F2B6007F64F9 /* Multisample.cpp in Sources */,
+				373D80331552F2B6007F64F9 /* Node.cpp in Sources */,
+				373D80341552F2B6007F64F9 /* NodeCallback.cpp in Sources */,
+				373D80351552F2B6007F64F9 /* NodeTrackerCallback.cpp in Sources */,
+				373D80361552F2B6007F64F9 /* NodeVisitor.cpp in Sources */,
+				373D80371552F2B6007F64F9 /* Notify.cpp in Sources */,
+				373D80381552F2B6007F64F9 /* Object.cpp in Sources */,
+				373D80391552F2B6007F64F9 /* Observer.cpp in Sources */,
+				373D803A1552F2B6007F64F9 /* ObserverNodePath.cpp in Sources */,
+				373D803B1552F2B6007F64F9 /* OccluderNode.cpp in Sources */,
+				373D803C1552F2B6007F64F9 /* OcclusionQueryNode.cpp in Sources */,
+				373D803D1552F2B6007F64F9 /* OperationThread.cpp in Sources */,
+				373D803E1552F2B6007F64F9 /* PagedLOD.cpp in Sources */,
+				373D803F1552F2B6007F64F9 /* Point.cpp in Sources */,
+				373D80401552F2B6007F64F9 /* PointSprite.cpp in Sources */,
+				373D80411552F2B6007F64F9 /* PolygonMode.cpp in Sources */,
+				373D80421552F2B6007F64F9 /* PolygonOffset.cpp in Sources */,
+				373D80431552F2B6007F64F9 /* PolygonStipple.cpp in Sources */,
+				373D80441552F2B6007F64F9 /* PositionAttitudeTransform.cpp in Sources */,
+				373D80451552F2B6007F64F9 /* PrimitiveSet.cpp in Sources */,
+				373D80461552F2B6007F64F9 /* Program.cpp in Sources */,
+				373D80471552F2B6007F64F9 /* Projection.cpp in Sources */,
+				373D80481552F2B6007F64F9 /* ProxyNode.cpp in Sources */,
+				373D80491552F2B6007F64F9 /* Quat.cpp in Sources */,
+				373D804A1552F2B6007F64F9 /* Referenced.cpp in Sources */,
+				373D804B1552F2B6007F64F9 /* Scissor.cpp in Sources */,
+				373D804C1552F2B6007F64F9 /* Sequence.cpp in Sources */,
+				373D804D1552F2B6007F64F9 /* ShadeModel.cpp in Sources */,
+				373D804E1552F2B6007F64F9 /* Shader.cpp in Sources */,
+				373D804F1552F2B6007F64F9 /* ShaderAttribute.cpp in Sources */,
+				373D80501552F2B6007F64F9 /* ShaderComposer.cpp in Sources */,
+				373D80511552F2B6007F64F9 /* ShadowVolumeOccluder.cpp in Sources */,
+				373D80521552F2B6007F64F9 /* Shape.cpp in Sources */,
+				373D80531552F2B6007F64F9 /* ShapeDrawable.cpp in Sources */,
+				373D80541552F2B6007F64F9 /* State.cpp in Sources */,
+				373D80551552F2B6007F64F9 /* StateAttribute.cpp in Sources */,
+				373D80561552F2B6007F64F9 /* StateSet.cpp in Sources */,
+				373D80571552F2B6007F64F9 /* Stats.cpp in Sources */,
+				373D80581552F2B6007F64F9 /* Stencil.cpp in Sources */,
+				373D80591552F2B6007F64F9 /* StencilTwoSided.cpp in Sources */,
+				373D805A1552F2B6007F64F9 /* Switch.cpp in Sources */,
+				373D805B1552F2B6007F64F9 /* TexEnv.cpp in Sources */,
+				373D805C1552F2B6007F64F9 /* TexEnvCombine.cpp in Sources */,
+				373D805D1552F2B6007F64F9 /* TexEnvFilter.cpp in Sources */,
+				373D805E1552F2B6007F64F9 /* TexGen.cpp in Sources */,
+				373D805F1552F2B6007F64F9 /* TexGenNode.cpp in Sources */,
+				373D80601552F2B6007F64F9 /* TexMat.cpp in Sources */,
+				373D80611552F2B6007F64F9 /* Texture.cpp in Sources */,
+				373D80621552F2B6007F64F9 /* Texture1D.cpp in Sources */,
+				373D80631552F2B6007F64F9 /* Texture2D.cpp in Sources */,
+				373D80641552F2B6007F64F9 /* Texture2DArray.cpp in Sources */,
+				373D80651552F2B6007F64F9 /* Texture2DMultisample.cpp in Sources */,
+				373D80661552F2B6007F64F9 /* Texture3D.cpp in Sources */,
+				373D80671552F2B6007F64F9 /* TextureCubeMap.cpp in Sources */,
+				373D80681552F2B6007F64F9 /* TextureRectangle.cpp in Sources */,
+				373D80691552F2B6007F64F9 /* Timer.cpp in Sources */,
+				373D806A1552F2B6007F64F9 /* TransferFunction.cpp in Sources */,
+				373D806B1552F2B6007F64F9 /* Transform.cpp in Sources */,
+				373D806C1552F2B6007F64F9 /* Uniform.cpp in Sources */,
+				373D806D1552F2B6007F64F9 /* UserDataContainer.cpp in Sources */,
+				373D806E1552F2B6007F64F9 /* Version.cpp in Sources */,
+				373D806F1552F2B6007F64F9 /* VertexProgram.cpp in Sources */,
+				373D80701552F2B6007F64F9 /* View.cpp in Sources */,
+				373D80711552F2B6007F64F9 /* Viewport.cpp in Sources */,
+				373D80721552F2B6007F64F9 /* Action.cpp in Sources */,
+				373D80731552F2B6007F64F9 /* ActionAnimation.cpp in Sources */,
+				373D80741552F2B6007F64F9 /* ActionBlendIn.cpp in Sources */,
+				373D80751552F2B6007F64F9 /* ActionBlendOut.cpp in Sources */,
+				373D80761552F2B6007F64F9 /* ActionCallback.cpp in Sources */,
+				373D80771552F2B6007F64F9 /* ActionStripAnimation.cpp in Sources */,
+				373D80781552F2B6007F64F9 /* ActionVisitor.cpp in Sources */,
+				373D80791552F2B6007F64F9 /* Animation.cpp in Sources */,
+				373D807A1552F2B6007F64F9 /* AnimationManagerBase.cpp in Sources */,
+				373D807B1552F2B6007F64F9 /* BasicAnimationManager.cpp in Sources */,
+				373D807C1552F2B6007F64F9 /* Bone.cpp in Sources */,
+				373D807D1552F2B6007F64F9 /* BoneMapVisitor.cpp in Sources */,
+				373D807E1552F2B6007F64F9 /* Channel.cpp in Sources */,
+				373D807F1552F2B6007F64F9 /* LinkVisitor.cpp in Sources */,
+				373D80801552F2B6007F64F9 /* MorphGeometry.cpp in Sources */,
+				373D80811552F2B6007F64F9 /* RigGeometry.cpp in Sources */,
+				373D80821552F2B6007F64F9 /* RigTransformHardware.cpp in Sources */,
+				373D80831552F2B6007F64F9 /* RigTransformSoftware.cpp in Sources */,
+				373D80841552F2B6007F64F9 /* Skeleton.cpp in Sources */,
+				373D80851552F2B6007F64F9 /* StackedMatrixElement.cpp in Sources */,
+				373D80861552F2B6007F64F9 /* StackedQuaternionElement.cpp in Sources */,
+				373D80871552F2B6007F64F9 /* StackedRotateAxisElement.cpp in Sources */,
+				373D80881552F2B6007F64F9 /* StackedScaleElement.cpp in Sources */,
+				373D80891552F2B6007F64F9 /* StackedTransform.cpp in Sources */,
+				373D808A1552F2B6007F64F9 /* StackedTranslateElement.cpp in Sources */,
+				373D808B1552F2B6007F64F9 /* StatsHandler.cpp in Sources */,
+				373D808C1552F2B6007F64F9 /* StatsVisitor.cpp in Sources */,
+				373D808D1552F2B6007F64F9 /* Target.cpp in Sources */,
+				373D808E1552F2B6007F64F9 /* Timeline.cpp in Sources */,
+				373D808F1552F2B6007F64F9 /* TimelineAnimationManager.cpp in Sources */,
+				373D80901552F2B6007F64F9 /* UpdateBone.cpp in Sources */,
+				373D80911552F2B6007F64F9 /* UpdateMaterial.cpp in Sources */,
+				373D80921552F2B6007F64F9 /* UpdateMatrixTransform.cpp in Sources */,
+				373D80931552F2B6007F64F9 /* VertexInfluence.cpp in Sources */,
+				373D80941552F2B6007F64F9 /* Archive.cpp in Sources */,
+				373D80951552F2B6007F64F9 /* AuthenticationMap.cpp in Sources */,
+				373D80961552F2B6007F64F9 /* Callbacks.cpp in Sources */,
+				373D80971552F2B6007F64F9 /* Compressors.cpp in Sources */,
+				373D80981552F2B6007F64F9 /* ConvertUTF.cpp in Sources */,
+				373D80991552F2B6007F64F9 /* DatabasePager.cpp in Sources */,
+				373D809A1552F2B6007F64F9 /* DatabaseRevisions.cpp in Sources */,
+				373D809B1552F2B6007F64F9 /* DotOsgWrapper.cpp in Sources */,
+				373D809C1552F2B6007F64F9 /* DynamicLibrary.cpp in Sources */,
+				373D809D1552F2B6007F64F9 /* ExternalFileWriter.cpp in Sources */,
+				373D809E1552F2B6007F64F9 /* Field.cpp in Sources */,
+				373D809F1552F2B6007F64F9 /* FieldReader.cpp in Sources */,
+				373D80A01552F2B6007F64F9 /* FieldReaderIterator.cpp in Sources */,
+				373D80A11552F2B6007F64F9 /* FileCache.cpp in Sources */,
+				373D80A21552F2B6007F64F9 /* FileNameUtils.cpp in Sources */,
+				373D80A31552F2B6007F64F9 /* FileUtils.cpp in Sources */,
+				373D80A41552F2B6007F64F9 /* fstream.cpp in Sources */,
+				373D80A51552F2B6007F64F9 /* ImageOptions.cpp in Sources */,
+				373D80A61552F2B6007F64F9 /* ImagePager.cpp in Sources */,
+				373D80A71552F2B6007F64F9 /* Input.cpp in Sources */,
+				373D80A81552F2B6007F64F9 /* InputStream.cpp in Sources */,
+				373D80A91552F2B6007F64F9 /* MimeTypes.cpp in Sources */,
+				373D80AA1552F2B6007F64F9 /* ObjectWrapper.cpp in Sources */,
+				373D80AB1552F2B6007F64F9 /* Options.cpp in Sources */,
+				373D80AC1552F2B6007F64F9 /* Output.cpp in Sources */,
+				373D80AD1552F2B6007F64F9 /* OutputStream.cpp in Sources */,
+				373D80AE1552F2B6007F64F9 /* PluginQuery.cpp in Sources */,
+				373D80AF1552F2B6007F64F9 /* ReaderWriter.cpp in Sources */,
+				373D80B01552F2B6007F64F9 /* ReadFile.cpp in Sources */,
+				373D80B11552F2B6007F64F9 /* Registry.cpp in Sources */,
+				373D80B21552F2B6007F64F9 /* SharedStateManager.cpp in Sources */,
+				373D80B31552F2B6007F64F9 /* StreamOperator.cpp in Sources */,
+				373D80B41552F2B6007F64F9 /* Version.cpp in Sources */,
+				373D80B51552F2B6007F64F9 /* WriteFile.cpp in Sources */,
+				373D80B61552F2B6007F64F9 /* XmlParser.cpp in Sources */,
+				373D80B71552F2B6007F64F9 /* AnisotropicLighting.cpp in Sources */,
+				373D80B81552F2B6007F64F9 /* BumpMapping.cpp in Sources */,
+				373D80B91552F2B6007F64F9 /* Cartoon.cpp in Sources */,
+				373D80BA1552F2B6007F64F9 /* Effect.cpp in Sources */,
+				373D80BB1552F2B6007F64F9 /* MultiTextureControl.cpp in Sources */,
+				373D80BC1552F2B6007F64F9 /* Outline.cpp in Sources */,
+				373D80BD1552F2B6007F64F9 /* Registry.cpp in Sources */,
+				373D80BE1552F2B6007F64F9 /* Scribe.cpp in Sources */,
+				373D80BF1552F2B6007F64F9 /* SpecularHighlights.cpp in Sources */,
+				373D80C01552F2B6007F64F9 /* Technique.cpp in Sources */,
+				373D80C11552F2B6007F64F9 /* Validator.cpp in Sources */,
+				373D80C21552F2B6007F64F9 /* Version.cpp in Sources */,
+				373D80C31552F2B6007F64F9 /* AnimationPathManipulator.cpp in Sources */,
+				373D80C41552F2B6007F64F9 /* CameraManipulator.cpp in Sources */,
+				373D80C51552F2B6007F64F9 /* CameraViewSwitchManipulator.cpp in Sources */,
+				373D80C61552F2B6007F64F9 /* DriveManipulator.cpp in Sources */,
+				373D80C71552F2B6007F64F9 /* EventQueue.cpp in Sources */,
+				373D80C81552F2B6007F64F9 /* EventVisitor.cpp in Sources */,
+				373D80C91552F2B6007F64F9 /* FirstPersonManipulator.cpp in Sources */,
+				373D80CA1552F2B6007F64F9 /* FlightManipulator.cpp in Sources */,
+				373D80CB1552F2B6007F64F9 /* GUIEventAdapter.cpp in Sources */,
+				373D80CC1552F2B6007F64F9 /* GUIEventHandler.cpp in Sources */,
+				373D80CD1552F2B6007F64F9 /* KeySwitchMatrixManipulator.cpp in Sources */,
+				373D80CE1552F2B6007F64F9 /* MultiTouchTrackballManipulator.cpp in Sources */,
+				373D80CF1552F2B6007F64F9 /* NodeTrackerManipulator.cpp in Sources */,
+				373D80D01552F2B6007F64F9 /* OrbitManipulator.cpp in Sources */,
+				373D80D11552F2B6007F64F9 /* SphericalManipulator.cpp in Sources */,
+				373D80D21552F2B6007F64F9 /* StandardManipulator.cpp in Sources */,
+				373D80D31552F2B6007F64F9 /* StateSetManipulator.cpp in Sources */,
+				373D80D41552F2B6007F64F9 /* TerrainManipulator.cpp in Sources */,
+				373D80D51552F2B6007F64F9 /* TrackballManipulator.cpp in Sources */,
+				373D80D61552F2B6007F64F9 /* UFOManipulator.cpp in Sources */,
+				373D80D71552F2B6007F64F9 /* Version.cpp in Sources */,
+				373D80D81552F2B6007F64F9 /* AntiSquish.cpp in Sources */,
+				373D80D91552F2B6007F64F9 /* Command.cpp in Sources */,
+				373D80DA1552F2B6007F64F9 /* Constraint.cpp in Sources */,
+				373D80DB1552F2B6007F64F9 /* Dragger.cpp in Sources */,
+				373D80DC1552F2B6007F64F9 /* Projector.cpp in Sources */,
+				373D80DD1552F2B6007F64F9 /* RotateCylinderDragger.cpp in Sources */,
+				373D80DE1552F2B6007F64F9 /* RotateSphereDragger.cpp in Sources */,
+				373D80DF1552F2B6007F64F9 /* Scale1DDragger.cpp in Sources */,
+				373D80E01552F2B6007F64F9 /* Scale2DDragger.cpp in Sources */,
+				373D80E11552F2B6007F64F9 /* ScaleAxisDragger.cpp in Sources */,
+				373D80E21552F2B6007F64F9 /* TabBoxDragger.cpp in Sources */,
+				373D80E31552F2B6007F64F9 /* TabBoxTrackballDragger.cpp in Sources */,
+				373D80E41552F2B6007F64F9 /* TabPlaneDragger.cpp in Sources */,
+				373D80E51552F2B6007F64F9 /* TabPlaneTrackballDragger.cpp in Sources */,
+				373D80E61552F2B6007F64F9 /* TrackballDragger.cpp in Sources */,
+				373D80E71552F2B6007F64F9 /* Translate1DDragger.cpp in Sources */,
+				373D80E81552F2B6007F64F9 /* Translate2DDragger.cpp in Sources */,
+				373D80E91552F2B6007F64F9 /* TranslateAxisDragger.cpp in Sources */,
+				373D80EA1552F2B6007F64F9 /* TranslatePlaneDragger.cpp in Sources */,
+				373D80EB1552F2B6007F64F9 /* Version.cpp in Sources */,
+				373D80EC1552F2B6007F64F9 /* BounceOperator.cpp in Sources */,
+				373D80ED1552F2B6007F64F9 /* ConnectedParticleSystem.cpp in Sources */,
+				373D80EE1552F2B6007F64F9 /* DomainOperator.cpp in Sources */,
+				373D80EF1552F2B6007F64F9 /* Emitter.cpp in Sources */,
+				373D80F01552F2B6007F64F9 /* ExplosionDebrisEffect.cpp in Sources */,
+				373D80F11552F2B6007F64F9 /* ExplosionEffect.cpp in Sources */,
+				373D80F21552F2B6007F64F9 /* FireEffect.cpp in Sources */,
+				373D80F31552F2B6007F64F9 /* FluidFrictionOperator.cpp in Sources */,
+				373D80F41552F2B6007F64F9 /* FluidProgram.cpp in Sources */,
+				373D80F51552F2B6007F64F9 /* ModularEmitter.cpp in Sources */,
+				373D80F61552F2B6007F64F9 /* ModularProgram.cpp in Sources */,
+				373D80F71552F2B6007F64F9 /* MultiSegmentPlacer.cpp in Sources */,
+				373D80F81552F2B6007F64F9 /* Particle.cpp in Sources */,
+				373D80F91552F2B6007F64F9 /* ParticleEffect.cpp in Sources */,
+				373D80FA1552F2B6007F64F9 /* ParticleProcessor.cpp in Sources */,
+				373D80FB1552F2B6007F64F9 /* ParticleSystem.cpp in Sources */,
+				373D80FC1552F2B6007F64F9 /* ParticleSystemUpdater.cpp in Sources */,
+				373D80FD1552F2B6007F64F9 /* PrecipitationEffect.cpp in Sources */,
+				373D80FE1552F2B6007F64F9 /* Program.cpp in Sources */,
+				373D80FF1552F2B6007F64F9 /* SinkOperator.cpp in Sources */,
+				373D81001552F2B6007F64F9 /* SmokeEffect.cpp in Sources */,
+				373D81011552F2B6007F64F9 /* SmokeTrailEffect.cpp in Sources */,
+				373D81021552F2B6007F64F9 /* Version.cpp in Sources */,
+				373D81DE1552F2B6007F64F9 /* obj.cpp in Sources */,
+				373D81DF1552F2B6007F64F9 /* OBJWriterNodeVisitor.cpp in Sources */,
+				373D81E01552F2B6007F64F9 /* ReaderWriterOBJ.cpp in Sources */,
+				373D81FF1552F2B6007F64F9 /* ReaderWriterOSG.cpp in Sources */,
+				373D82001552F2B6007F64F9 /* ReaderWriterOSG2.cpp in Sources */,
+				373D82411552F2B6007F64F9 /* AnimationMaterial.cpp in Sources */,
+				373D82421552F2B6007F64F9 /* CompileSlideCallback.cpp in Sources */,
+				373D82431552F2B6007F64F9 /* PickEventHandler.cpp in Sources */,
+				373D82441552F2B6007F64F9 /* SlideEventHandler.cpp in Sources */,
+				373D82451552F2B6007F64F9 /* SlideShowConstructor.cpp in Sources */,
+				373D82461552F2B6007F64F9 /* ConvexPolyhedron.cpp in Sources */,
+				373D82471552F2B6007F64F9 /* DebugShadowMap.cpp in Sources */,
+				373D82481552F2B6007F64F9 /* LightSpacePerspectiveShadowMap.cpp in Sources */,
+				373D82491552F2B6007F64F9 /* MinimalCullBoundsShadowMap.cpp in Sources */,
+				373D824A1552F2B6007F64F9 /* MinimalDrawBoundsShadowMap.cpp in Sources */,
+				373D824B1552F2B6007F64F9 /* MinimalShadowMap.cpp in Sources */,
+				373D824C1552F2B6007F64F9 /* OccluderGeometry.cpp in Sources */,
+				373D824D1552F2B6007F64F9 /* ParallelSplitShadowMap.cpp in Sources */,
+				373D824E1552F2B6007F64F9 /* ShadowedScene.cpp in Sources */,
+				373D824F1552F2B6007F64F9 /* ShadowMap.cpp in Sources */,
+				373D82501552F2B6007F64F9 /* ShadowSettings.cpp in Sources */,
+				373D82511552F2B6007F64F9 /* ShadowTechnique.cpp in Sources */,
+				373D82521552F2B6007F64F9 /* ShadowTexture.cpp in Sources */,
+				373D82531552F2B6007F64F9 /* ShadowVolume.cpp in Sources */,
+				373D82541552F2B6007F64F9 /* SoftShadowMap.cpp in Sources */,
+				373D82551552F2B6007F64F9 /* StandardShadowMap.cpp in Sources */,
+				373D82561552F2B6007F64F9 /* Version.cpp in Sources */,
+				373D82571552F2B6007F64F9 /* ViewDependentShadowMap.cpp in Sources */,
+				373D82581552F2B6007F64F9 /* ViewDependentShadowTechnique.cpp in Sources */,
+				373D82591552F2B6007F64F9 /* BlinkSequence.cpp in Sources */,
+				373D825A1552F2B6007F64F9 /* ColorRange.cpp in Sources */,
+				373D825B1552F2B6007F64F9 /* DOFTransform.cpp in Sources */,
+				373D825C1552F2B6007F64F9 /* ElevationSlice.cpp in Sources */,
+				373D825D1552F2B6007F64F9 /* HeightAboveTerrain.cpp in Sources */,
+				373D825E1552F2B6007F64F9 /* Impostor.cpp in Sources */,
+				373D825F1552F2B6007F64F9 /* ImpostorSprite.cpp in Sources */,
+				373D82601552F2B6007F64F9 /* InsertImpostorsVisitor.cpp in Sources */,
+				373D82611552F2B6007F64F9 /* LightPoint.cpp in Sources */,
+				373D82621552F2B6007F64F9 /* LightPointDrawable.cpp in Sources */,
+				373D82631552F2B6007F64F9 /* LightPointNode.cpp in Sources */,
+				373D82641552F2B6007F64F9 /* LightPointSpriteDrawable.cpp in Sources */,
+				373D82651552F2B6007F64F9 /* LineOfSight.cpp in Sources */,
+				373D82661552F2B6007F64F9 /* MultiSwitch.cpp in Sources */,
+				373D82671552F2B6007F64F9 /* OverlayNode.cpp in Sources */,
+				373D82681552F2B6007F64F9 /* ScalarBar.cpp in Sources */,
+				373D82691552F2B6007F64F9 /* ScalarsToColors.cpp in Sources */,
+				373D826A1552F2B6007F64F9 /* Sector.cpp in Sources */,
+				373D826B1552F2B6007F64F9 /* ShapeAttribute.cpp in Sources */,
+				373D826C1552F2B6007F64F9 /* SphereSegment.cpp in Sources */,
+				373D826D1552F2B6007F64F9 /* Version.cpp in Sources */,
+				373D826E1552F2B6007F64F9 /* VisibilityGroup.cpp in Sources */,
+				373D826F1552F2B6007F64F9 /* GeometryTechnique.cpp in Sources */,
+				373D82701552F2B6007F64F9 /* Layer.cpp in Sources */,
+				373D82711552F2B6007F64F9 /* Locator.cpp in Sources */,
+				373D82721552F2B6007F64F9 /* Terrain.cpp in Sources */,
+				373D82731552F2B6007F64F9 /* TerrainTechnique.cpp in Sources */,
+				373D82741552F2B6007F64F9 /* TerrainTile.cpp in Sources */,
+				373D82751552F2B6007F64F9 /* Version.cpp in Sources */,
+				373D82761552F2B6007F64F9 /* DefaultFont.cpp in Sources */,
+				373D82771552F2B6007F64F9 /* FadeText.cpp in Sources */,
+				373D82781552F2B6007F64F9 /* Font.cpp in Sources */,
+				373D82791552F2B6007F64F9 /* Glyph.cpp in Sources */,
+				373D827A1552F2B6007F64F9 /* GlyphGeometry.cpp in Sources */,
+				373D827B1552F2B6007F64F9 /* String.cpp in Sources */,
+				373D827C1552F2B6007F64F9 /* Style.cpp in Sources */,
+				373D827D1552F2B6007F64F9 /* Text.cpp in Sources */,
+				373D827E1552F2B6007F64F9 /* Text3D.cpp in Sources */,
+				373D827F1552F2B6007F64F9 /* TextBase.cpp in Sources */,
+				373D82801552F2B6007F64F9 /* Version.cpp in Sources */,
+				373D82811552F2B6007F64F9 /* CubeMapGenerator.cpp in Sources */,
+				373D82821552F2B6007F64F9 /* CullVisitor.cpp in Sources */,
+				373D82831552F2B6007F64F9 /* DelaunayTriangulator.cpp in Sources */,
+				373D82841552F2B6007F64F9 /* DisplayRequirementsVisitor.cpp in Sources */,
+				373D82851552F2B6007F64F9 /* DrawElementTypeSimplifier.cpp in Sources */,
+				373D82861552F2B6007F64F9 /* EdgeCollector.cpp in Sources */,
+				373D82871552F2B6007F64F9 /* GLObjectsVisitor.cpp in Sources */,
+				373D82881552F2B6007F64F9 /* HalfWayMapGenerator.cpp in Sources */,
+				373D82891552F2B6007F64F9 /* HighlightMapGenerator.cpp in Sources */,
+				373D828A1552F2B6007F64F9 /* IncrementalCompileOperation.cpp in Sources */,
+				373D828B1552F2B6007F64F9 /* IntersectionVisitor.cpp in Sources */,
+				373D828C1552F2B6007F64F9 /* IntersectVisitor.cpp in Sources */,
+				373D828D1552F2B6007F64F9 /* LineSegmentIntersector.cpp in Sources */,
+				373D828E1552F2B6007F64F9 /* MeshOptimizers.cpp in Sources */,
+				373D828F1552F2B6007F64F9 /* Optimizer.cpp in Sources */,
+				373D82901552F2B6007F64F9 /* PerlinNoise.cpp in Sources */,
+				373D82911552F2B6007F64F9 /* PlaneIntersector.cpp in Sources */,
+				373D82921552F2B6007F64F9 /* PolytopeIntersector.cpp in Sources */,
+				373D82931552F2B6007F64F9 /* PositionalStateContainer.cpp in Sources */,
+				373D82941552F2B6007F64F9 /* PrintVisitor.cpp in Sources */,
+				373D82951552F2B6007F64F9 /* RenderBin.cpp in Sources */,
+				373D82961552F2B6007F64F9 /* RenderLeaf.cpp in Sources */,
+				373D82971552F2B6007F64F9 /* RenderStage.cpp in Sources */,
+				373D82981552F2B6007F64F9 /* ReversePrimitiveFunctor.cpp in Sources */,
+				373D82991552F2B6007F64F9 /* SceneGraphBuilder.cpp in Sources */,
+				373D829A1552F2B6007F64F9 /* SceneView.cpp in Sources */,
+				373D829B1552F2B6007F64F9 /* ShaderGen.cpp in Sources */,
+				373D829C1552F2B6007F64F9 /* Simplifier.cpp in Sources */,
+				373D829D1552F2B6007F64F9 /* SmoothingVisitor.cpp in Sources */,
+				373D829E1552F2B6007F64F9 /* StateGraph.cpp in Sources */,
+				373D829F1552F2B6007F64F9 /* Statistics.cpp in Sources */,
+				373D82A01552F2B6007F64F9 /* TangentSpaceGenerator.cpp in Sources */,
+				373D82A11552F2B6007F64F9 /* Tessellator.cpp in Sources */,
+				373D82A21552F2B6007F64F9 /* TransformAttributeFunctor.cpp in Sources */,
+				373D82A31552F2B6007F64F9 /* TransformCallback.cpp in Sources */,
+				373D82A41552F2B6007F64F9 /* connectivity_graph.cpp in Sources */,
+				373D82A51552F2B6007F64F9 /* policy.cpp in Sources */,
+				373D82A61552F2B6007F64F9 /* tri_stripper.cpp in Sources */,
+				373D82A71552F2B6007F64F9 /* TriStripVisitor.cpp in Sources */,
+				373D82A81552F2B6007F64F9 /* UpdateVisitor.cpp in Sources */,
+				373D82A91552F2B6007F64F9 /* Version.cpp in Sources */,
+				373D82AA1552F2B6007F64F9 /* CompositeViewer.cpp in Sources */,
+				373D82AB1552F2B6007F64F9 /* GraphicsWindow.cpp in Sources */,
+				373D82AC1552F2B6007F64F9 /* GraphicsWindowIOS.mm in Sources */,
+				373D82AD1552F2B6007F64F9 /* HelpHandler.cpp in Sources */,
+				373D82AE1552F2B6007F64F9 /* IOSUtils.mm in Sources */,
+				373D82AF1552F2B6007F64F9 /* Renderer.cpp in Sources */,
+				373D82B01552F2B6007F64F9 /* Scene.cpp in Sources */,
+				373D82B11552F2B6007F64F9 /* ScreenCaptureHandler.cpp in Sources */,
+				373D82B21552F2B6007F64F9 /* StatsHandler.cpp in Sources */,
+				373D82B31552F2B6007F64F9 /* Version.cpp in Sources */,
+				373D82B41552F2B6007F64F9 /* View.cpp in Sources */,
+				373D82B51552F2B6007F64F9 /* Viewer.cpp in Sources */,
+				373D82B61552F2B6007F64F9 /* ViewerBase.cpp in Sources */,
+				373D82B71552F2B6007F64F9 /* ViewerEventHandlers.cpp in Sources */,
+				373D82B81552F2B6007F64F9 /* FixedFunctionTechnique.cpp in Sources */,
+				373D82B91552F2B6007F64F9 /* Layer.cpp in Sources */,
+				373D82BA1552F2B6007F64F9 /* Locator.cpp in Sources */,
+				373D82BB1552F2B6007F64F9 /* Property.cpp in Sources */,
+				373D82BC1552F2B6007F64F9 /* RayTracedTechnique.cpp in Sources */,
+				373D82BD1552F2B6007F64F9 /* volume_frag.cpp in Sources */,
+				373D82BE1552F2B6007F64F9 /* volume_iso_frag.cpp in Sources */,
+				373D82BF1552F2B6007F64F9 /* volume_lit_frag.cpp in Sources */,
+				373D82C01552F2B6007F64F9 /* volume_lit_tf_frag.cpp in Sources */,
+				373D82C11552F2B6007F64F9 /* volume_mip_frag.cpp in Sources */,
+				373D82C21552F2B6007F64F9 /* volume_tf_frag.cpp in Sources */,
+				373D82C31552F2B6007F64F9 /* volume_tf_iso_frag.cpp in Sources */,
+				373D82C41552F2B6007F64F9 /* volume_tf_mip_frag.cpp in Sources */,
+				373D82C51552F2B6007F64F9 /* volume_vert.cpp in Sources */,
+				373D82C61552F2B6007F64F9 /* Version.cpp in Sources */,
+				373D82C71552F2B6007F64F9 /* Volume.cpp in Sources */,
+				373D82C81552F2B6007F64F9 /* VolumeTechnique.cpp in Sources */,
+				373D82C91552F2B6007F64F9 /* VolumeTile.cpp in Sources */,
+				373D82CA1552F2B6007F64F9 /* Box.cpp in Sources */,
+				373D82CB1552F2B6007F64F9 /* Browser.cpp in Sources */,
+				373D82CC1552F2B6007F64F9 /* Canvas.cpp in Sources */,
+				373D82CD1552F2B6007F64F9 /* Frame.cpp in Sources */,
+				373D82CE1552F2B6007F64F9 /* Input.cpp in Sources */,
+				373D82CF1552F2B6007F64F9 /* Label.cpp in Sources */,
+				373D82D01552F2B6007F64F9 /* Lua.cpp in Sources */,
+				373D82D11552F2B6007F64F9 /* PdfReader.cpp in Sources */,
+				373D82D21552F2B6007F64F9 /* Python.cpp in Sources */,
+				373D82D31552F2B6007F64F9 /* StyleManager.cpp in Sources */,
+				373D82D41552F2B6007F64F9 /* Table.cpp in Sources */,
+				373D82D51552F2B6007F64F9 /* Util.cpp in Sources */,
+				373D82D61552F2B6007F64F9 /* Version.cpp in Sources */,
+				373D82D71552F2B6007F64F9 /* ViewerEventHandlers.cpp in Sources */,
+				373D82D81552F2B6007F64F9 /* VncClient.cpp in Sources */,
+				373D82D91552F2B6007F64F9 /* Widget.cpp in Sources */,
+				373D82DA1552F2B6007F64F9 /* Window.cpp in Sources */,
+				373D82DB1552F2B6007F64F9 /* WindowManager.cpp in Sources */,
+				373D83A31552F2B6007F64F9 /* AlphaFunc.cpp in Sources */,
+				373D83A41552F2B6007F64F9 /* AnimationPath.cpp in Sources */,
+				373D83A51552F2B6007F64F9 /* AnimationPathCallback.cpp in Sources */,
+				373D83A61552F2B6007F64F9 /* AudioSink.cpp in Sources */,
+				373D83A71552F2B6007F64F9 /* AudioStream.cpp in Sources */,
+				373D83A81552F2B6007F64F9 /* AutoTransform.cpp in Sources */,
+				373D83A91552F2B6007F64F9 /* Billboard.cpp in Sources */,
+				373D83AA1552F2B6007F64F9 /* BlendColor.cpp in Sources */,
+				373D83AB1552F2B6007F64F9 /* BlendEquation.cpp in Sources */,
+				373D83AC1552F2B6007F64F9 /* BlendFunc.cpp in Sources */,
+				373D83AD1552F2B6007F64F9 /* Box.cpp in Sources */,
+				373D83AE1552F2B6007F64F9 /* Camera.cpp in Sources */,
+				373D83AF1552F2B6007F64F9 /* CameraView.cpp in Sources */,
+				373D83B01552F2B6007F64F9 /* Capsule.cpp in Sources */,
+				373D83B11552F2B6007F64F9 /* ClampColor.cpp in Sources */,
+				373D83B21552F2B6007F64F9 /* ClearNode.cpp in Sources */,
+				373D83B31552F2B6007F64F9 /* ClipNode.cpp in Sources */,
+				373D83B41552F2B6007F64F9 /* ClipPlane.cpp in Sources */,
+				373D83B51552F2B6007F64F9 /* ClusterCullingCallback.cpp in Sources */,
+				373D83B61552F2B6007F64F9 /* ColorMask.cpp in Sources */,
+				373D83B71552F2B6007F64F9 /* ColorMatrix.cpp in Sources */,
+				373D83B81552F2B6007F64F9 /* CompositeShape.cpp in Sources */,
+				373D83B91552F2B6007F64F9 /* Cone.cpp in Sources */,
+				373D83BA1552F2B6007F64F9 /* ConvexHull.cpp in Sources */,
+				373D83BB1552F2B6007F64F9 /* ConvexPlanarOccluder.cpp in Sources */,
+				373D83BC1552F2B6007F64F9 /* CoordinateSystemNode.cpp in Sources */,
+				373D83BD1552F2B6007F64F9 /* CullFace.cpp in Sources */,
+				373D83BE1552F2B6007F64F9 /* Cylinder.cpp in Sources */,
+				373D83BF1552F2B6007F64F9 /* Depth.cpp in Sources */,
+				373D83C01552F2B6007F64F9 /* Drawable.cpp in Sources */,
+				373D83C11552F2B6007F64F9 /* DrawPixels.cpp in Sources */,
+				373D83C21552F2B6007F64F9 /* EllipsoidModel.cpp in Sources */,
+				373D83C31552F2B6007F64F9 /* Fog.cpp in Sources */,
+				373D83C41552F2B6007F64F9 /* FragmentProgram.cpp in Sources */,
+				373D83C51552F2B6007F64F9 /* FrontFace.cpp in Sources */,
+				373D83C61552F2B6007F64F9 /* Geode.cpp in Sources */,
+				373D83C71552F2B6007F64F9 /* Geometry.cpp in Sources */,
+				373D83C81552F2B6007F64F9 /* Group.cpp in Sources */,
+				373D83C91552F2B6007F64F9 /* HeightField.cpp in Sources */,
+				373D83CA1552F2B6007F64F9 /* Hint.cpp in Sources */,
+				373D83CB1552F2B6007F64F9 /* Image.cpp in Sources */,
+				373D83CC1552F2B6007F64F9 /* ImageSequence.cpp in Sources */,
+				373D83CD1552F2B6007F64F9 /* ImageStream.cpp in Sources */,
+				373D83CE1552F2B6007F64F9 /* LibraryWrapper.cpp in Sources */,
+				373D83CF1552F2B6007F64F9 /* Light.cpp in Sources */,
+				373D83D01552F2B6007F64F9 /* LightModel.cpp in Sources */,
+				373D83D11552F2B6007F64F9 /* LightSource.cpp in Sources */,
+				373D83D21552F2B6007F64F9 /* LineStipple.cpp in Sources */,
+				373D83D31552F2B6007F64F9 /* LineWidth.cpp in Sources */,
+				373D83D41552F2B6007F64F9 /* LOD.cpp in Sources */,
+				373D83D51552F2B6007F64F9 /* LogicOp.cpp in Sources */,
+				373D83D61552F2B6007F64F9 /* Material.cpp in Sources */,
+				373D83D71552F2B6007F64F9 /* MatrixTransform.cpp in Sources */,
+				373D83D81552F2B6007F64F9 /* Multisample.cpp in Sources */,
+				373D83D91552F2B6007F64F9 /* Node.cpp in Sources */,
+				373D83DA1552F2B6007F64F9 /* NodeCallback.cpp in Sources */,
+				373D83DB1552F2B6007F64F9 /* NodeTrackerCallback.cpp in Sources */,
+				373D83DC1552F2B6007F64F9 /* Object.cpp in Sources */,
+				373D83DD1552F2B6007F64F9 /* OccluderNode.cpp in Sources */,
+				373D83DE1552F2B6007F64F9 /* OcclusionQueryNode.cpp in Sources */,
+				373D83DF1552F2B6007F64F9 /* PagedLOD.cpp in Sources */,
+				373D83E01552F2B6007F64F9 /* Point.cpp in Sources */,
+				373D83E11552F2B6007F64F9 /* PointSprite.cpp in Sources */,
+				373D83E21552F2B6007F64F9 /* PolygonMode.cpp in Sources */,
+				373D83E31552F2B6007F64F9 /* PolygonOffset.cpp in Sources */,
+				373D83E41552F2B6007F64F9 /* PolygonStipple.cpp in Sources */,
+				373D83E51552F2B6007F64F9 /* PositionAttitudeTransform.cpp in Sources */,
+				373D83E61552F2B6007F64F9 /* Program.cpp in Sources */,
+				373D83E71552F2B6007F64F9 /* Projection.cpp in Sources */,
+				373D83E81552F2B6007F64F9 /* ProxyNode.cpp in Sources */,
+				373D83E91552F2B6007F64F9 /* Scissor.cpp in Sources */,
+				373D83EA1552F2B6007F64F9 /* Sequence.cpp in Sources */,
+				373D83EB1552F2B6007F64F9 /* ShadeModel.cpp in Sources */,
+				373D83EC1552F2B6007F64F9 /* Shader.cpp in Sources */,
+				373D83ED1552F2B6007F64F9 /* ShaderBinary.cpp in Sources */,
+				373D83EE1552F2B6007F64F9 /* Shape.cpp in Sources */,
+				373D83EF1552F2B6007F64F9 /* ShapeDrawable.cpp in Sources */,
+				373D83F01552F2B6007F64F9 /* Sphere.cpp in Sources */,
+				373D83F11552F2B6007F64F9 /* StateAttribute.cpp in Sources */,
+				373D83F21552F2B6007F64F9 /* StateSet.cpp in Sources */,
+				373D83F31552F2B6007F64F9 /* Stencil.cpp in Sources */,
+				373D83F41552F2B6007F64F9 /* StencilTwoSided.cpp in Sources */,
+				373D83F51552F2B6007F64F9 /* Switch.cpp in Sources */,
+				373D83F61552F2B6007F64F9 /* TessellationHints.cpp in Sources */,
+				373D83F71552F2B6007F64F9 /* TexEnv.cpp in Sources */,
+				373D83F81552F2B6007F64F9 /* TexEnvCombine.cpp in Sources */,
+				373D83F91552F2B6007F64F9 /* TexEnvFilter.cpp in Sources */,
+				373D83FA1552F2B6007F64F9 /* TexGen.cpp in Sources */,
+				373D83FB1552F2B6007F64F9 /* TexGenNode.cpp in Sources */,
+				373D83FC1552F2B6007F64F9 /* TexMat.cpp in Sources */,
+				373D83FD1552F2B6007F64F9 /* Texture.cpp in Sources */,
+				373D83FE1552F2B6007F64F9 /* Texture1D.cpp in Sources */,
+				373D83FF1552F2B6007F64F9 /* Texture2D.cpp in Sources */,
+				373D84001552F2B6007F64F9 /* Texture2DArray.cpp in Sources */,
+				373D84011552F2B6007F64F9 /* Texture3D.cpp in Sources */,
+				373D84021552F2B6007F64F9 /* TextureCubeMap.cpp in Sources */,
+				373D84031552F2B6007F64F9 /* TextureRectangle.cpp in Sources */,
+				373D84041552F2B6007F64F9 /* TransferFunction.cpp in Sources */,
+				373D84051552F2B6007F64F9 /* TransferFunction1D.cpp in Sources */,
+				373D84061552F2B6007F64F9 /* Transform.cpp in Sources */,
+				373D84071552F2B6007F64F9 /* TriangleMesh.cpp in Sources */,
+				373D84081552F2B6007F64F9 /* Uniform.cpp in Sources */,
+				373D84091552F2B6007F64F9 /* UserDataContainer.cpp in Sources */,
+				373D840A1552F2B6007F64F9 /* ValueObject.cpp in Sources */,
+				373D840B1552F2B6007F64F9 /* VertexProgram.cpp in Sources */,
+				373D840C1552F2B6007F64F9 /* Viewport.cpp in Sources */,
+				373D840D1552F2B6007F64F9 /* Action.cpp in Sources */,
+				373D840E1552F2B6007F64F9 /* ActionAnimation.cpp in Sources */,
+				373D840F1552F2B6007F64F9 /* ActionBlendIn.cpp in Sources */,
+				373D84101552F2B6007F64F9 /* ActionBlendOut.cpp in Sources */,
+				373D84111552F2B6007F64F9 /* ActionStripAnimation.cpp in Sources */,
+				373D84121552F2B6007F64F9 /* Animation.cpp in Sources */,
+				373D84131552F2B6007F64F9 /* AnimationManagerBase.cpp in Sources */,
+				373D84141552F2B6007F64F9 /* BasicAnimationManager.cpp in Sources */,
+				373D84151552F2B6007F64F9 /* Bone.cpp in Sources */,
+				373D84161552F2B6007F64F9 /* LibraryWrapper.cpp in Sources */,
+				373D84171552F2B6007F64F9 /* MorphGeometry.cpp in Sources */,
+				373D84181552F2B6007F64F9 /* RigGeometry.cpp in Sources */,
+				373D84191552F2B6007F64F9 /* Skeleton.cpp in Sources */,
+				373D841A1552F2B6007F64F9 /* StackedMatrixElement.cpp in Sources */,
+				373D841B1552F2B6007F64F9 /* StackedQuaternionElement.cpp in Sources */,
+				373D841C1552F2B6007F64F9 /* StackedRotateAxisElement.cpp in Sources */,
+				373D841D1552F2B6007F64F9 /* StackedScaleElement.cpp in Sources */,
+				373D841E1552F2B6007F64F9 /* StackedTransformElement.cpp in Sources */,
+				373D841F1552F2B6007F64F9 /* StackedTranslateElement.cpp in Sources */,
+				373D84201552F2B6007F64F9 /* Timeline.cpp in Sources */,
+				373D84211552F2B6007F64F9 /* TimelineAnimationManager.cpp in Sources */,
+				373D84221552F2B6007F64F9 /* UpdateBone.cpp in Sources */,
+				373D84231552F2B6007F64F9 /* UpdateMaterial.cpp in Sources */,
+				373D84241552F2B6007F64F9 /* UpdateMatrixTransform.cpp in Sources */,
+				373D84251552F2B6007F64F9 /* UpdateMorph.cpp in Sources */,
+				373D84261552F2B6007F64F9 /* UpdateSkeleton.cpp in Sources */,
+				373D84271552F2B6007F64F9 /* AnisotropicLighting.cpp in Sources */,
+				373D84281552F2B6007F64F9 /* BumpMapping.cpp in Sources */,
+				373D84291552F2B6007F64F9 /* Cartoon.cpp in Sources */,
+				373D842A1552F2B6007F64F9 /* Effect.cpp in Sources */,
+				373D842B1552F2B6007F64F9 /* LibraryWrapper.cpp in Sources */,
+				373D842C1552F2B6007F64F9 /* MultiTextureControl.cpp in Sources */,
+				373D842D1552F2B6007F64F9 /* Outline.cpp in Sources */,
+				373D842E1552F2B6007F64F9 /* Scribe.cpp in Sources */,
+				373D842F1552F2B6007F64F9 /* SpecularHighlights.cpp in Sources */,
+				373D84301552F2B6007F64F9 /* AntiSquish.cpp in Sources */,
+				373D84311552F2B6007F64F9 /* CompositeDragger.cpp in Sources */,
+				373D84321552F2B6007F64F9 /* Dragger.cpp in Sources */,
+				373D84331552F2B6007F64F9 /* LibraryWrapper.cpp in Sources */,
+				373D84341552F2B6007F64F9 /* RotateCylinderDragger.cpp in Sources */,
+				373D84351552F2B6007F64F9 /* RotateSphereDragger.cpp in Sources */,
+				373D84361552F2B6007F64F9 /* Scale1DDragger.cpp in Sources */,
+				373D84371552F2B6007F64F9 /* Scale2DDragger.cpp in Sources */,
+				373D84381552F2B6007F64F9 /* ScaleAxisDragger.cpp in Sources */,
+				373D84391552F2B6007F64F9 /* TabBoxDragger.cpp in Sources */,
+				373D843A1552F2B6007F64F9 /* TabBoxTrackballDragger.cpp in Sources */,
+				373D843B1552F2B6007F64F9 /* TabPlaneDragger.cpp in Sources */,
+				373D843C1552F2B6007F64F9 /* TabPlaneTrackballDragger.cpp in Sources */,
+				373D843D1552F2B6007F64F9 /* TrackballDragger.cpp in Sources */,
+				373D843E1552F2B6007F64F9 /* Translate1DDragger.cpp in Sources */,
+				373D843F1552F2B6007F64F9 /* Translate2DDragger.cpp in Sources */,
+				373D84401552F2B6007F64F9 /* TranslateAxisDragger.cpp in Sources */,
+				373D84411552F2B6007F64F9 /* TranslatePlaneDragger.cpp in Sources */,
+				373D84421552F2B6007F64F9 /* AccelOperator.cpp in Sources */,
+				373D84431552F2B6007F64F9 /* AngularAccelOperator.cpp in Sources */,
+				373D84441552F2B6007F64F9 /* AngularDampingOperator.cpp in Sources */,
+				373D84451552F2B6007F64F9 /* BounceOperator.cpp in Sources */,
+				373D84461552F2B6007F64F9 /* BoxPlacer.cpp in Sources */,
+				373D84471552F2B6007F64F9 /* CenteredPlacer.cpp in Sources */,
+				373D84481552F2B6007F64F9 /* CompositePlacer.cpp in Sources */,
+				373D84491552F2B6007F64F9 /* ConnectedParticleSystem.cpp in Sources */,
+				373D844A1552F2B6007F64F9 /* ConstantRateCounter.cpp in Sources */,
+				373D844B1552F2B6007F64F9 /* Counter.cpp in Sources */,
+				373D844C1552F2B6007F64F9 /* DampingOperator.cpp in Sources */,
+				373D844D1552F2B6007F64F9 /* DomainOperator.cpp in Sources */,
+				373D844E1552F2B6007F64F9 /* Emitter.cpp in Sources */,
+				373D844F1552F2B6007F64F9 /* ExplosionDebrisEffect.cpp in Sources */,
+				373D84501552F2B6007F64F9 /* ExplosionEffect.cpp in Sources */,
+				373D84511552F2B6007F64F9 /* ExplosionOperator.cpp in Sources */,
+				373D84521552F2B6007F64F9 /* FireEffect.cpp in Sources */,
+				373D84531552F2B6007F64F9 /* FluidFrictionOperator.cpp in Sources */,
+				373D84541552F2B6007F64F9 /* FluidProgram.cpp in Sources */,
+				373D84551552F2B6007F64F9 /* ForceOperator.cpp in Sources */,
+				373D84561552F2B6007F64F9 /* Interpolator.cpp in Sources */,
+				373D84571552F2B6007F64F9 /* LibraryWrapper.cpp in Sources */,
+				373D84581552F2B6007F64F9 /* LinearInterpolator.cpp in Sources */,
+				373D84591552F2B6007F64F9 /* ModularEmitter.cpp in Sources */,
+				373D845A1552F2B6007F64F9 /* ModularProgram.cpp in Sources */,
+				373D845B1552F2B6007F64F9 /* MultiSegmentPlacer.cpp in Sources */,
+				373D845C1552F2B6007F64F9 /* Operator.cpp in Sources */,
+				373D845D1552F2B6007F64F9 /* OrbitOperator.cpp in Sources */,
+				373D845E1552F2B6007F64F9 /* Particle.cpp in Sources */,
+				373D845F1552F2B6007F64F9 /* ParticleEffect.cpp in Sources */,
+				373D84601552F2B6007F64F9 /* ParticleProcessor.cpp in Sources */,
+				373D84611552F2B6007F64F9 /* ParticleSystem.cpp in Sources */,
+				373D84621552F2B6007F64F9 /* ParticleSystemUpdater.cpp in Sources */,
+				373D84631552F2B6007F64F9 /* Placer.cpp in Sources */,
+				373D84641552F2B6007F64F9 /* PointPlacer.cpp in Sources */,
+				373D84651552F2B6007F64F9 /* PrecipitationEffect.cpp in Sources */,
+				373D84661552F2B6007F64F9 /* Program.cpp in Sources */,
+				373D84671552F2B6007F64F9 /* RadialShooter.cpp in Sources */,
+				373D84681552F2B6007F64F9 /* RandomRateCounter.cpp in Sources */,
+				373D84691552F2B6007F64F9 /* SectorPlacer.cpp in Sources */,
+				373D846A1552F2B6007F64F9 /* SegmentPlacer.cpp in Sources */,
+				373D846B1552F2B6007F64F9 /* Shooter.cpp in Sources */,
+				373D846C1552F2B6007F64F9 /* SinkOperator.cpp in Sources */,
+				373D846D1552F2B6007F64F9 /* SmokeEffect.cpp in Sources */,
+				373D846E1552F2B6007F64F9 /* SmokeTrailEffect.cpp in Sources */,
+				373D846F1552F2B6007F64F9 /* VariableRateCounter.cpp in Sources */,
+				373D84701552F2B6007F64F9 /* DebugShadowMap.cpp in Sources */,
+				373D84711552F2B6007F64F9 /* LibraryWrapper.cpp in Sources */,
+				373D84721552F2B6007F64F9 /* LightSpacePerspectiveShadowMapCB.cpp in Sources */,
+				373D84731552F2B6007F64F9 /* LightSpacePerspectiveShadowMapDB.cpp in Sources */,
+				373D84741552F2B6007F64F9 /* LightSpacePerspectiveShadowMapVB.cpp in Sources */,
+				373D84751552F2B6007F64F9 /* MinimalCullBoundsShadowMap.cpp in Sources */,
+				373D84761552F2B6007F64F9 /* MinimalDrawBoundsShadowMap.cpp in Sources */,
+				373D84771552F2B6007F64F9 /* MinimalShadowMap.cpp in Sources */,
+				373D84781552F2B6007F64F9 /* ParallelSplitShadowMap.cpp in Sources */,
+				373D84791552F2B6007F64F9 /* ShadowedScene.cpp in Sources */,
+				373D847A1552F2B6007F64F9 /* ShadowMap.cpp in Sources */,
+				373D847B1552F2B6007F64F9 /* ShadowTechnique.cpp in Sources */,
+				373D847C1552F2B6007F64F9 /* ShadowTexture.cpp in Sources */,
+				373D847D1552F2B6007F64F9 /* ShadowVolume.cpp in Sources */,
+				373D847E1552F2B6007F64F9 /* SoftShadowMap.cpp in Sources */,
+				373D847F1552F2B6007F64F9 /* StandardShadowMap.cpp in Sources */,
+				373D84801552F2B6007F64F9 /* ViewDependentShadowTechnique.cpp in Sources */,
+				373D84811552F2B6007F64F9 /* AzimElevationSector.cpp in Sources */,
+				373D84821552F2B6007F64F9 /* AzimSector.cpp in Sources */,
+				373D84831552F2B6007F64F9 /* BlinkSequence.cpp in Sources */,
+				373D84841552F2B6007F64F9 /* ConeSector.cpp in Sources */,
+				373D84851552F2B6007F64F9 /* DirectionalSector.cpp in Sources */,
+				373D84861552F2B6007F64F9 /* DOFTransform.cpp in Sources */,
+				373D84871552F2B6007F64F9 /* ElevationSector.cpp in Sources */,
+				373D84881552F2B6007F64F9 /* Impostor.cpp in Sources */,
+				373D84891552F2B6007F64F9 /* LibraryWrapper.cpp in Sources */,
+				373D848A1552F2B6007F64F9 /* LightPointNode.cpp in Sources */,
+				373D848B1552F2B6007F64F9 /* LightPointSystem.cpp in Sources */,
+				373D848C1552F2B6007F64F9 /* MultiSwitch.cpp in Sources */,
+				373D848D1552F2B6007F64F9 /* ObjectRecordData.cpp in Sources */,
+				373D848E1552F2B6007F64F9 /* OverlayNode.cpp in Sources */,
+				373D848F1552F2B6007F64F9 /* ScalarBar.cpp in Sources */,
+				373D84901552F2B6007F64F9 /* Sector.cpp in Sources */,
+				373D84911552F2B6007F64F9 /* SequenceGroup.cpp in Sources */,
+				373D84921552F2B6007F64F9 /* ShapeAttributeList.cpp in Sources */,
+				373D84931552F2B6007F64F9 /* SphereSegment.cpp in Sources */,
+				373D84941552F2B6007F64F9 /* VisibilityGroup.cpp in Sources */,
+				373D84951552F2B6007F64F9 /* CompositeLayer.cpp in Sources */,
+				373D84961552F2B6007F64F9 /* ContourLayer.cpp in Sources */,
+				373D84971552F2B6007F64F9 /* GeometryTechnique.cpp in Sources */,
+				373D84981552F2B6007F64F9 /* HeightFieldLayer.cpp in Sources */,
+				373D84991552F2B6007F64F9 /* ImageLayer.cpp in Sources */,
+				373D849A1552F2B6007F64F9 /* Layer.cpp in Sources */,
+				373D849B1552F2B6007F64F9 /* LibraryWrapper.cpp in Sources */,
+				373D849C1552F2B6007F64F9 /* Locator.cpp in Sources */,
+				373D849D1552F2B6007F64F9 /* ProxyLayer.cpp in Sources */,
+				373D849E1552F2B6007F64F9 /* SwitchLayer.cpp in Sources */,
+				373D849F1552F2B6007F64F9 /* Terrain.cpp in Sources */,
+				373D84A01552F2B6007F64F9 /* TerrainTechnique.cpp in Sources */,
+				373D84A11552F2B6007F64F9 /* TerrainTile.cpp in Sources */,
+				373D84A21552F2B6007F64F9 /* FadeText.cpp in Sources */,
+				373D84A31552F2B6007F64F9 /* LibraryWrapper.cpp in Sources */,
+				373D84A41552F2B6007F64F9 /* Text.cpp in Sources */,
+				373D84A51552F2B6007F64F9 /* Text3D.cpp in Sources */,
+				373D84A61552F2B6007F64F9 /* TextBase.cpp in Sources */,
+				373D84A71552F2B6007F64F9 /* AlphaFuncProperty.cpp in Sources */,
+				373D84A81552F2B6007F64F9 /* CompositeLayer.cpp in Sources */,
+				373D84A91552F2B6007F64F9 /* CompositeProperty.cpp in Sources */,
+				373D84AA1552F2B6007F64F9 /* FixedFunctionTechnique.cpp in Sources */,
+				373D84AB1552F2B6007F64F9 /* ImageDetails.cpp in Sources */,
+				373D84AC1552F2B6007F64F9 /* ImageLayer.cpp in Sources */,
+				373D84AD1552F2B6007F64F9 /* IsoSurfaceProperty.cpp in Sources */,
+				373D84AE1552F2B6007F64F9 /* Layer.cpp in Sources */,
+				373D84AF1552F2B6007F64F9 /* LibraryWrapper.cpp in Sources */,
+				373D84B01552F2B6007F64F9 /* LightingProperty.cpp in Sources */,
+				373D84B11552F2B6007F64F9 /* Locator.cpp in Sources */,
+				373D84B21552F2B6007F64F9 /* MaximumIntensityProjectionProperty.cpp in Sources */,
+				373D84B31552F2B6007F64F9 /* Property.cpp in Sources */,
+				373D84B41552F2B6007F64F9 /* PropertyAdjustmentCallback.cpp in Sources */,
+				373D84B51552F2B6007F64F9 /* RayTracedTechnique.cpp in Sources */,
+				373D84B61552F2B6007F64F9 /* SampleDensityProperty.cpp in Sources */,
+				373D84B71552F2B6007F64F9 /* ScalarProperty.cpp in Sources */,
+				373D84B81552F2B6007F64F9 /* SwitchProperty.cpp in Sources */,
+				373D84B91552F2B6007F64F9 /* TransferFunctionProperty.cpp in Sources */,
+				373D84BA1552F2B6007F64F9 /* TransparencyProperty.cpp in Sources */,
+				373D84BB1552F2B6007F64F9 /* Volume.cpp in Sources */,
+				373D84BC1552F2B6007F64F9 /* VolumeTechnique.cpp in Sources */,
+				373D84BD1552F2B6007F64F9 /* VolumeTile.cpp in Sources */,
+				375240B815530F320000AA53 /* FreeTypeFont.cpp in Sources */,
+				375240BA15530F320000AA53 /* FreeTypeLibrary.cpp in Sources */,
+				375240BC15530F320000AA53 /* ReaderWriterFreeType.cpp in Sources */,
+				375240BE15530F3A0000AA53 /* ReaderWriterImageIO_IOS.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3740056115435282004E64E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -9456,6 +11083,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		373D85F01552F2B6007F64F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/OpenSceneGraph_iOS.dst;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "OpenSceneGraph-iOS-lite";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		373D85F11552F2B6007F64F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/OpenSceneGraph_iOS.dst;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "OpenSceneGraph-iOS-lite";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		3740057015435282004E64E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -9541,6 +11188,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		373D85EF1552F2B6007F64F9 /* Build configuration list for PBXNativeTarget "OpenSceneGraph-iOS-lite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				373D85F01552F2B6007F64F9 /* Debug */,
+				373D85F11552F2B6007F64F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3740055F15435281004E64E3 /* Build configuration list for PBXProject "OpenSceneGraph-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

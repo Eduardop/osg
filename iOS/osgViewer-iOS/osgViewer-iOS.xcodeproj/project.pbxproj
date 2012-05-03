@@ -6411,9 +6411,10 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "../OpenSceneGraph-iOS/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				OTHER_LDFLAGS = "-lOpenSceneGraph-iOS";
+				OTHER_LDFLAGS = "-lOpenSceneGraph-iOS-lite";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../OpenSceneGraph-iOS/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 			};
 			name = Debug;
 		};
@@ -6438,9 +6439,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = "../OpenSceneGraph-iOS/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				OTHER_LDFLAGS = "-lOpenSceneGraph-iOS";
+				OTHER_LDFLAGS = "-lOpenSceneGraph-iOS-lite";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../OpenSceneGraph-iOS/build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
