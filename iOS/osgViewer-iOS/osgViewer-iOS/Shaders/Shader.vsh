@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-// This shader is not used on GLES 1 (fixed-function).
+// Only used on GLES 2.
 
 attribute vec4 osg_Vertex;
 attribute vec3 osg_Normal;

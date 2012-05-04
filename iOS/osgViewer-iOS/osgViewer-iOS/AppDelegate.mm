@@ -18,6 +18,9 @@
 #define kAccelerometerFrequency     30.0 // Hz
 #define kFilteringFactor            0.1
 
+#define GLES_VERSION 1
+//#define GLES_VERSION 2
+
 @implementation AppDelegate
 
 @synthesize _window;
@@ -54,7 +57,7 @@ bool loadShaderSource(osg::Shader* obj, const std::string& fileName )
     CGRect lFrame = [[UIScreen mainScreen] bounds];
     unsigned int w = lFrame.size.width;
     unsigned int h = lFrame.size.height;
-    
+
     // create the main window at screen size
     self._window = [[UIWindow alloc] initWithFrame: lFrame]; 
     
@@ -108,8 +111,8 @@ bool loadShaderSource(osg::Shader* obj, const std::string& fileName )
     osg::ref_ptr<osg::Node> model = (osgDB::readNodeFile("crate.osgt"));
     _root->addChild(model);
     
-    osg::StateSet* stateset = _root->getOrCreateStateSet();
-    
+#if (GLES_VERSION == 2)
+    osg::StateSet* shaderStateset = _root->getOrCreateStateSet();
     osg::Program* programObject = new osg::Program;
     osg::Shader* vertexObject = new osg::Shader( osg::Shader::VERTEX );
     osg::Shader* fragmentObject = new osg::Shader( osg::Shader::FRAGMENT );
@@ -117,8 +120,8 @@ bool loadShaderSource(osg::Shader* obj, const std::string& fileName )
     programObject->addShader( vertexObject );
     loadShaderSource( vertexObject, "Shader.vsh" );
     loadShaderSource( fragmentObject, "Shader.fsh" );
-    
-    stateset->setAttributeAndModes(programObject, osg::StateAttribute::ON);    
+    shaderStateset->setAttributeAndModes(programObject, osg::StateAttribute::ON);
+#endif
     
     // create and attach ortho camera for hud text
     _hudCamera = new osg::CameraNode;
@@ -141,7 +144,7 @@ bool loadShaderSource(osg::Shader* obj, const std::string& fileName )
     
     osg::ref_ptr<osgText::Text> text = new osgText::Text; 
     osg::ref_ptr<osg::Geode> textGeode = new osg::Geode();
-    stateset = textGeode->getOrCreateStateSet();
+    osg::StateSet* stateset = textGeode->getOrCreateStateSet();
     stateset->setMode(GL_LIGHTING,osg::StateAttribute::OFF);
 
     textGeode->addDrawable( text );
