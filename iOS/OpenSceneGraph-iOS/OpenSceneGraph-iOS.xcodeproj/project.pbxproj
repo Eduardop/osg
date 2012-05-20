@@ -315,11 +315,6 @@
 		373D81E01552F2B6007F64F9 /* ReaderWriterOBJ.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400BA0154352E7004E64E3 /* ReaderWriterOBJ.cpp */; };
 		373D81FF1552F2B6007F64F9 /* ReaderWriterOSG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400BDD154352E7004E64E3 /* ReaderWriterOSG.cpp */; };
 		373D82001552F2B6007F64F9 /* ReaderWriterOSG2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400BDE154352E7004E64E3 /* ReaderWriterOSG2.cpp */; };
-		373D82411552F2B6007F64F9 /* AnimationMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CBC154352E8004E64E3 /* AnimationMaterial.cpp */; };
-		373D82421552F2B6007F64F9 /* CompileSlideCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CBE154352E8004E64E3 /* CompileSlideCallback.cpp */; };
-		373D82431552F2B6007F64F9 /* PickEventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CBF154352E8004E64E3 /* PickEventHandler.cpp */; };
-		373D82441552F2B6007F64F9 /* SlideEventHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CC0154352E8004E64E3 /* SlideEventHandler.cpp */; };
-		373D82451552F2B6007F64F9 /* SlideShowConstructor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CC1154352E8004E64E3 /* SlideShowConstructor.cpp */; };
 		373D82461552F2B6007F64F9 /* ConvexPolyhedron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CCA154352E8004E64E3 /* ConvexPolyhedron.cpp */; };
 		373D82471552F2B6007F64F9 /* DebugShadowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CCB154352E8004E64E3 /* DebugShadowMap.cpp */; };
 		373D82481552F2B6007F64F9 /* LightSpacePerspectiveShadowMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400CCC154352E8004E64E3 /* LightSpacePerspectiveShadowMap.cpp */; };
@@ -434,24 +429,6 @@
 		373D82B51552F2B6007F64F9 /* Viewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D5E154352E8004E64E3 /* Viewer.cpp */; };
 		373D82B61552F2B6007F64F9 /* ViewerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D5F154352E8004E64E3 /* ViewerBase.cpp */; };
 		373D82B71552F2B6007F64F9 /* ViewerEventHandlers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D60154352E8004E64E3 /* ViewerEventHandlers.cpp */; };
-		373D82B81552F2B6007F64F9 /* FixedFunctionTechnique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D63154352E8004E64E3 /* FixedFunctionTechnique.cpp */; };
-		373D82B91552F2B6007F64F9 /* Layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D64154352E8004E64E3 /* Layer.cpp */; };
-		373D82BA1552F2B6007F64F9 /* Locator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D65154352E8004E64E3 /* Locator.cpp */; };
-		373D82BB1552F2B6007F64F9 /* Property.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D66154352E8004E64E3 /* Property.cpp */; };
-		373D82BC1552F2B6007F64F9 /* RayTracedTechnique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D67154352E8004E64E3 /* RayTracedTechnique.cpp */; };
-		373D82BD1552F2B6007F64F9 /* volume_frag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D69154352E8004E64E3 /* volume_frag.cpp */; };
-		373D82BE1552F2B6007F64F9 /* volume_iso_frag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D6A154352E8004E64E3 /* volume_iso_frag.cpp */; };
-		373D82BF1552F2B6007F64F9 /* volume_lit_frag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D6B154352E8004E64E3 /* volume_lit_frag.cpp */; };
-		373D82C01552F2B6007F64F9 /* volume_lit_tf_frag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D6C154352E8004E64E3 /* volume_lit_tf_frag.cpp */; };
-		373D82C11552F2B6007F64F9 /* volume_mip_frag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D6D154352E8004E64E3 /* volume_mip_frag.cpp */; };
-		373D82C21552F2B6007F64F9 /* volume_tf_frag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D6E154352E8004E64E3 /* volume_tf_frag.cpp */; };
-		373D82C31552F2B6007F64F9 /* volume_tf_iso_frag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D6F154352E8004E64E3 /* volume_tf_iso_frag.cpp */; };
-		373D82C41552F2B6007F64F9 /* volume_tf_mip_frag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D70154352E8004E64E3 /* volume_tf_mip_frag.cpp */; };
-		373D82C51552F2B6007F64F9 /* volume_vert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D71154352E8004E64E3 /* volume_vert.cpp */; };
-		373D82C61552F2B6007F64F9 /* Version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D72154352E8004E64E3 /* Version.cpp */; };
-		373D82C71552F2B6007F64F9 /* Volume.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D73154352E8004E64E3 /* Volume.cpp */; };
-		373D82C81552F2B6007F64F9 /* VolumeTechnique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D74154352E8004E64E3 /* VolumeTechnique.cpp */; };
-		373D82C91552F2B6007F64F9 /* VolumeTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D75154352E8004E64E3 /* VolumeTile.cpp */; };
 		373D82CA1552F2B6007F64F9 /* Box.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D77154352E8004E64E3 /* Box.cpp */; };
 		373D82CB1552F2B6007F64F9 /* Browser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D78154352E8004E64E3 /* Browser.cpp */; };
 		373D82CC1552F2B6007F64F9 /* Canvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37400D79154352E8004E64E3 /* Canvas.cpp */; };
@@ -9366,11 +9343,6 @@
 				373D81E01552F2B6007F64F9 /* ReaderWriterOBJ.cpp in Sources */,
 				373D81FF1552F2B6007F64F9 /* ReaderWriterOSG.cpp in Sources */,
 				373D82001552F2B6007F64F9 /* ReaderWriterOSG2.cpp in Sources */,
-				373D82411552F2B6007F64F9 /* AnimationMaterial.cpp in Sources */,
-				373D82421552F2B6007F64F9 /* CompileSlideCallback.cpp in Sources */,
-				373D82431552F2B6007F64F9 /* PickEventHandler.cpp in Sources */,
-				373D82441552F2B6007F64F9 /* SlideEventHandler.cpp in Sources */,
-				373D82451552F2B6007F64F9 /* SlideShowConstructor.cpp in Sources */,
 				373D82461552F2B6007F64F9 /* ConvexPolyhedron.cpp in Sources */,
 				373D82471552F2B6007F64F9 /* DebugShadowMap.cpp in Sources */,
 				373D82481552F2B6007F64F9 /* LightSpacePerspectiveShadowMap.cpp in Sources */,
@@ -9485,24 +9457,6 @@
 				373D82B51552F2B6007F64F9 /* Viewer.cpp in Sources */,
 				373D82B61552F2B6007F64F9 /* ViewerBase.cpp in Sources */,
 				373D82B71552F2B6007F64F9 /* ViewerEventHandlers.cpp in Sources */,
-				373D82B81552F2B6007F64F9 /* FixedFunctionTechnique.cpp in Sources */,
-				373D82B91552F2B6007F64F9 /* Layer.cpp in Sources */,
-				373D82BA1552F2B6007F64F9 /* Locator.cpp in Sources */,
-				373D82BB1552F2B6007F64F9 /* Property.cpp in Sources */,
-				373D82BC1552F2B6007F64F9 /* RayTracedTechnique.cpp in Sources */,
-				373D82BD1552F2B6007F64F9 /* volume_frag.cpp in Sources */,
-				373D82BE1552F2B6007F64F9 /* volume_iso_frag.cpp in Sources */,
-				373D82BF1552F2B6007F64F9 /* volume_lit_frag.cpp in Sources */,
-				373D82C01552F2B6007F64F9 /* volume_lit_tf_frag.cpp in Sources */,
-				373D82C11552F2B6007F64F9 /* volume_mip_frag.cpp in Sources */,
-				373D82C21552F2B6007F64F9 /* volume_tf_frag.cpp in Sources */,
-				373D82C31552F2B6007F64F9 /* volume_tf_iso_frag.cpp in Sources */,
-				373D82C41552F2B6007F64F9 /* volume_tf_mip_frag.cpp in Sources */,
-				373D82C51552F2B6007F64F9 /* volume_vert.cpp in Sources */,
-				373D82C61552F2B6007F64F9 /* Version.cpp in Sources */,
-				373D82C71552F2B6007F64F9 /* Volume.cpp in Sources */,
-				373D82C81552F2B6007F64F9 /* VolumeTechnique.cpp in Sources */,
-				373D82C91552F2B6007F64F9 /* VolumeTile.cpp in Sources */,
 				373D82CA1552F2B6007F64F9 /* Box.cpp in Sources */,
 				373D82CB1552F2B6007F64F9 /* Browser.cpp in Sources */,
 				373D82CC1552F2B6007F64F9 /* Canvas.cpp in Sources */,
