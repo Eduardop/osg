@@ -785,7 +785,8 @@ void CompositeViewer::eventTraversal()
                                 ++citr)
                             {
                                 osg::Camera* camera = *citr;
-                                if (camera->getView() &&
+                                if ((camera->getNodeMask()!=0) &&
+                                    camera->getView() &&
                                     camera->getAllowEventFocus() &&
                                     camera->getRenderTargetImplementation()==osg::Camera::FRAME_BUFFER)
                                 {
@@ -1158,8 +1159,9 @@ void CompositeViewer::updateTraversal()
         {
             view->setFusionDistance( view->getCameraManipulator()->getFusionDistanceMode(),
                                     view->getCameraManipulator()->getFusionDistanceValue() );
-
-            view->getCamera()->setViewMatrix( view->getCameraManipulator()->getInverseMatrix());
+            
+            view->getCameraManipulator()->updateCamera(*(view->getCamera()));
+            
         }
         view->updateSlaves();
 

@@ -35,12 +35,19 @@ struct ImagePager::SortFileRequestFunctor
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
-//  ReadQueue
+//  RequestQueue
 //
 void ImagePager::RequestQueue::sort()
 {
     std::sort(_requestList.begin(),_requestList.end(),SortFileRequestFunctor());
 }
+
+unsigned int ImagePager::RequestQueue::size() const
+{
+    OpenThreads::ScopedLock<OpenThreads::Mutex> lock(_requestMutex);
+    return _requestList.size();
+}
+
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -74,8 +81,11 @@ void ImagePager::ReadQueue::clear()
 void ImagePager::ReadQueue::add(ImagePager::ImageRequest* databaseRequest)
 {
     OpenThreads::ScopedLock<OpenThreads::Mutex> lock(_requestMutex);
+    
     _requestList.push_back(databaseRequest);
     databaseRequest->_requestQueue = this;
+
+    OSG_INFO<<"ImagePager::ReadQueue::add(..), size()="<<size()<<std::endl;
 
     updateBlock();
 }
@@ -249,8 +259,11 @@ ImagePager::ImagePager():
     _readQueue = new ReadQueue(this,"Image Queue");
     _completedQueue = new RequestQueue;
     _imageThreads.push_back(new ImageThread(this, ImageThread::HANDLE_ALL_REQUESTS, "Image Thread 1"));
-    //_imageThreads.push_back(new ImageThread(this, ImageThread::HANDLE_ALL_REQUESTS, "Image Thread 2"));
-    //_imageThreads.push_back(new ImageThread(this, ImageThread::HANDLE_ALL_REQUESTS, "Image Thread 3"));
+    _imageThreads.push_back(new ImageThread(this, ImageThread::HANDLE_ALL_REQUESTS, "Image Thread 2"));
+    _imageThreads.push_back(new ImageThread(this, ImageThread::HANDLE_ALL_REQUESTS, "Image Thread 3"));
+    _imageThreads.push_back(new ImageThread(this, ImageThread::HANDLE_ALL_REQUESTS, "Image Thread 4"));
+    _imageThreads.push_back(new ImageThread(this, ImageThread::HANDLE_ALL_REQUESTS, "Image Thread 5"));
+    _imageThreads.push_back(new ImageThread(this, ImageThread::HANDLE_ALL_REQUESTS, "Image Thread 6"));
 
     // 1 second
     _preLoadTime = 1.0;

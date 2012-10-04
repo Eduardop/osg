@@ -596,22 +596,6 @@ void Viewer::advance(double simulationTime)
         _frameStamp->setSimulationTime(simulationTime);
     }
 
-    if (_eventQueue.valid())
-    {
-        osgGA::GUIEventAdapter* eventState = getEventQueue()->getCurrentEventState();
-        if (getCamera()->getViewport())
-        {
-            osg::Viewport* viewport = getCamera()->getViewport();
-            eventState->setInputRange( viewport->x(), viewport->y(), viewport->x() + viewport->width(), viewport->y() + viewport->height());
-        }
-        else
-        {
-            eventState->setInputRange(-1.0, -1.0, 1.0, 1.0);
-        }
-
-        _eventQueue->frame( getFrameStamp()->getReferenceTime() );
-    }
-
     if (getViewerStats() && getViewerStats()->collectStats("frame_rate"))
     {
         // update previous frame stats
@@ -814,6 +798,19 @@ void Viewer::eventTraversal()
         }
     }
 
+    // pass on the coorindates of the main camera to make sure the frame event is scaled appropriately.
+    if (getCamera()->getViewport())
+    {
+        osg::Viewport* viewport = getCamera()->getViewport();
+        eventState->setInputRange( viewport->x(), viewport->y(), viewport->x() + viewport->width(), viewport->y() + viewport->height());
+    }
+    else
+    {
+        eventState->setInputRange(-1.0, -1.0, 1.0, 1.0);
+    }
+
+    // create a frame event for the new frame.
+    _eventQueue->frame( getFrameStamp()->getReferenceTime() );
 
     // OSG_NOTICE<<"mouseEventState Xmin = "<<eventState->getXmin()<<" Ymin="<<eventState->getYmin()<<" xMax="<<eventState->getXmax()<<" Ymax="<<eventState->getYmax()<<std::endl;
 
@@ -1053,7 +1050,7 @@ void Viewer::updateTraversal()
         setFusionDistance( getCameraManipulator()->getFusionDistanceMode(),
                             getCameraManipulator()->getFusionDistanceValue() );
 
-        _camera->setViewMatrix(_cameraManipulator->getInverseMatrix());
+        _cameraManipulator->updateCamera(*_camera);
     }
 
     updateSlaves();
