@@ -3,6 +3,7 @@ package osg.AndroidExample;
 public class osgNativeLib {
 	
 	static {
+        System.loadLibrary("gnustl_shared");
         System.loadLibrary("osgNativeLib");
     }
 

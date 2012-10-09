@@ -3,18 +3,18 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE    := osgNativeLib
-### Main Install dir
-OSG_ANDROID_DIR	:= < type your install directory >
+
+### OpenSceneGraph build dir. Change the line below to your path.
+OSG_ANDROID_DIR	:= /home/eduardo/src/eduardop-osg/osg-android
+
 LIBDIR 			:= $(OSG_ANDROID_DIR)/obj/local/armeabi
 
 ifeq ($(TARGET_ARCH_ABI),armeabi-v7a)
-	LOCAL_ARM_NEON 	:= true
+#	LOCAL_ARM_NEON 	:= true
 	LIBDIR 			:= $(OSG_ANDROID_DIR)/obj/local/armeabi-v7a
 endif
 
-### Add all source file names to be included in lib separated by a whitespace
-
-LOCAL_C_INCLUDES:= $(OSG_ANDROID_DIR)/include
+LOCAL_C_INCLUDES:= $(OSG_ANDROID_DIR)/include ../../include
 LOCAL_CFLAGS    := -Werror -fno-short-enums
 LOCAL_CPPFLAGS  := -DOSG_LIBRARY_STATIC 
 

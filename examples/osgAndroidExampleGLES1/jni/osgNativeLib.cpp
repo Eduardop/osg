@@ -75,7 +75,7 @@ JNIEXPORT void JNICALL Java_osg_AndroidExample_osgNativeLib_setClearColor(JNIEnv
 }
 JNIEXPORT void JNICALL Java_osg_AndroidExample_osgNativeLib_loadObject(JNIEnv * env, jobject obj, jstring address){
     //Import Strings from JNI
-    const char *nativeAddress = env->GetStringUTFChars(address, false);
+    const char *nativeAddress = env->GetStringUTFChars(address, NULL);
 
     mainApp.loadObject(std::string(nativeAddress));
 
@@ -84,8 +84,8 @@ JNIEXPORT void JNICALL Java_osg_AndroidExample_osgNativeLib_loadObject(JNIEnv * 
 }
 JNIEXPORT void JNICALL Java_osg_AndroidExample_osgNativeLib_loadObject(JNIEnv * env, jobject obj, jstring address, jstring name){
     //Import Strings from JNI
-    const char *nativeAddress = env->GetStringUTFChars(address, false);
-    const char *nativeName = env->GetStringUTFChars(name, false);
+    const char *nativeAddress = env->GetStringUTFChars(address, NULL);
+    const char *nativeName = env->GetStringUTFChars(name, NULL);
 
     mainApp.loadObject(std::string(nativeName),std::string(nativeAddress));
 
