@@ -64,6 +64,10 @@ I had linker problems with this NDK and the gnustl_static version.
 This branch also patches a few cpp files that were erroring out during the
 build, due to the NDK change to GCC 4.6.
 
+* Builds for platform android-8.
+* Builds for ABIs armeabi and armeabi-v7a.
+* Does not use NEON, for compatibility.
+
 Instructions:
 
 * Clone the repository to a directory called OpenSceneGraph.
@@ -75,7 +79,7 @@ Instructions:
 * cd ../osg-android; make -j'number_of_cpus' (e.g. make -j4).
 * To build the sample:
   * cd ../OpenSceneGraph/examples/osgAndroidExampleGLES1.
-  * edit Android.mk and fix the osg build path - should be an absolute path
+  * edit jni/Android.mk and fix the osg build path - should be an absolute path
     to your osg-android directory.
   * build the JNI module with ndk-build.
   * build the Java module as you normally would (e.g. Eclipse).
