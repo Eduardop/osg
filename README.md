@@ -71,6 +71,7 @@ build, due to the NDK change to GCC 4.6.
 Instructions:
 
 * Clone the repository to a directory called OpenSceneGraph.
+* Switch to branch osg-android: git checkout osg-android
 * Download http://www2.ai2.upv.es/difusion/osgAndroid/3rdpartyAndroid.zip.
 * Unzip it inside OpenSceneGraph.
 * Create a directory parallel to OpenSceneGraph for your osg build, called 
